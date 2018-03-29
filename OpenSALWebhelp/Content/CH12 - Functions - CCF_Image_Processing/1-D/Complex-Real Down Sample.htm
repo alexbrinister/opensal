@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="752" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - CCF/Image Processing|One-Dimensional Correlation, Convolution, and Filtering" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="XF24cBuYL20RV/jR+vHnojyi+Ws3c/LgqvsasO0sdJhXjtWaapTeuEniL+Jwio76GqWCop9C2WoC7vz+UQ/DlvbiZ9/H5rE5fju8oQT4fxAazh2PkJ1tYhjp9FJ5aZ2T3wMCt1hQTCya6np2kLVpHloZqFcOGsyfnH8CxgGSH44Cl6rTVeePuce60uYvBu6lbTs/B8aLpDh+PnZsNOEjZArqoWPQAOgnizL9TsMDIhCTr5puHR7QoWed+nUuEIrIukPMVogJjl7CPN/bZe5HwKZxf+FO6CUjfO21SsMMyrx1ULfDHuYi3pJCXGil/TOsJgmn+HxRviVPWwEC5MeXNTn4LueSwYRuEEbyM825owkbBonluqt3mBr3Zupo5h91uHc6/vFrQTs6WWud44YlmUybO1Vv/49pFdhr00Kk9s7B7EXhkJrvhur7wkqOYaIoMBoRjbyPFehfMIij1S0FPrR2R39upSomKmZpqghrTvOrda6QMD5U/Nb5RtZZhcGL3EbRgdaZ7HiSrrbNDO9rjAot0nDu8uUN502yBRJCrrjA7ahHlhoskCeMspOeauwPX7XZ1fd/M4NoakI+3X9ogiI9w3OkADDkRkAXMvXpAEeHCFKpIFPIXin8EaBChJeBmuuTWbFCq5OwnM7PhXyYcryvlcK7+/z9dnksKzH2J8N4vA8Hp5jpAk1HW+WXDwupuKonaI6ZmDz582OisBksLzMcuGJ4BfLkIodM8sNayqSASj3MFfCyiiT7cFOz6iIW0T4I1MNFzey5wEp+N8dODThfWK8IHIRjXj8fibOMPsz3o80ax0XONvQT2Cg4fJiiBA9IoZITo3AoK16Iqbf52J99l0D/xsb/4sKm5C1O/J9yMqNFBrUSS8Or279EPvm6NufotuPqmppBLPxWLcO/odmM1j7wqyfJGIkgJ8Uf+zBR8BiiZU2n8GmCLu7y29R4hRwVKYdrICVcY2zr9pCpQ5FKxuWlTjycD7cDoSfDW2pxj8l/JPCyDvlGnEaIPsHYieEaWgN5hxajv40AqOjnhbYzomIAaG1RVkc7L3jhCiNdojhKcG5fVCFqZ9KEjFw0zs6AdxEOieArmCjq57xv9PoQptLR1BHQiuEXnFUahO/0Iyz9qe9zc5OeHJtWt1lnUcLxqTjstdX4F6dgOvNIlAdbMJDTqAN955SOpPlUwKY+bsd1765gjNZpu3bkfT1txETX5+bfQ9Hmn2BwE+GhINrg5lccXODBIPf0jF6j8XQrL2aza2+MqKp2wt8LCqE3fjM4jTos1dAxjp/EslpjVFWhg6v4eLc8RHO7jFfOPGPDZia/3Q4VQbDmQkE2zpU3tjUnbcDLCtcWNpzcOZAVdw==" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Complex/Real Down Sample with Anti-aliasing</title>
+        <link href="../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../Default_CSH.htm#CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1081"></a>Complex/Real Down Sample with Anti-aliasing</h2>
+        <p class="API_name"><a name="desampx"></a><a name="kanchor1082"></a>desampx(), <a name="crdesampx"></a><a name="kanchor1083"></a>crdesampx(), <a name="zrdesampx"></a><a name="kanchor1084"></a>zrdesampx()</p>
+        <p class="Image">
+            <img src="../../Resources/Images/SAL_funct_equat_185.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 56px;" />
+            <col style="width: 141px;" />
+            <col style="width: 303px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>desampx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Decimation factor */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Filter coefficient vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Length of output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 P,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Coefficient count vector B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>crdesampx</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Input vector. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Complex decimation factor */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Filter coefficient vector, = 2*(decimation factor */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Length of output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 P</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Length of filter vector B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>zrdesampx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Split complex input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Decimation factor */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Filter coefficient vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Length of output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 P,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Length of filter vector B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The desampx(), crdesampx(), and zrdesampx() functions perform finite impulse response (FIR) filtering with decimation of the output.</p>
+        <p class="Body">For interleaved complex vectors, the complex decimation factor is twice the decimation factor.  For example, if input vector <i>A </i>(declared as <code>SAL_cf32 *A</code>) is undecimated, then <i>f </i>= 2. If <i>A </i>is decimated by a factor of two, then <i>f </i>= 4, and so on.  This is analogous to interleaved complex vector strides, which are measured in terms of half elements. </p>
+        <p class="Body">The length of <i>A </i>must be at least (<i>N</i>-1) + <i>D </i>+ <i>P</i>, where <i>D </i>is the decimation factor, (i.e., <i>D </i>= <i>f </i>for desampx and zrdesampx, and <i>D </i>= <i>f</i>/2 for crdesampx).</p>
+        <p class="Body">These functions can run in-place, but <i>C </i>cannot be in-place with <i>B</i>.</p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

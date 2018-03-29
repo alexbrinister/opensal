@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="274" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="jcNwiBrALqjRme8mwnpzOuFn+A/gVHXLDjNv9r7tSx81ps4N6ar+CS9Eye8/MgtPZhF0SZlL81H6IohhOUeABGwySkjeudDoLXIOVHbfNf/te9vUejssV6Sx8Ok8rvQt8zx2zchVmoJq1Ni4FroLBxw5hjlxG5X5CVPlM1dZ3nnPdwLT4PyMesr0hN+njMtFXLyadAsP0Wa1VWPZyXMzuHISHkFrgFtkmL2zSw9tHFij9nMkWGJ0gtBViDlj+n3atgI1aPO1McAsoYtp/gzHLMuPesBL1QEJtDkwyCYg65mBaPB5BwfUsl1hB4jD7oM1p1q4CQvc24niwYM1l5WpgDRO5bkth8YpULdGHHHK0g2ISzy2rBSMQLTh6+g6cEUiGBanlycmpap8H8NWZvRjOVtPtSuXGQSdmi5vXRn4/ct8wFhAPhm+RD3t+Te3YSjKFt3bzFRGpgKNavRHC1C5dTGPg6gnXFoDFfsxz0ak1WecGxHtU+e46f/DZ8vjzx9MoqitRuQmkIX/0muQPFEORIUw77wATJV+xamu7pzUYoyVGMfEJguWcuNCbfI3JL1Emctk1I0Y2oV5LaNNFlexZOz03VufzDeLzK9P3XjJ6Z9F2CF6oPMnAFqM7S96G6/6/be7AqgwjXL0cFl5jDIQxuIqA9zwxCWVqD9S8tGA7n2omVo6F/sJ6BnVfUdzXz4yF3YsKf2NXa/sCxa6WdtHaZ60nWljiLPkBN5O4PcgIE3fhOUc3SkwbTpo1kcfrCioCLNPayIUi+9sd3ZtgYrTI54Dq3llzaWDPyd8yWxzlWKMCqUBbHqeDli/biMwAbEI3ZnFMNwaxWkhF6s38NpSvw9WRUrLbGC1ibuXdY3R9AMmaFMZFi5sez9dPwyVj3868fserZ65MLlFdJn4wBnz8tdB/Phe8qv+4baCotU8ZduhbmdfgtT9k2tPLBT4SWI3SjLWE+b96eXWnbrg02ERnhFbDTpQs8NztEW8hlc/OfR6kKXTHQxYw5vPVRqVnsy7" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Migrating from Single-Core to Multi-Core</title>
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH04 - MultiCore SAL/Migrating_single-to-multi.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="kanchor1175"></a>Migrating from Single-Core to Multi-Core</h1>
+        <p class="Body">To change an application with SAL calls to use multi-core enabled SAL, you must: 
+</p>
+        <ol>
+            <li value="1">
+                <p>Add the <a href="#sal_create">sal_create()</a>, <a href="#sal_init_">sal_init()</a>, and <a href="#sal_destroy">sal_destroy()</a> functions to your application. </p>
+                <p>If you want to go back to using single-core SAL, you do not have to remove these functions from your code. These functions enable the multi-core versions of the SAL functions only when your application defines <code>SAL_ENABLE_MULTICORE</code>.
+</p>
+            </li>
+            <li value="2">Compile your application with <code>SAL_ENABLE_MULTICORE</code> defined in the appropriate places; for example, in your makefile or in an application source or header file, but before including the <code>sal.h</code> header file.
+</li>
+            <li value="3">In addition to linking with the SAL or the CSAL libraries, link your application with the MCSAL performance library or development library.</li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

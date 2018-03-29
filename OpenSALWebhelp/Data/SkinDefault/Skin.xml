@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin Version="1" Comment="This is the default skin" Anchors="Width,Height" Width="900px" Height="693px" Top="254px" Left="332px" Bottom="253px" Right="368px" Tabs="TOC,Index,Search" DefaultTab="TOC" Title="SAL Reference" BrowserSetup="Resizable" AutoSyncTOC="True" UseBrowserDefaultSize="false" CommentsInTopic="true" NavigationLinkTop="true" ToolbarInTopic="false" FeedbackUserProfileItems="Username|Occupation|EmailAddress" UseDefaultBrowserSetup="false">
+    <Index BinaryStorage="True" />
+    <HtmlHelpOptions ShowMenuBar="false" TopmostWindowStyle="false" Buttons="" EnableButtonCaptions="True" AutoShowNavigationPane="true" AdvancedSearch="false" />
+    <WebHelpOptions HideNavigationOnStartup="False" NavigationPaneWidth="175" NavigationPanePosition="Left" VisibleAccordionItemCount="7" AboutBox="About.png" AboutBoxWidth="327" AboutBoxHeight="159">
+    </WebHelpOptions>
+    <Stylesheet Link="Stylesheet.xml">
+    </Stylesheet>
+    <Toolbar EnableCustomLayout="true" Buttons="ToggleNavigationPane|Home|PreviousTopic|NextTopic|Stop|Refresh|Separator|RemoveHighlight|Print|TopicRatings" ExcludeAccordionTitle="false" />
+    <TopicToolbar EnableCustomLayout="true" Buttons="" />
+</CatapultSkin>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="724" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="About Resampling" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="ommyJFahfuZ5arSAnwQ/oI2AZRBbG0GOH6O7ZUXgggueam582uPpWKzFiuWsqYXHg6aiFCbUUXJ+karobkmPxmX0vxqf0fLCR17lz5g9ZOTsrQgquvViadjJ4FugCw4pXK4BZyefXMP9vLcd/gTlfDQAqxoZwW/4taX2UAsWmlFfWMn5harXBigjLgpdv1k4UYsaeSQLYekymHdBzFBvMIqxvtOJ5O5d9OA8OKl+QMBxpBilgOz2T/QWCe42CxMml4aciWIBPhGxaCW3FxGARJtPsdxpD/r2FQOhDBYk1ZfNatyydt0n3uQd5wXBqW55czt06zA+Pz4++2KNa0uM0Q4Dy48mRbGWypPB7q/iyiMuW7T3OsmBDrNN+Ae4fcBbx2Fq+NEsYNwhCvZMW+IBvhpTUAD8Y7trsAju8o3rE/8+VmI3xacGBCGJ3mu2d5JlDYrKkF4/8Jjt0XTVpPFOscjZSSN7X5Z4X8KWJiQ1v+QYJ67e2GvspYA7RJuoi2x7oHDuCropaAUnoYvr0WTo6I8oaUfZv+hB+Rn8PvihCjv0nlegF01A8DKFBJi1LcpHSO1BA0kgznG41JVhEf3dH5EMEjWGvcfRFqDmbSlm/+W20fqm200toiRE2jrtSCM7UaTapqD7xwlbxViyv1/Tmjfh3LNI0H19zJRO6hTkXeh+VfOpVF42J3d4AvfAfVl0xV5ALRjNVrb1q4Lowx/sosH1v+YMkDZE1Hlq4bfKOD6/VVf+gtrN0T8wPNgm+i//1cX8Z+lY9+ITdZAQ9pgx2PMYKcKKmxm88LRpdUQXNB4tYBfXRiasFwNwcTdAthn0DlVXUc3Ga4eySA3jlFPftrNAs5WOnPM2Aw7mhzgeJWF+za+55wdBdriY4rceTXX41CEyy4C86/nJIXJkQh5R724/c+jJqN6peElAMEHki6WF3hVZyOjVq7d96KkBV3JUDFS45OyLq5S7BQHOno+r5lBEM0aEFxAi/7n69prCm1h06w7mg22jTDoHmWtbZ4qg" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Resampling Terms and Definitions</title>
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH05 - Resampling/Terms.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1><a name="top"></a><a name="kanchor81"></a>Resampling Terms and Definitions</h1>
+        <p class="Body">To understand SAL resampling functions, you must be familiar with:</p>
+        <ul>
+            <li value="1">Output-centered resampling algorithms</li>
+            <li value="2">Input-centered resampling algorithms</li>
+            <li value="3">Uniform sequences</li>
+            <li value="4">Reference sequences</li>
+            <li value="5">Reference points</li>
+            <li value="6">Reference maps</li>
+            <li value="7">Reference map tables</li>
+            <li value="8">Polyphase filter sets</li>
+        </ul>
+        <h2><a name="kanchor82"></a>Input-Centered and Output-Centered Resampling&#160;</h2>
+        <p class="Body">The output-centered (OC) resampling routines handle uniformly sampled input sequences. Input-centered (IC)&#160;routines handle uniformly sampled output sequences. </p>
+        <p class="Body">When both sequences are uniformly sampled, use OC or IC. However, depending on the processor architecture, OC implementations are more efficient.
+</p>
+        <p class="Body">If neither the input, nor the output sequence is uniformly sampled:
+</p>
+        <ol>
+            <li value="1">Use an IC routine to form a uniformly sampled intermediate sequence.
+</li>
+            <li value="2">Use the intermediate sequence as an input to an OC routine to produce the required non-uniformly sampled output sequence. </li>
+        </ol>
+        <h3><a name="kanchor83"></a>Output-Centered Resampling Algorithms</h3>
+        <p class="Body">An OC resampling algorithm computes an output sequence from a uniformly-spaced input sequence. This is done by:</p>
+        <ol>
+            <li value="1">Centering a continuous, real-valued (typically symmetric) filter function  over (or near) each output point</li>
+            <li value="2">Sampling the filter so that the resulting discrete filter coefficients line up exactly with some fixed number (m) of input points on either side of the output (reference) point</li>
+        </ol>
+        <p class="Body"> This discrete filter is then applied to the surrounding input points in a dot-product calculation, the result of which is written or added to the designated output point. This process is repeated for each point in the output sequence.</p>
+        <h3><a name="kanchor84"></a>Input-Centered Resampling Algorithms</h3>
+        <p class="Body">An IC resampling algorithm computes a uniformly-spaced output sequence from an input sequence. This is done by:</p>
+        <ol>
+            <li value="1">Centering a continuous, real-valued (typically symmetric) filter function over (or near) each input point</li>
+            <li value="2">Sampling the filter so that the resulting discrete filter coefficients line up exactly with some fixed number (m) of output points on either side of the input (reference) point</li>
+        </ol>
+        <p class="Body">This discrete filter is then applied to the surrounding output points by multiplying each of the m filter coefficients by the designated input point and adding each of the results to the m corresponding output points, thereby updating the m output points (one per filter coefficient).</p>
+        <h2><a name="kanchor85"></a>Uniform Sequences</h2>
+        <p class="Body">The uniform sequence is the uniformly-spaced sequence (sampled at a uniform spacing t = 1), over which the resampling filter is applied. </p>
+        <ul>
+            <li value="1">For OC routines, this is the input sequence. </li>
+            <li value="2">For IC routines, this is the output sequence. </li>
+        </ul>
+        <p class="Body">It is assumed that t is equal to 1 for all the routines in this specification, so that the entire sampling space ranges from 0 to N–1 units, where N is the number of points in the uniform sequence.</p>
+        <h2><a name="kanchor86"></a>Reference Sequences</h2>
+        <p class="Body">The reference sequence is the sequence that is being accessed (walked) sequentially during a particular resampling routine. </p>
+        <ul>
+            <li value="1">For OC routines, this is the output sequence. </li>
+            <li value="2">For IC routines, this is the input sequence. </li>
+        </ul>
+        <p class="Body">The reference sequence does not have to be uniformly-spaced.</p>
+        <h2><a name="kanchor87"></a>Reference Points</h2>
+        <p class="Body">The reference point is the current point in the reference sequence that is being computed (OC) or operated on (IC) routines.</p>
+        <h2><a name="kanchor88"></a>Reference Maps</h2>
+        <p class="Body">A reference map is the non-integral position of a given reference point within the uniform sequence. </p>
+        <ul>
+            <li value="1">For OC routines, each reference map is the position of a unique output point within the uniformly-spaced input sequence. </li>
+            <li value="2">For IC routines, each reference map is the position of a unique input point within the uniformly-spaced output sequence. </li>
+        </ul>
+        <p class="Body">The integer part of a reference map identifies the contiguous subsequence within the uniform sequence over which to apply the interpolation filter. The fractional part of a reference map determines the phase of the discretely sampled filter so that the filter coefficients line up with their corresponding points in the uniform sequence.</p>
+        <h2><a name="kanchor89"></a>Reference Map Tables</h2>
+        <p class="Body">A reference map table is a table of reference maps where each table entry corresponds to a unique reference point within the reference sequence. During a resampling routine, a reference map table is sequentially accessed to acquire the position of each reference point within the uniform sequence. </p>
+        <ul>
+            <li value="1">For the OC algorithm, the i<sup>th</sup> table entry corresponds to the i<sup>th</sup> output point. </li>
+            <li value="2">For the IC algorithm, the i<sup>th</sup> table entry corresponds to the i<sup>th</sup> input point.</li>
+        </ul>
+        <p class="Body">A reference map is considered out-of-bounds if the application of a complete m-point filter will result in accesses beyond either end of the uniform sequence (the input sequence for the OC algorithm or the output sequence for the IC algorithm). By default, SAL does not check for out-of-bounds reference maps. SAL supports two boundary checking options for handling out-of-bounds reference maps:</p>
+        <ul>
+            <li value="1">The <i>Zero</i> option applies a filter of all zeros. </li>
+            <li class="Bullet1" value="2">For the OC routines, this option causes a zero to be written (or added) to the current reference point. </li>
+            <li class="Bullet1" value="3">For the IC routines, this option leaves the partially computed output sequence unchanged.</li>
+            <li value="4">The <i>Taper</i> option allows for partial application of the filter based on the number of valid points in the uniform sequence that actually fall under the filter. Filter points that correspond to invalid (beyond either end) input (OC) or output (IC) points are not included in the calculation. If all points are invalid, the behavior is the same as if the Zero option had been specified.</li>
+        </ul>
+        <h2><a name="kanchor90"></a>Polyphase Filter Sets</h2>
+        <p class="Body">For SAL resampling functionality, a polyphase filter set is defined as a collection of n discrete filters of equal length m, where each filter is sampled from the same continuous real-valued filter function at the uniform time interval t = 1.</p>
+        <p class="Body">Each of the m filters represents a different discrete phase of the filter function that corresponds to the centers of the n unique <i>phase intervals</i> of width t/n = 1/n. Therefore, adjacent filters within the set are phase-shifted by exactly 1/n from one another.</p>
+        <p class="Body">During a resampling operation, a particular discrete filter is selected from the set based on the phase interval that the current reference point falls within (determined by its associated reference map). </p>
+        <p class="Body">The center of the continuous filter function ƒ(x) is defined as x = <span style="font-family: sans-serif;">0</span>. The center of each discrete filter in the set should correspond to the center of its phase interval, and the discrete filter coefficients should line up with the m surrounding points in the <i>uniform sequence</i>over which the filter is applied. This ensures that the selected filter is within 1/(2n) units from the reference point. Therefore, by increasing the number of filters in the set, this error can be made arbitrarily small (limited by the rounding error of the computer).</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

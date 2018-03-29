@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="735" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="JgcCG+KSkld8OIr3tYKPRmjw1ywZlS8lee6W34x5hAg2BhEYl3SUWLaGS5CloDpQpH5SNOfhjUVqqCB2BmNpxUEKKOWJNEpKA3wPSVjLUJfXILgSptLzlM6IzgngPCHASpD0L0sppQAAERrnjyfWW8ZHJhw8TLFiNEukw9jTYylW4Wd/J5fsplMnj8mxnwVyLgZtupI2H/XJ4XMIWy8A7LTlyHAGQnVz2977u8jEWBHs5O6Ip5sexhKM6Y3Y+PN29MupH9Ab7Dqn1k4ywesz58rm4SEt1B3WNfb5rdwr3Hjwr4jVdd4BX6cqGqFBZW+btU5I3IawaR0FE5u9cSXKoTAmC7oJ3K+cOp5VrRkIdOXzL23CAglvy3n7/cEI86e0ZAMbRSFuAjQx2FdnRZaoOZ3ESzMypQfhf8oQE598WxycW3PnVzvfcDjWd5hqE6rR9sCoRbkP7zySn3DJbli+LO1ocTTIh0oD1q4r0GAu7SyOjUwxlW2HfzLJSMXEWYTevFU/HY+bNam164MvE/K7aGu+/V4O7B5IEw6/Qd38CUE/05gQNacz+TajqXrKAkuD1u+tPxBJj44imd67k0NdAT70GqXJF7Mec0ovo0hTGk6ddWeumrEDjwjmigaDOPRFfiL/JP30aoebNvlvTZ+8dg6yxIv5CORM9G1PWpzSDhZE6gcomyaq7M5m/hPKG1nDoKK5IB4CbUVrPqCDZXZtcTu7Aoo5U+nyt92PBQS1g6YgYxM/VJR2o6x5J49slPxhh2hfCvZr1vTmGt6F+OYdsKuwPyo6/QtuHB06eQTU5mu3fcLkQefy/LQpVYWjbh2e8WCGNqrQtSED2f86ffJfQpIzdTkaa08TfbGP7mfRqrDDmgK4tF1C2RvXf/TE9+DBAvz9dZFfqhIEI/qpFn36YpiNMpZ4ZAcqF8D37esjkL3Gn68RR+yaMC6nEo6i1xfKx6xvpNG+uWGQXloXHxX6ASRomQ1scHcVxEDlDs/pMYAhpcVO2pedwms4fOLBEbAM" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Using the MCSAL Development Library</title>
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH04 - MultiCore SAL/MCSAL_library.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="kanchor1173"></a>Using the MCSAL Development Library</h1>
+        <p class="Body"><a name="kanchor1174"></a>The MCSAL development library, <code>libmcsal_dev.a</code>, provides Trace Analysis Tool and Library (TATL) trace events for each MCSAL function.
+</p>
+        <p class="Body">Events are logged when MCSAL functions are entered and when the functions exit. The end event records, as data, the number of workers used by the function. </p>
+        <p class="Body">If the data set to process is too small, and if using fewer workers will result in better performance, the MCSAL function might not use all of the workers available to it. The number of workers actually used is logged with the TATL event. For more information, see the <i>Trace Analysis Tool and Library (TATL) User Guide</i> or the <i>MultiCore Plus Open Development Suite User Guide</i>. You can use this information to determine whether the multi-core version of the function was used.
+</p>
+        <p class="StepStart">To see these events in your TATL traces:
+</p>
+        <ol>
+            <li value="1">
+                <p>Create a TATL buffer for the thread that is calling SAL functions. You can use the buffer to log other user events. </p>
+                <table style="width: 500px; mc-table-style: url('../Resources/TableStyles/o_Code.css'); margin-left: 0; margin-right: auto;" class="TableStyle_o_Code" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_o_Code_Body_0_0_RowEnd_ColEnd">
+                                <p>trace_params.location = (SAL_char *)0; </p>
+                                <p>trace_params.options = TATL_CIRCULAR_Q ;
+</p>
+                                <p>rc = tatl_trace_create( &amp;trace_params, &amp;trid); </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="2">
+                <p>Assign the buffer to the thread.
+</p>
+                <table style="width: 500px; mc-table-style: url('../Resources/TableStyles/o_Code.css'); margin-left: 0; margin-right: auto;" class="TableStyle_o_Code" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_o_Code_Body_0_0_RowEnd_ColEnd">
+                                <p>tatl_thread_set_buffer(trid);</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="3">
+                <p>Start logging TATL events.
+</p>
+                <table style="width: 500px; mc-table-style: url('../Resources/TableStyles/o_Code.css'); margin-left: 0; margin-right: auto;" class="TableStyle_o_Code" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="TableStyle_o_Code_Body_0_0_RowEnd_ColEnd">
+                                <p>tatl_trace_start(&amp;trid, 1);</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li value="4">Link-in <code>libmcsal_dev.a</code> instead of <code>libmcsal.a</code>.
+</li>
+        </ol>
+        <p class="Body">TATL events for SAL start at <span style="font-family: serif;">0xf000</span>. MCSAL includes a TATL workspace file (<code>$MC_DIR/examples/mcsal/mcsal_with_tatl/sal_all.wsp</code>) that lists all MCSAL events with names and data formats. You can use this workspace file directly, or you can copy events of interest into this file to create an application-specific workspace file.
+</p>
+        <p class="Body">For example, if your application uses the <a href="../CH09 - Functions - Vector_to_Vector/V2V_math_float.htm#vaddx">vaddx()</a> function, you can search or <i>grep </i>for "SAL_vaddx" in the default workspace file, then add the lines to the application-specific version of the file. </p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Code_Body_0_0_RowEnd_ColEnd">
+                        <p>% grep SAL_vaddx sa_all.wsp
+</p>
+                        <p>EVENT_TYPE: ID=f32c: NAME=SAL_vaddx_begin: FORMAT=string:
+</p>
+                        <p>EVENT_TYPE: ID=f32d: NAME=SAL_vaddx_end: FORMAT=long:</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

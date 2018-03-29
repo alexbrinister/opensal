@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="740" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="IiTeECxf9Yg4m8WLBPs9jNp0M6JYvZWmWN3PGf+wEgh4yBvn7GfUs+RryWaJ6nEVyldWtO2/+nx0mUvOkulZHV/2y8b2MgPn4D1db6HqsvajqrxWTsqlC2aW9NOK40UHxFsORe7KWHSrHEq4h/S4ZFbDeyCKEK/59Sgcy8EbzjnVpd/2JGJPsjImShNFrxJcdd6e56WX5XgTvTwWEAc1EXN1VGsQpGXHbwfN5RfBsk/ABk4Q2oyWXITy74YZ5bmIB7T9eM9BKjckdgn7LDGaMPKQcKkDxhGMqdAujyB3PCtBXsuTjneciUUg+hAeZO11swInDXGzrCmmHSiGQH3qzE5Sn/OHG8pt8wFybFJM73XWIw/dBSb4JYtBjH9zYVOFjEagIQPfk6RQseGGdlNSq/XTKo4+3hWpvBbogYgQ5IPHO0OAeRZWjBNJN/WKtC1dY0F58vl0TFy+KHXNZPE++OfOspQ1MLRULy1rBYtAiVDC9Vtd+sG2pfaK5UUebV+klUXf+51Vkp8Dz6EjYV1PGkyjNZh6IbvRumxW/pSf8qTjgBrSkffaZ5ovj67nY48Tks1cCuJibZGzNkT/TtLEoPuA8TeoHQ0lEAFLa86sJ/a+bMZtnot1ZAY8SHMb+YErBYmxTEvWAplTaCRfW7GXZO1UHkm8FHa/Vrp17Qch3WZwNjxdeFya9VRAVeRTXfkGkMxk4O0gODDpBdVgbaHn4du+rE1deD7ChFCofWYf9LBcDeEwlnSQOI6xowa6tueoekbuWelLTEZRTXcp9glYu59wDWoyRKPx8l6T9lBiJCdLQj+gAJGj+TigL5NqxK/7UUAGGpHn22dIkKDkmEkCgeRyEtNpGwn2rsm05DWo1LoSbeRqEKA+rBQFyswUteE3Hd2nrlsz0NADcyCwB7qYjImHibl13oHk+xkm2Q2g+HszYUWugGaJVSvh7URv3G8hZJr+TJ8X7ZuGvNJrtk/jF1JZTDrH9GQJrTDDM9p5oYF4QBvbbbipwG1v2uhcFRsU" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Increasing Performance with Vectorized SAL Code</title>
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#AppC - Performance/Increasing_Performance.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="kanchor1280"></a>Increasing Performance with Vectorized SAL Code</h1>
+        <p class="Body">When determining whether to use SAL functions or non-complex C code, consider a program that performs a large amount of arithmetic computations. If it is not running as fast as you want, you can improve performance by replacing scalar operations, written in non-complex C code, with vector operations.</p>
+        <p class="Body"><a href="#Creating_and_Processing_Ramped_Vectors_" target="" title="" alt="" class="MCXref_Fig_Tab_Exam"><span style="color: Black;" class="mcFormatColor">For more information, see </span><i><span style="color: DarkBlue;" class="mcFormatColor">Creating and Processing Ramped Vectors Using Scalar Operations</span></i><span style="color: Black;" class="mcFormatColor"> on page 1.</span></a> depicts code that uses scalar operations. This example is slow when run on the floating point unit (FPU).</p>
+        <p class="CaptionNumChap_Example" style="page-break-before: auto;page-break-after: auto;" MadCap:autonum="&lt;b&gt;Example 12-5: &lt;/b&gt;"><span class="autonumber"><span><b>Example 12-5: </b></span></span><a name="Creating_and_Processing_Ramped_Vectors_"></a>Creating and Processing Ramped Vectors Using Scalar Operations</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 32px;" />
+            <col style="width: 168px;" />
+            <col style="width: 291px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Define variables and call the subroutines:</span> <![CDATA[ ]]></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">#include &lt;sal.h&gt;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">#include &lt;stdio.h&gt;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">#include &lt;math.h&gt;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">#define n 1000</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void main(void);</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void ramp(SAL_f32 *a);</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void process(SAL_f32 *a, SAL_f32 *sum);</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void main(void)</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">{SAL_f32 a[1000], sum;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">ramp(a);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* fill a vector with values */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">process(a, &amp;sum);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* sum the squares */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">printf("Sum: %f\n", sum);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* display the sum */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* main() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Create a ramped vector:</span> <![CDATA[ ]]></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void ramp(SAL_f32 *a)</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">{SAL_i32 i;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p colspan="2" class="Code1">printf("Creating ramped vector\n");</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p colspan="2" class="Code1">for (i = 0; i &lt; n; i++, a++) *a = i;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ramp() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Process the vector:</span> <![CDATA[ ]]></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void process(SAL_f32 *a, SAL_f32 *sum)</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">{SAL_i32 i;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p colspan="2" class="Code1">printf("Processing the vector\n");</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p colspan="2" class="Code1">for (i = 0; i &lt; n; i++, a++)</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">{*a += 1.0;</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* add scalar to this element */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">*sum += *a;</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* add result to the running sum */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">}</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* for i */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* process() */</td>
+            </tr>
+        </table>
+        <p class="Body"> <![CDATA[ ]]><a href="#Processing_Vectors" target="" title="" alt="" class="MCXref_Fig_Tab_Exam"><span style="color: Black;" class="mcFormatColor">For more information, see </span><i><span style="color: DarkBlue;" class="mcFormatColor">Processing Vectors Using SAL Vector Routines</span></i><span style="color: Black;" class="mcFormatColor"> on page 1.</span></a> uses the SAL <a href="../CH07 - Functions - Single Vector/SV_scalar_math.htm#vsaddx">vsaddx()</a> and <a href="../CH08 - Functions - Vector_to_Scalar/V2S_floatDbl.htm#svex">svex()</a> vector routines to implement vector operations. The SAL routines execute faster because they are microcoded to take full advantage of the processor architecture.</p>
+        <p class="CaptionNumChap_Example" style="page-break-before: auto;page-break-after: auto;" MadCap:autonum="&lt;b&gt;Example 12-6: &lt;/b&gt;"><span class="autonumber"><span><b>Example 12-6: </b></span></span><a name="Processing_Vectors"></a>Processing Vectors Using SAL Vector Routines</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 32px;" />
+            <col style="width: 207px;" />
+            <col style="width: 233px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Define variables and call the subroutines:</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">#include &lt;mcos.h&gt;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">#include &lt;sal.h&gt;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">#include &lt;stdio.h&gt;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">#include &lt;math.h&gt;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">#define n 1000</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void main(void);</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void ramp(SAL_f32 *a);</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void process(SAL_f32 *a, SAL_f32 *sum);</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void main(void)</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">{ SAL_f32 a[1000],</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1"> sum;</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* scalar */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">ramp(a);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* fill a vector with values */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">process(a, &amp;sum);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* sum the squares */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">printf("Sum: %f\n", sum);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* display the sum */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* main() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Fill a buffer with data:</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void ramp(SAL_f32 *a)</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">{ SAL_f32 i = 0.0; //start value</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p class="Code1">SAL_f32 j = 1.0; //slopt value</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p class="Code1">printf("Creating ramped vector\n");</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p class="Code1">vrampx(&amp;i, &amp;j, a, 1, n, 0);</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ramp() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Process the data using SAL routines:</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">void process(SAL_f32 *a, SAL_f32 *sum)</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">{ SAL_f32 one = 1.0;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">
+                    <p colspan="2" class="Code1">printf("Processing the vector\n");</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">vsaddx(a,1,&amp;one,a,1,n,0);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* add scalar to each element */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">
+                    <p class="Code1">svex (a, 1, sum, n, 0);</p>
+                </td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* sum the vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">}</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* process() */}</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><span style="font-family: Arial;">Compile and execute the program:</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">% gcc -o vecsum vecsum.c //can use ccmc too</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="2">% runmc -ce 2 vecsu</td>
+            </tr>
+        </table>
+        <p class="Body">The results appear as:</p>
+        <p class="Body1" style="font-family: 'Courier New';">Creating ramped vector</p>
+        <p class="Body1" style="font-family: 'Courier New';">Processing the vector</p>
+        <p class="Body1" style="font-family: 'Courier New';">Sum: 500500.000000</p>
+        <p class="Body">The speed of the SAL approach can be up to ten times higher.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

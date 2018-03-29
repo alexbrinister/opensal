@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="745" MadCap:lastWidth="654" MadCap:ignoredWords="zmatcholdx;cmatcholdx;matcholdx;mat_chol_solx;zmat_chol_decx;cmat_chol_decx;zmat_chol_solx;cmat_chol_solx;mat_chol_decx;A_tcols;zmatcholsx;cmatcholsx;matcholsx;Dinv" MadCap:disableMasterStylesheet="true" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="cEBe/blqD++yAZayi4o78oYxU16vV07fP6fWLCPXwQVysWP/hEjYavE43RqUEpxox37qFnS/+Ju/U+Gggz1svmazLRJvXCmIEulsMTKUGwpLRldhe/Fe2DKTzObHhHHFTZIJJYs0y5zPpvj1Qjy29v6V5i3BSJFmaq1AgB5t2Gj8dm5Q569RifG/lt13nN1Z2/RbFbBDYLFP/m+yJPHSqRZ8fu7grhfQOFgdQspSj5lwVNuSVIQ3nG/2ryosP8eszSb4nVzzmjOunqvVvvbZJg1HjHASOjRjXPSyh0AxEL7yCULoBdKEuzmjVzwSkPUAF5V7Q4kZ4e14ASaI1/yGt2OeyaSXQnfx4TkEjXMVt0E4hb+sKpHXWSbCsFkiy4kuKuS24Vx1as4YieW8qltD6M4oQkox9oNp47/vuzYnqIjvJvX+DeUaDOZt8YdMhWK/Ryv9Ohnc4fWFmkvG13jEkUMm/tEjcH/VYU62S1FJbUmVN4IK47bjqkFIwKqLEPBV3MgV7DmAcAFSohlzs243bLJZZn5vqPo77/6lDV4Z4dwgSzhvz96nD62zHYa7itc1D6op73EUgWt8tJSDwavc6S+FYF58iJmqsB4kowM3QbnDhEaYN73aqm+yQoEExI9Yl34UCHXWO4WI+qd3dQfBjS/XB2oLjfU6qIszFM/UvsQMOZcrOZx4SXZAGRLyAHbXUjR+FYNXJoS8Hn1jZAMoBxiUrk1o3VCsXWnhTcS6mIcWAKSvuv1wgISJqskcQTuxqBdgZmcqBk/hEHdLdOT0NLTKkPNF09gzGC647DtYAkRf45wx4S9sgiPVt3PLAH4qYRFPS4PcrTd9JuqUUtpbvjsTF/gvBywtyiy3IJyP4I2bHlTLrDSWFNTWdQNvuh0T68eREHxL9SpfBgcdV/7LWejqfm8FC0bb3hHkGLHYaEIXLL/U3KaPTOhS9WSLCDS+SFWDOhKeBevVHLfdquzECmgxk6sFCi2wcRZhWT/DmitKKtftiwC8rnnEk98aNvo9lYaW8rNdGCNK5Kqq7d3eqdvyyCv5VHvR+bWoTCNbPysrWW2aY1tkBJ4YU348Z7ZX+cUMaJsHdFua/Mx+mHu7MMMj9YPhdTThFsV1f3LHeBHhOZPO5QUoH7VBikBj2S+Vfkb2t6zbLiOQ10uxqURzR0lvWIQ4/fA+0Ou2BhHDiN/lMBc+BqmhhxTsLbg2E6pu/A6rqMl476ZMarS8LzmcGNqnEBJmOBX58liuAa6PzUzqPfXre0Gdpo32h13A6eZ0pdpoNu80SWD7yVvn9J6Be1WJ21y/3P8cn8H9QWGMb6JeJQ9PlM2ZOAHxRBtkr1qod1TvaO2k0mfvhJs+pfkobg==" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Cholesky Square-Root-Free Decomposition and Solution</title>
+        <link href="../Resources/TableStyles/o_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#AppD - Legacy Functions/Cholesky SqRt Free.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1291"></a>Cholesky Square-Root-Free Decomposition and Solution</h2>
+        <p class="API_name"><a name="matcholdx"></a>matcholdx(), <a name="matcholsx"></a>matcholsx(), <a name="cmatcholdx"></a>cmatcholdx(), <a name="cmatcholsx"></a>cmatcholsx(), <a name="zmatcholdx"></a>zmatcholdx(), <a name="zmatcholsx"></a>zmatcholsx()</p>
+        <p class="Image">Decomposer:   A = L • D • L<sup>H</sup> &#160;&#160;&#160;&#160;&#160;&#160;&#160;         Solver:   A • X = B</p>
+        <p class="API_heads">Synopsis</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/o_Code.css');width: 502px;" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 56px;" />
+            <col style="width: 133px;" />
+            <col style="width: 313px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>matcholdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* n x n input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real symmetric positive definite */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 A_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *LU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU column element stride */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector, inverses of D diagonal */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>matcholsx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *LU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix, output of matcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector, output of matcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector of right-side quantities */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *X</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* vector of unknowns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>cmatcholdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* n x n input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Hermitian symmetric positive definite */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 A_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *LU</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector, inverses of D diagonal */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>cmatcholsx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *LU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix, output of cmatcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector, output of cmatcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector of right-side quantities */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *X,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* vector of unknowns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>zmatcholdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* n x n input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* Hermitian symmetric positive definite */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 A_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *LU</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector, inverses of D diagonal */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>zmatcholsx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *LU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix, output of zmatcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LU_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU total number of columns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *Dinv,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector, output of zmatcholdx() */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector of right-side quantities */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *X,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* vector of unknowns */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LU row count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The matcholdx(), cmatcholdx(), and zmatcholdx() functions perform the square-root-free Cholesky decomposition of square symmetric positive definite matrices. The matcholdx() function performs the Cholesky decomposition of a real symmetrical matrix. The cmatcholdx() and zmatcholdx() functions decompose complex (Hermitian) matrices.</p>
+        <p class="Body">The matcholsx(), cmatcholsx(), and zmatcholsx() functions solve systems of linear equations <i>A </i>* <i>X </i>= <i>B </i>using the <i>LU </i>and <i>Dinv </i>outputs from the corresponding decomposition functions together with input vectors. The matcholsx(), cmatcholsx(), and zmatcholsx() functions execute in-place if pointers <i>B </i>and <i>X </i>coincide.</p>
+        <table class="TableStyle_o_Note" style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Note.css');" cellspacing="0">
+            <col style="width: 454px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowEnd_ColEnd">These functions are not recommended for new application development. Use the <a href="../CH10 - Functions - Matrix Math/Cholesky decomposition.htm#mat_chol_decx">mat_chol_decx</a>(), <a href="../CH10 - Functions - Matrix Math/Matrix Cholesky Decomposition.htm#cmat_chol_decx">cmat_chol_decx</a>(), <a href="../CH10 - Functions - Matrix Math/Matrix Cholesky Decomposition.htm#zmat_chol_decx">zmat_chol_decx</a>() and <a href="../CH10 - Functions - Matrix Math/Matrix Cholesky solver.htm#mat_chol_solx">mat_chol_solx</a>(), <a href="../CH10 - Functions - Matrix Math/Matrix Cholesky solver - Complex.htm#cmat_chol_solx">cmat_chol_solx</a>(), <a href="../CH10 - Functions - Matrix Math/Matrix Cholesky solver - Complex.htm#zmat_chol_solx">zmat_chol_solx</a>() functions for square-root-free Cholesky decomposition and solution.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">The source matrix, <i>A</i>, is contained in a larger matrix, with a column count, <i>A_tcols</i>, greater than or equal to <i>n</i>, the column and row count of <i>A</i>.</p>
+        <p class="Body">For best performance, use values for <i>n</i>, <i>A_tcols</i>, and <i>LU_tcols </i>that are multiples of four.</p>
+        <p class="Body">The matcholdx(), cmatcholdx(), and zmatcholdx() functions decompose square matrices. The source matrix, <i>A</i>, is contained in a larger matrix, with a column count, <i>A_tcols</i>, greater than or equal to <i>n</i>, the column and row count of <i>A</i>.</p>
+        <p class="Body">The decomposition consists of a lower triangular matrix (<i>L</i>), its Hermitian transpose, upper triangular matrix (<i>U </i>= <i>L<sup>H</sup></i>), and the diagonal matrix <i>D </i>so that <i>A </i>= <i>L </i>* <i>D </i>* <i>U</i>. The <i>L </i>and <i>U </i>matrices are contained in output matrix <i>LU</i>. The inverses of the diagonal of <i>D </i>are in the <i>Dinv</i> vector.</p>
+        <p class="Body">The matcholdx(), cmatcholdx(), and zmatcholdx() functions execute faster as in-place functions than as out-of-place. For in-place execution, call them with the same pointer for input matrix <i>A </i>and output matrix <i>LU</i>, and with the same column element strides <i>A_tcols </i>and <i>LU_tcols</i>.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

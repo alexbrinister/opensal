@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2829" MadCap:lastWidth="670" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - CCF/Image Processing|One-Dimensional Correlation, Convolution, and Filtering" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="arE7qFk3w1XBVMCmpVGaWCTN3i2ZUJYDHhtlDZXufgwL4STk3C4giLow/knRTTDWMeMJyJSc+xArmkTRKLsSDSSsLTdCZJf0rynfAgR4jR2iPjgJ+kqdbT2vFRAZI4UV0ltCWMYa/RWn2eTk3TdnOVzNjFjqAL7yrjQ6556Yb8amtgJ3OjnfSOABOX+dKpJK4Bl2ua7fxrPDgcis4+e0OI/HV3jYDUiVVzwA+yuvQRqmbGgrhB1a+3/sdKkEdVH+UDbcIcyi1F46hRer54X5mY8vb/gL4vvtkH9P/ZTyL35G/5ynLd7shu7i4Yg6jW+rGvaXYKj1O6Q9k13hVLHGO1oI3+qYVvJGjhXU27HOtWJ33OHgB1pUAaFl4waEloVBzCiWoaRVYyNJcSdPUW/h3bVAazD1vZ6FseFMqRsR9ANVF5Gqog11isHalzoapMotqiq3CwMDgnUKt8Htn7fpJk0TkFbPmaU/RMQreBToUJHWUDEQYT5t+ij/ND74mIuXnij0pi87xw8RMQ41kVI1yoG7NoDEwAoHTsoSEpARE8CV1lfNeUPXo4qcsZAVqpCrL4qojsdG1KMX6OA2AjK4g/YEidjJusQXmHM0MQuWQBLOtlAkMXFMvv5SMxZ9+m4nDs4une4Po+s7Rs5T0/g7zAPBQwLFSV30GSuGAyzxFvQt4rd0n/1x/DVWP61+hdoFewxvukkQ1OE4wFYsOF5kiXWx1B/ZlV3mI84kOFVhwk+hVYAa8ZOuIkPYO9WHlQhv5jDKgKo/gI1GURKzCYXF+l74zdxp9kueApWYw3jr6GJc21eNUua4goERO2vSapMGGaii84pCzi2NaIdeYCM8xKedrHNFePHCpog9VPV4lpAM48h6J+757k0NOnJrjjSOCVOMV5GBTcp5gkmO28bwLE268OkzcOcj3eUwWyFWxs6d+iaqX/hUD43zTX9ha067KI9aamH2rL/ltUSWA0RTmwgcze6rCK5hZexweg5oSTmv0l94mSlH7iWJBw3EbDYilyBkxWxRGgpn+B4eV6wBZryDTKEarE87bHxhb4W2Mn/OmPu/hbZ060JxVaCNXFcPht/B/kGbbgMPcLwiKEsBH6seeTSoUVhh9AOq1mwvv0FpR1D1Qm11pMwmLBNUdN8s1grieBrf2uhCMc2b413X5kKrnaRQyhij0YogUzYecdHaUNTNG7uuUlVLYVXi6NhXuFHbseIJJ9yeUCNobl8yaEOPS3f22HQM+9bDX/XqEXbXteE9XBNLqFPAgZ5JE/x3Z4CBBgS2UB3wQ0iS0uKUI6nRstOvmzYU1WTzy2F5enb2zh71L1qzfSIZlh/OaU8pwnVwdqyOsz+UHSIBUD1W8g==" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Fast Convolution and Correlation</title>
+        <link href="../../Resources/TableStyles/o_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../Default_CSH.htm#CH12 - Functions - CCF_Image_Processing/1-D/Fast Convolution Correlation.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2 style="page-break-before: always;page-break-after: auto;margin-left: 0.5in;"><a name="kanchor1092"></a>Fast Convolution and Correlation</h2>
+        <p class="API_name" style="margin-left: 1in;"><a name="fcs_ciptx"></a><a name="kanchor1093"></a>fcs_ciptx(), <a name="fcs_riptx"></a><a name="kanchor1094"></a>fcs_riptx(), <a name="fcs_ziptx"></a><a name="kanchor1095"></a>fcs_ziptx(), <a name="fcs_zriptx"></a><a name="kanchor1096"></a>fcs_zriptx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 38px;" />
+            <col style="width: 167px;" />
+            <col style="width: 342px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fcs_ciptx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* FFT weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *filter_freq,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input from freq. domain filter output */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *signal,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* time and freq. domain signal input seq. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* adjacent component elem. stride in the signal buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *t,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* temporary buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of convolution size N */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* x-form direction for time domain signal sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fcs_riptx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* FFT weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *filter_freq,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input from freq. domain filter output */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *signal,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* time and freq. domain signal input seq. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* adjacent component elem. stride in the signal buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *t,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* temporary buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of convolution size N */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* x-form direction for time domain signal sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fcs_ziptx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* FFT weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *filter_freq,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input from frequency domain filter output */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *signal,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* time and freq. domain signal input seq.*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* adjacent component elem. stride in the signal buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *t,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* temporary buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of convolution size N */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* x-form direction for time domain signal input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fcs_zriptx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* FFT weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *filter_freq,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input from frequency domain filter output */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *signal,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* time and freq. domain signal input seq.*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* adjacent component elem. stride in the signal buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *t,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* temporary buffer */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of convolution size N */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* x-form direction for time domain signal sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The fcs_ciptx(), fcs_riptx(), fcs_ziptx(), and fcs_zriptx() functions convolve or correlate the transformed (frequency domain) filter output from the corresponding filter sequence transform function fcf_ciptx(), fcf_riptx(), fcf_ziptx(), or fcf_zriptx(), with a time domain signal sequence of the same size and data format.</p>
+        <p class="Body">These signal transform and convolution functions:</p>
+        <ol>
+            <li value="1">Compute a forward or inverse FFT of the signal sequence.</li>
+            <li value="2">Complex multiply between the transformed filter and signal sequences.</li>
+            <li value="3">Inverse FFT the resulting sequence.</li>
+        </ol>
+        <table class="TableStyle_o_Note" style="width: 500px;caption-side: top;mc-table-style: url('../../Resources/TableStyles/o_Note.css');" cellspacing="0">
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowSep_ColEnd">
+                        <p class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #06347a;&quot; class=&quot;mcFormatColor&quot;&gt;Note&lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #06347a;" class="mcFormatColor">Note</span></b></span></span>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowEnd_ColEnd">The fcs_riptx() and fcs_zriptx() routines are functionally identical. The only difference is the way that the real data are stored. For fcs_zriptx(), real data is stored in split complex form, with <i>N</i>/2 odd reals stored on the imaginary side of the split complex form, and <i>N</i>/2 even reals in stored on the real side.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">These functions are part of a function set that performs one-dimensional circular convolutions or correlations between sequences that have lengths equal to a power of 2. For each data type, this fast convolution function set consists of a filter transform function, followed by a single or multiple signal transform and convolution function.</p>
+        <p class="Body">These signal transform and convolution functions accept the output of the corresponding fcf_ciptx(), fcf_riptx(), fcf_ziptx(), and fcf_zriptx() filter transforms. Because the fcf_xxx() function data output is not in a standard FFT format, use the output only from these filter transform functions in the fast convolution set as input to the signal transform and convolution functions.</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">setup</p>
+        <p class="Body1">Points to a structure initialized by a prior call to FFT weights array function, <a href="../../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup()</a>. The value supplied as parameter <i>log2N </i>of the setup function must equal the value supplied as parameter <i>log2N </i>of subsequent calls to these fast convolution or correlation functions. Also, option flag <code>FFT_FAST_CONVOLUTION </code>must be specified to the setup function used with any fast convolution function.</p>
+        <p class="Parameter">filter_freq</p>
+        <p class="Body1">Points to the frequency domain filter sequence, created by the corresponding filter transform function. Preserved.</p>
+        <p class="Parameter">signal</p>
+        <p class="Body1">Points to the time domain signal sequence, which must be the same size as the <i>N</i>-point filter sequence, including any zero-padding. The length of the signal might be less than <i>2log2N</i>, in which case the signal vector must be zero-padded out to <i>N </i>points.</p>
+        <p class="Body1">The convolution or correlation output overwrites the input sequence in signal.</p>
+        <p class="Parameter">j</p>
+        <p class="Body1">The stride between adjacent component elements in signal.</p>
+        <p class="Parameter">t</p>
+        <p class="Body1">Points to a temporary buffer of the same data type and size as signal.</p>
+        <p class="Parameter">log2N</p>
+        <p class="Body1">The base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter <i>log2N</i>.</p>
+        <p class="Parameter">f</p>
+        <p class="Body1">Specifies the direction of the FFT that transforms the time domain sequence, with two allowed values: </p>
+        <ul>
+            <li class="BulletIndent" value="1"><code>FFT_FORWARD </code>for a forward transform </li>
+            <li class="BulletIndent" value="2"><code>FFT_INVERSE </code>for an inverse</li>
+        </ul>
+        <p class="Body1">The transform direction controls whether the function set computes a circular fast convolution or a correlation.</p>
+        <p class="Body1">Using the <code>FFT_INVERSE </code>flag in the fast convolution SAL routines might not seem to make sense, especially when applied to real convolutions. For SAL FFT routines, <code>FFT_INVERSE </code>is typically specified when performing an inverse FFT on a data sequence that is a result of a prior call to a forward (<code>FFT_FORWARD</code>) FFT.</p>
+        <p class="Body1">For a “real” FFT, this data sequence is in a <i>special format</i> that takes advantage of the known symmetry properties of the real data sequence forward FFT output.</p>
+        <p class="Body1">The SAL real FFT functions do not allow you to perform an inverse FFT on a strictly real data sequence. Instead, when <code>FFT_INVERSE </code>is specified to a real FFT routine, the input sequence is assumed to be in the <i>special format</i>, which is generally complex.</p>
+        <p class="Body1">However, the inverse FFT of a real sequence is mathematically equivalent to the complex conjugate of the forward FFT. This is the actual interpretation of the <code>FFT_INVERSE </code>flag when specified to the fast convolution routines. Regardless of whether the time domain sequence is real or complex, an inverse FFT is performed on the sequence.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../../CH01 - Introduction/Calling_Conventions.htm#Address_strides" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Address Strides</i></span></a>
+        </p>
+        <p class="Body"><a href="../../CH02 - Transform Functions/SAL_CCFs.htm" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>SAL Convolution and Correlation Functions</i></span></a>
+        </p>
+        <p class="Body"><a href="../../CH02 - Transform Functions/SAL_FFTs.htm" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>SAL Fast Fourier Transforms</i></span></a>
+        </p>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="FCC Filter Transform.htm#fcf_ciptx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fcf_ciptx(), fcf_riptx(), fcf_ziptx(), fcf_zriptx()</i></span></a>
+        </p>
+        <p class="Body"><a href="FCC Multi Signal Xforms - Single Filter.htm#fcsm_ciptx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fcsm_ciptx(), fcsm_riptx(), fcsm_ziptx(), fcsm_zriptx()</i></span></a>
+        </p>
+        <p class="Body"><a href="../../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fft1d_setup(), fft1d_setupd()</i></span></a>&#160;&#160;</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="727" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - Vector-to-Vector" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="Zbfi+V55xT1h7GL7Eoq3g4f9HxgmKRILVzCvdASfOx5zncLa4XWBx0xFswJLEWevIpKDQ1decZBwZtMWHw5M65D/VAYsoT6N4vRPVUFcwSKDKOBLfqMyzHVUPWdQmlEnd2WIT9C5S5DSEoVyxm4eDh//d7uXviF/8Byn6NkUjm/GfKgpSNSmmwqFgB1bk6mqXsTQWHCXiiJ60oC0w1ktU60YHx0vXR0pJtPrgjlvSLpr3pIZs4CttXexeu6TWwI1gu3GsRFfvcyBuyCf4zfqOWPrUc+bysuFzhNg6KEClmGpso6RR66YeEYrLWae/H8nMsG2VWQKPn38Lkn4+NyGgmu7uqBenMn9UFb9x2Q+fIiWmFV6HBqmQtGQKZYjvMiuwYrG61213PJJsgOIdMBGvTxreQehXK1vLdkSW69dyb3TGuFZTHm/l2MkNI/KXrXf1Nz1tV5q2aIGRwYqhFYzJMs3ewBT9ZbfIamA/rrqJ6i1ts+DwXyd9a9nm7OAhcf63JR+v3NpUhhDPr1Z7Tbitgp8m9x7vVOMUAj3A4c/NYztgBZOTvKkLoqFfHcBxjj9Rr/w5alpSxvXLp8xb82IA8VY7JrnYFRjiEEXrgpZ+KpOth5XHi65t4+iJhkYH2BiM5zivf3u2FPUt7cxLxNJyARjoLz/r0QQ+UafrmN9+eo+T6QfJUmbB/BAE054JT2GDTlMtXiQgucEs9+SxQIhN0FE1gKGb5j9Q3AZWt6xixiyGlr2ryRgYw4cyFFGY/wbptCzC11hcfxSYxXmm5A/Lpi7IfBqEWxCS3lZq3WBye8zi/MWOqLZs8dVmixhgjrejswcjsjFCaM42cxMkh0sYWH0GmK9sF22WtxQY6GXAoyS0IxV6dm+GlCh5jc162+cIWiZwg8XXHo1rWRb3SHNS8OgOj8qottveyqQtgeh+CMbgioXM5BdC5M5MrfG1F9Y8czoi+OHpu32gEKhI02qLOzHtj8gnvtbameB2wjbCt3h0l8Qe7NGE1Mluz7RN6jS" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Vector-to-Vector Comparison Operations</title>
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH09 - Functions - Vector_to_Vector/V2V_compare.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="kanchor677"></a>Vector-to-Vector Comparison Operations</h1>
+        <p class="Body">Vector-to-vector comparison functions compare the corresponding elements of two vectors and generate a third vector based upon the results of the comparison. For example, creating a vector with elements that are the minimum or the maximum of the corresponding elements in the two input vectors.</p>
+        <p class="Body">Vector-to-vector <i>integer</i> comparison functions compare integer vectors.</p>
+        <p class="Body">Vector-to-vector <i>float</i> comparison functions compare float vectors.</p>
+        <p class="Body">Vector-to-vector <i>double precision</i> comparison functions compare double precision vectors.</p>
+        <p class="CaptionNumChap_Table" style="page-break-before: auto;page-break-after: auto;" MadCap:autonum="&lt;b&gt;Table 8-4: &lt;/b&gt;"><span class="autonumber"><span><b>Table 8-4: </b></span></span>Vector-to-Vector Comparison Functions</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Basic.css');" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 77px;" />
+            <col style="width: 51px;" />
+            <col style="width: 64px;" />
+            <col style="width: 306px;" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Integer</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Float</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Double Precision</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColEnd">Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lveqix">lveqix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lveqx">lveqx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lveqdx">lveqdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical equal</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgeix">lvgeix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgex">lvgex</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgedx">lvgedx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical greater or equal</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgtix">lvgtix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgtx">lvgtx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvgtdx">lvgtdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical greater than</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvleix">lvleix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvlex">lvlex</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvledx">lvledx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical less than or equal</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvltix">lvltix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvltx">lvltx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvltdx">lvltdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical less than</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvneix">lvneix</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvnex">lvnex</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#lvnedx">lvnedx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector logical not equal</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#venvlpx">venvlpx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#venvlpdx">venvlpdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector envelope</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vmaxx">vmaxx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vmaxdx">vmaxdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector maxima (listed under <a href="V2V_math_float.htm" target="" title="Link to vector-to-vector comparison operations" alt="Link to vector-to-vector comparison operations" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Vector-to-Vector Arithmetic Operations, Integer, Float and Double Precision</i></span></a></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vmaxmgx">vmaxmgx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vmaxmgdx">vmaxmgdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector maximum magnitudes  (listed under <a href="V2V_math_float.htm" target="" title="Link to vector-to-vector comparison operations" alt="Link to vector-to-vector comparison operations" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Vector-to-Vector Arithmetic Operations, Integer, Float and Double Precision</i></span></a></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vminx">vminx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vmindx">vmindx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector minima  (listed under <a href="V2V_math_float.htm" target="" title="Link to vector-to-vector comparison operations" alt="Link to vector-to-vector comparison operations" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Vector-to-Vector Arithmetic Operations, Integer, Float and Double Precision</i></span></a></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vminmgx">vminmgx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="V2V_math_float.htm#vminmgdx">vminmgdx</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Vector minimum magnitudes  (listed under <a href="V2V_math_float.htm" target="" title="Link to vector-to-vector comparison operations" alt="Link to vector-to-vector comparison operations" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Vector-to-Vector Arithmetic Operations, Integer, Float and Double Precision</i></span></a></td>
+            </tr>
+        </table>
+        <h2><a name="kanchor678"></a>Vector Logical Equal</h2>
+        <p class="API_name"><a name="lveqx"></a><a name="kanchor679"></a>lveqx(), <a name="lveqdx"></a><a name="kanchor680"></a>lveqdx(), <a name="lveqix"></a><a name="kanchor681"></a>lveqix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_152.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 143px;" />
+            <col style="width: 302px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lveqx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lveqdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lveqix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element count (32-bit elements) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lveqx(), lveqdx(), and lveqix() functions compare two vectors for equal values. If <i>A</i> equals <i>B</i>, these functions write 1 to vector <i>C</i>. Otherwise, these functions write a zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor682"></a>Vector Logical Greater or Equal</h2>
+        <p class="API_name"><a name="lvgex"></a><a name="kanchor683"></a>lvgex(), <a name="lvgedx"></a><a name="kanchor684"></a>lvgedx(), <a name="lvgeix"></a><a name="kanchor685"></a>lvgeix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_153.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 141px;" />
+            <col style="width: 304px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgex</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgedx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgeix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element count (32-bit elements) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lvgex(), lvgedx(), and lvgeix() functions compare two vectors for greater or equal values. For each comparison, if <i>A</i> is greater than or equal to <i>B</i>, these functions write a 1 to vector <i>C</i>. Otherwise, the functions write a zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor686"></a>Vector Logical Greater Than</h2>
+        <p class="API_name"><a name="lvgtx"></a><a name="kanchor687"></a>lvgtx(), <a name="lvgtdx"></a><a name="kanchor688"></a>lvgtdx(), <a name="lvgtix"></a><a name="kanchor689"></a>lvgtix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_154.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 167px;" />
+            <col style="width: 278px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgtx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgtdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvgtix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element count (32-bit elements) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lvgtx(), lvgtdx(), and lvgtix() functions compare two vectors for greater values. For each comparison, if <i>A</i> is greater than <i>B</i>, these functions write a 1 to vector <i>C</i>. Otherwise, the functions write a zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor690"></a>Vector Logical Less Than or Equal</h2>
+        <p class="API_name"><a name="lvlex"></a><a name="kanchor691"></a>lvlex(), <a name="lvledx"></a><a name="kanchor692"></a>lvledx(), <a name="lvleix"></a><a name="kanchor693"></a>lvleix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_155.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 56px;" />
+            <col style="width: 165px;" />
+            <col style="width: 279px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvlex</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvledx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvleix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* integer element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lvlex(), lvledx(), and lvleix() functions compare two vectors for less than or equal values. For each comparison, if <i>A</i> is less than or equal to <i>B</i>, these functions write a 1 to vector <i>C</i>. Otherwise, the functions write zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor694"></a>Vector Logical Less Than</h2>
+        <p class="API_name"><a name="lvltx"></a><a name="kanchor695"></a>lvltx(), <a name="lvltdx"></a><a name="kanchor696"></a>lvltdx(), <a name="lvltix"></a><a name="kanchor697"></a>lvltix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_156.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 164px;" />
+            <col style="width: 281px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvltx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvltdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvltix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* integer element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lvltx(), lvltdx(), and lvltix() functions compare two vectors for lesser values. For each comparison, if <i>A</i> is less than <i>B</i>, these functions write a 1 to vector <i>C</i>. Otherwise, the functions write a zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor698"></a>Vector Logical Not Equal</h2>
+        <p class="API_name"><a name="lvnex"></a><a name="kanchor699"></a>lvnex(), <a name="lvnedx"></a><a name="kanchor700"></a>lvnedx(), <a name="lvneix"></a><a name="kanchor701"></a>lvneix()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_157.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 140px;" />
+            <col />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvnex</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvnedx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>lvneix</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* address stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element count (32-bit elements) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The lvnex(), lvnedx(), and lvneix() functions compare two vectors for unequal values. For each comparison, if <i>C</i> does not equal <i>B</i>, these functions write a 1 to vector <i>C</i>. Otherwise, the functions write a zero to vector <i>C</i>.</p>
+        <h2><a name="kanchor702"></a>Vector Envelope</h2>
+        <p class="API_name"><a name="venvlpx"></a><a name="kanchor703"></a>venvlpx(), <a name="venvlpdx"></a><a name="kanchor704"></a>venvlpdx()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_158.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 161px;" />
+            <col style="width: 284px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>venvlpx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* high-envelope vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* low-envelope vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *D,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for D */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* real element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>venvlpdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* high-envelope vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* low-envelope vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 j,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *D,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for D */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* double-precision element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The venvlpx() and venvlpdx() functions find the extrema of vector <i>C</i>. </p>
+        <p class="Body">For each input vector <i>C</i> value, vector <i>A</i> provides an upper-threshold value and vector <i>B</i> provides a lower-threshold value. </p>
+        <ul>
+            <li value="1">If the <i>C</i> value falls outside the range defined by vectors <i>A</i> and <i>B</i>, venvlpx() and venvlpdx() copy vector <i>C</i> to vector <i>D</i>. </li>
+            <li value="2">If the <i>C</i> value is within range, venvlpx() and venvlpdx() write zero to vector <i>D</i>.</li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

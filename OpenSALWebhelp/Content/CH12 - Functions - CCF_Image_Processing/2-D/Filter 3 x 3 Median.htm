@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="587" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - CCF/Image Processing|Two-Dimensional Correlation, Convolution, and Filtering" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="nLiaaKXjsLisBTNGSIfrram0SFgCmMq9ZqrHKvzVUf1Tf1iwJalrvGF9qcek68OKd6HbcFqZMhpohkC6XyYEav31m/g6iA5MtDFuf4LOeRCqqRv1vMLkl4BhMu3LZcM6R+8wi0cvqrx5E/pM7Gn9Om0FoJWFT/LtUGff/sarEnbuvl52y+y9p7Qt18BKiXxXJ/5m/tt+KVP194U9KWGwHIJ2PsC7FwMJDMZTB122xuADG/CQ1OSrRwaGVFnDM+UAfGBfxiFgD/eVg/s3HTZVkVYIHLmVd01Ij8BKhz2HYAPY+vX4/1D8qZsqV3gGSRc+/ZQXC3FrbLroiAfRXov+5WKUx8ARxMmEtD2cbSn+sETQo8uz82FuoDZAfzCq0KHpP5Y0CIjjqv13HLfFHQ8ZUOeO/JGL9fADTMHpV90VqVN6L5DPmZ0o74kQ8aAgExPaeDgakOrZhyWwE7xKBPM5f83hrnVuVXShIgMe+wAusEahDsbI1C0m+QbCoGyVgnzWxn7HR89KXUyUWcJyYSrTxzYMRgAN7Ns+qLYoCZV+V3vf9excBSUEvKr7LsEsT9yjwgRmibXSA5+eU93ZMa4l4xyT3nHxz5ly6Gqbx4iiep0+7YyHrv80JBRBEpzG8LWLSEBhnM3wrHleTkYIqSboFfpalZnT0tkHtytYVVeuGEF5c8uis+O25K+nTOMCwMEXS57eeAtrZh1t45oZRYpeHLlF+lUsaeV+JIh/2mgU3jK2lG8ZQ4mMaK8xJSdqSq5zq1gGHyWRd/yxri0S5nGDbjPqfAe2DyuFhQVbiKR3AdQCNlzXlPyF8DHL2x0a0nNcKsX+QWJXZ29k0FgVzAUUmTZu80IIkvWk8QG7uulfKJxyNQN4UbR1Co3na8lw0oDKMvBq/c81FmNo7EMy9+qneSk+aV+Fpb/f8H/gt2XFTQTuimLcK1JhTB/kvWgU/p8GjWfWDFo9WyhWTeQ47VIB9HoS1sejEDhiennJk8gNnzBUk5mn60ftymnwBCw72vgN" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Filter, 3 x 3 Median</title>
+        <link href="../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../Default_CSH.htm#CH12 - Functions - CCF_Image_Processing/2-D/Filter 3 x 3 Median.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1129"></a>Filter, 3 x 3 Median</h2>
+        <p class="API_name"><a name="medf3x3x"></a><a name="kanchor1130"></a>medf3x3x(), <a name="medf3x3dx"></a><a name="kanchor1131"></a>medf3x3dx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 122px;" />
+            <col style="width: 323px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>medf3x3x</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for A and C, &gt;= 3 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for A and C, &gt;= 4 and even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>medf3x3dx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for A and C, &gt;= 3 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for A and C, &gt;= 4 and even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The medf3x3x() and medf3x3dx() functions filter an <i>m </i>x <i>n </i>image by outputting the median value of each 3 x 3 submatrix of image <i>A</i>. These functions pad the perimeter of output image <i>C </i>with a border of zeros of width 1. These functions can be done out-of-place only.</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

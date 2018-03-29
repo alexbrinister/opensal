@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin Version="1" Comment="This is the default skin" Anchors="Width,Height" Width="936px" Height="693px" Top="197px" Left="450px" Bottom="310px" Right="534px" Tabs="TOC,Index,Search" DefaultTab="TOC" Title="OpenSAL Reference" BrowserSetup="Resizable" AutoSyncTOC="True" UseBrowserDefaultSize="False" CommentsInTopic="true" NavigationLinkTop="true" ToolbarInTopic="false" FeedbackUserProfileItems="Username|Occupation|EmailAddress">
+    <!-- saved from url=(0014)about:internet -->
+    <Index BinaryStorage="True" />
+    <HtmlHelpOptions ShowMenuBar="false" TopmostWindowStyle="false" Buttons="" EnableButtonCaptions="True" AutoShowNavigationPane="true" AdvancedSearch="false" />
+    <WebHelpOptions HideNavigationOnStartup="False" NavigationPaneWidth="175" NavigationPanePosition="Left" VisibleAccordionItemCount="7" AboutBox="About.png" AboutBoxWidth="327" AboutBoxHeight="159">
+    </WebHelpOptions>
+    <Stylesheet Link="Stylesheet.xml">
+    </Stylesheet>
+    <Toolbar EnableCustomLayout="true" Buttons="ToggleNavigationPane|Home|PreviousTopic|NextTopic|Stop|Refresh|Separator|RemoveHighlight|Print|TopicRatings" ExcludeAccordionTitle="false" />
+    <TopicToolbar EnableCustomLayout="true" Buttons="" />
+</CatapultSkin>

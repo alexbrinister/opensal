@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="732" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - CCF/Image Processing|Two-Dimensional Correlation, Convolution, and Filtering" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="Nle4kPTHvuAICV1yPGUSm4vw+km6XMfd/AGTP/Zlz8h3714eIrUag0jr0dNq+zbBXgpAc9JO0j0rQ/0mFUDknFPJ5W8hbZX0x7i0igBZUggjf0KUJjhrdywYkOyC36nnTEOLr7GZ2xwhvrw8a62MC5WokSmDMGwrIK3JchFClQkfRKq3AyEJU5+6zkeStOpU/OPwDfzAmxcdEHXmjibbmcV2ls3F/MBFzqGnCVi07RuozYJ+I0fC2sB4qdNDdTJENdwDHolG+x8gG7FfGlPnoS9vHBguRMAlk3B5jo5dtE9gw/+YX4gWC7P3v1FNldWPKCq4ehZ7fGw8OojFftGFZDpgi1IYVLQLKQB0f1qbQQ4oWp1qlxWwsG7Tl0QUUtlZhRUkpSrM0JT6HiyBdcmVkI0jIyl3BUSTiOJ4KdR59w8rTMH8o36PUGu68bs7PPvt7ISCd6SkwaUUpWtpnrl3yDiKLcGzCjaez6oPANCUiyss//eap7h2xZMDNIrR0xbhIB+GduNw7h0lnIP5DKfSKecoqDlGRYmdgJbfWDvmS/U+LEcoiw6OD3oiFgWV0E9pUvUh6gt0dO2xJllrPTz6NCbUvR79FEylT0uPdvd2OxQysjSYhpGZO/sf0DBtWbCqiMfLV4C9LmhejTjeD32Z5f2TVj/X0q3gnArMMsTz8jyO1dx2HWGzW17qCK1Mb5brm69b69zxR+gyNBmb4CqH0we63UgSz3FmJeKQ/Rrk+psevY17CXL3W076nUPVv3zCWBoxRI33tLWB3+A+BeqVq6r5IwOIQxZV1+YcbsIQgsxXA4TbzKMD8o12GEeQafE3w58nszxS0SE5P1sfgi+osU8RYZRF/wyY1LiiKoJYQCJub2IOVr4AQNfsjsFZ2R/6gleWSwnltYQjUgnztLbuhH/z0tmc4G2NE5Mwhq3DOSPxNtYVGkEOYK4lM0XwxpPTwsbRD94JoxFEJH7yS9rkkhkmaIAkfSAlRofiToWrQieVpxHTiQy1D6cx0bsQM2msMGPxUrXJJ73ZSVGZ54S7a9HXCNxWo+Xldi5Ce5MBTBkBpTgJx634GmX5jC4PL3VsLEI/0TBVTXCWfGEbUdHKN45+VgiMdfH+F7eAFyU5+HcUeMnyqiBmHzB7+1O6XoZ5EypF95mfhQD2Cp0fBQfTT91Z1g2zTLoy57dowYv3U2ED/+4xaapK0vsP9RXOA/FCqpRpzUQ92ZTsQt4hKnGrtJEodJJk8GqAyGFFdv3nXMxAsFW5CJV+f/0CiLtJ0X0ip5DoDtJ/VQIRHNxSN991JSXT6/b3pMyt56PB38WVsuSOrjLfBd5dxkbtoYcSLf4A4dtCxK8GuuRUPfSFYdGblw==" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Two-Dimensional Convolution, Indirect Addressing</title>
+        <link href="../../Resources/TableStyles/o_CodeIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_CodeIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../Default_CSH.htm#CH12 - Functions - CCF_Image_Processing/2-D/2-D Convolution indirect add.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1113"></a>Two-Dimensional Convolution, Indirect Addressing</h2>
+        <p class="API_name"><a name="conv2d_iax"></a><a name="kanchor1114"></a>conv2d_iax(), <a name="conv2dd_iax"></a><a name="kanchor1115"></a>conv2dd_iax(), <a name="cconv2d_iax"></a><a name="kanchor1116"></a>cconv2d_iax(),  <a name="cconv2dd_iax"></a><a name="kanchor1117"></a>cconv2dd_iax(), <a name="zconv2d_iax"></a><a name="kanchor1118"></a>zconv2d_iax(),<a name="zconv2dd_iax"></a><a name="kanchor1119"></a>zconv2dd_iax()</p>
+        <p class="Image">
+            <img src="../../Resources/Images/SAL_funct_equat_192.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 141px;" />
+            <col style="width: 304px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>conv2d_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 **A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 **B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 **C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>conv2dd_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 **A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 **B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 **C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>cconv2d_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 **A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 **B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 **C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* conjugation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>cconv2dd_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf64 **A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf64 **B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf64 **C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* conjugation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>zconv2d_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* conjugation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>zconv2dd_iax</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* kernel matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 dsy,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* desampling factor for each column */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrb,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in B */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 ncc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of columns in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nrc,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of rows in C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 cflag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* conjugation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The 2-D convolution _iax functions provide an alternate method of representing input matrices operated on by SAL convolution routines. Each matrix row is represented by a pointer stored in an array. To access any element of a particular matrix row, the pointer is read from the array and the element accessed by adding an offset to the pointer. For example, to read the element of an array from the second row, fourth column:</p>
+        <p class="Body" style="font-weight: bold;">Real</p>
+        <table class="TableStyle_o_CodeIndent" style="caption-side: top;width: 475px;mc-table-style: url('../../Resources/TableStyles/o_CodeIndent.css');" cellspacing="0">
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_CodeIndent_Body_0_0_RowEnd_ColEnd">
+                        <p>SAL_f32 **row_array, *mptr, m24;</p>
+                        <p>mptr = *(row_array + 2);   /* read element M[2][4] */</p>
+                        <p>m24 = *(mptr + 4);</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="TableStyle_o_CodeIndent" style="caption-side: top;width: 475px;mc-table-style: url('../../Resources/TableStyles/o_CodeIndent.css');" cellspacing="0">
+            <col style="width: 100%;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_CodeIndent_Body_0_0_RowEnd_ColEnd">
+                        <p>SAL_f64 **row_array, *mptr, m24;</p>
+                        <p>mptr = *(row_array + 2);   /* read element M[2][4] */</p>
+                        <p>m24 = *(mptr + 4);</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body" style="font-weight: bold;">Split Complex</p>
+        <table class="TableStyle_o_CodeIndent" style="caption-side: top;width: 475px;mc-table-style: url('../../Resources/TableStyles/o_CodeIndent.css');" cellspacing="0">
+            <col style="width: 364px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_CodeIndent_Body_0_0_RowEnd_ColEnd">
+                        <p>SAL_zf32 Rp[16];</p>
+                        <p>SAL_f32 *rmptr, *imptr, rm24, im24;</p>
+                        <p>rmptr = Rp[2].realp;</p>
+                        <p>imptr = Rp[2].imagp;</p>
+                        <p>rm24 = *(rmptr + 4);</p>
+                        <p>im24 = *(imptr + 4);</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="TableStyle_o_CodeIndent" style="caption-side: top;width: 475px;mc-table-style: url('../../Resources/TableStyles/o_CodeIndent.css');" cellspacing="0">
+            <col style="width: 474px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_CodeIndent_Body_0_0_RowEnd_ColEnd">
+                        <p>SAL_zf64 Rp[16];</p>
+                        <p>SAL_f64 *rmptr, *imptr, rm24, im24;</p>
+                        <p>rmptr = Rp[2].realp;</p>
+                        <p>imptr = Rp[2].imagp;</p>
+                        <p>rm24 = *(rmptr + 4);</p>
+                        <p>im24 = *(imptr + 4);</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="2-D Convolution.htm#conv2dx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>conv2dx(), cconv2dx(), zconv2dx()</i></span></a>&#160;</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

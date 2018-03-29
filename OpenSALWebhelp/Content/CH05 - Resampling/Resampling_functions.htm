@@ -1,0 +1,1692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="15850" MadCap:lastWidth="648.3333" MadCap:ignoredWords="SAL_RESAMP_MR_CICX" MadCap:disableMasterStylesheet="true" MadCap:tocPath="About Resampling" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="jV2E8ZCjhm1trjV/80AjvJqRl6jrRvNhoyxILqp0RfqT7qla9Qxsz+vH92NIEa7lfafv+ULwyVevCNnbdOeqF9cfSNuS1u+qkqDQEnFbsIAkaOmVvZ1I2jDLTR4jjp4Varjfp0vVt+NniPsa9Rpcc1SNmlWdwXo6v3dB9vNrnJ+d0y96+IBDWRCsd/wCCc2t7ny0XUqIaL6xGQArQI527nLu18ZvYrhwEGNNC76eXTnicj8SGWNxpcqgVgfpOZ/rsj12UbZJdccCudQVFTTVR/TLSNmf/eUFPXynAjXSMhZhmv3qIcEKl+cFUzM1MbApdGFDMcrewTAYQIRmQVIaOjqHpf78ArqLTXbX4iJfKwRXh6HRVVtekZPW9rI+OPRvJEY3SNy/d2JVARhYHHnQyJSMAAkr70wbYRZiGHi+l1Ffvr0YC45vzYTI+ANXE9mQuBLPNiFfrp+ZMH3Ini1bpOeuTwNWkcGOQv3sCUfgCv8qsItiM5znub5EDu7XxV/61r/TbcegCgjRgEmNt/xWV05HIIcTPEK/q4BcMO6VBXrDTRhTdwt9K3QwlWk9OYBFnGCiLONtWz4iR015uHYyATgJNlWGTwq+HK+ClBNFFoqjkdPofA3vhPv/7/Nhf0EzHVm3W4f+mjkPqDqMSsNNGCYzAmY3iOCtVgrS/SZJBNkpedJ7PWJqbRVXY8JCqc7Dfz0NyVjcozjkqdk+TxRnw9ELFvWDd0pt6DIDSspVwFYOHaiK9SAiF7tiRjtejJ2ZsHMESKqGQTeXqmq8pwhAYUBplD5Dl/fRBzM2j9j973P+g/wRAfbEW7SJZodz8P9f3uyLhxcPrxYkHrZecmNDq4U632lt+pEf+/pjcG0+MNfE9cSkqarYyP5OekvPRg7HlDx9uL65pYkMDqa52ZI7a5x7oVvjfFzK97JxpVatdPXEuo6RJ4RWVRhcq026tT8x4vv5CfhS06J94csIHX9zpl+Eyd5BG7lQzW9KYn7D1JyeKimNx5RRu2ksEeRICOAk" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Resampling Functions</title>
+        <link href="../Resources/TableStyles/o_NoteIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_InvisibleIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_NoteIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_InvisibleIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH05 - Resampling/Resampling_functions.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1><a name="kanchor104"></a>Resampling Functions</h1>
+        <p class="Body">SAL resampling functions include filter and map setup functions and process functions.</p>
+        <p class="CaptionNumChap_Table" MadCap:autonum="&lt;b&gt;Table 4-2: &lt;/b&gt;"><span class="autonumber"><span><b>Table 4-2: </b></span></span>Resampling: Filter and Map Setup Functions</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Basic.css');" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 203px;" />
+            <col style="width: 295px;" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Function</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColEnd">Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_filter_create">resamp_filter_create()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" rowspan="3">Create and close a resampling filter object</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_filter_close">resamp_filter_close()</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_make_filter_set">resamp_make_filter_set()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Construct a polyphase filter set</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_map_create">resamp_map_create()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" rowspan="3">Create and close a resampling map object</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a> <![CDATA[ ]]></td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_map_close">resamp_map_close()</a>
+                </td>
+            </tr>
+        </table>
+        <p class="CaptionNumChap_Table" style="page-break-before: auto;page-break-after: auto;" MadCap:autonum="&lt;b&gt;Table 4-3: &lt;/b&gt;"><span class="autonumber"><span><b>Table 4-3: </b></span></span>Resampling Process Functions</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/o_Basic.css'); caption-side: top; width: 500px;" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 186px;" />
+            <col style="width: 312px;" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Function</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColEnd">Description</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_cicx">resamp_cicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, interleaved complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_cicx">resamp_mc_cicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, interleaved complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_cicx">resamp_mr_cicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, interleaved complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_cocx">resamp_cocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, interleaved complex, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_cocx">resamp_mc_cocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, interleaved complex, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_cocx">resamp_mr_cocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, interleaved complex, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_ricx">resamp_ricx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, real, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_ricx">resamp_mc_ricx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, real, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_ricx">resamp_mr_ricx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, real, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_rocx">resamp_rocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, real, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_rocx">resamp_mc_rocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, real, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_rocx">resamp_mr_rocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, real, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_zicx">resamp_zicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, split complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_zicx">resamp_mc_zicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, split complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_zicx">resamp_mr_zicx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, split complex, input-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_zocx">resamp_zocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Single, split complex, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mc_zocx">resamp_mc_zocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple columns, split complex, output-centered</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="#resamp_mr_zocx">resamp_mr_zocx()</a>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Multiple rows, split complex, output-centered</td>
+            </tr>
+        </table>
+        <h2>Close a Resampling Filter Object</h2>
+        <p class="API_name"><a name="resamp_filter_close"></a>resamp_filter_close()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col />
+            <col style="width: 249px;" />
+            <col style="width: 194px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_filter_close</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_filter filter_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_filter_close() function closes a resampling filter object.</p>
+        <p class="Body">If the filter object specified by <code>filter_handle </code>is currently in use by one or more active map objects, the filter object does not actually close, but is scheduled to close when the last map object that references the filter object closes.</p>
+        <p class="Body">If the filter object was created with <a href="#resamp_filter_create">resamp_filter_create()</a>, the previously allocated object memory is freed after all map objects that reference the filter object are also closed.</p>
+        <p class="Body">If the filter object was created with <a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a>, the object memory is not freed. You are responsible for freeing the memory.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument is detected. The function was not executed.</p>
+        <h2>Create a Resampling Filter Object from a Set of Polyphase Filters</h2>
+        <p class="API_name"><a name="resamp_filter_create"></a>resamp_filter_create(), <a name="resamp_filter_create_user_alloc"></a>resamp_filter_create_user_alloc()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 32px;" />
+            <col style="width: 241px;" />
+            <col style="width: 273px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_filter_create</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *filter_set,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input filter set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 filter_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter length in filter_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_filters,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of filters in _set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_name function_name,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* resampling function name */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_filter *filter_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter handle or NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *num_bytes );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of alloc. Bytes or NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_filter_create_user_alloc</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *filter_set,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input filter set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 filter_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter length in filter_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_filters,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of filters in _set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_name function_name,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* resampling function name */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_filter *filter_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter handle, never NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">void *buffer_ptr );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* user alloc. buffer for */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_filter_create() function creates a resampling filter object from a set of polyphase filters, implicitly allocating space for internal storage. You can also use this function to determine the memory requirements for explicit memory allocation.</p>
+        <p class="Body">The resamp_filter_create_user_alloc() function creates a resampling filter object from a set of polyphase filters using a user-allocated buffer for internal storage.</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">filter_set</p>
+        <p class="Body1">A polyphase filter set built by <a href="#resamp_make_filter_set">resamp_make_filter_set()</a> or created manually according to the algorithm for constructing filter sets.</p>
+        <p class="Parameter">filter_len</p>
+        <p class="Body1">Length of each interpolation filter in <code>filter_set</code>.</p>
+        <p class="Parameter">num_filters</p>
+        <p class="Body1">Number of interpolation filters in <code>filter_set</code>.</p>
+        <p class="Parameter">function_name</p>
+        <p class="Body1">Determines the specific resampling function that can later be invoked with this filter object. These values cannot be ORed together. Specify only one of the following values according to the resampling function you intend to call:</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_InvisibleIndent.css');" class="TableStyle_o_InvisibleIndent" cellspacing="0">
+            <col />
+            <col style="width: 140px;" />
+            <col style="width: 161px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_ROCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_ROCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_ROCX</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_COCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_COCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_COCX</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_ZOCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_ZOCX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_ZOCX</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_RICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_RICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_RICX</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_CICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_CICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_CICX</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowEnd_ColSep" style="font-family: monospace;">&#160;</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowEnd_ColSep" style="font-family: monospace;">SAL_RESAMP_ZICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowEnd_ColSep" style="font-family: monospace;">SAL_RESAMP_MR_ZICX</td>
+                    <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowEnd_ColEnd" style="font-family: monospace;">SAL_RESAMP_MC_ZICX</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Parameter">filter_handle</p>
+        <p class="Body1">Filter object handle.</p>
+        <p class="Body1">You can specify <code>NULL </code>only for the resamp_filter_create() function and only if the <code>num_bytes </code>value is not <code>NULL</code>. If the filter_handle is <code>NULL</code>, then the filter object is not created, but its required size is returned in <code>num_bytes</code>.</p>
+        <p class="Parameter">num_bytes</p>
+        <p class="Body1">You can specify <code>NULL </code>only if the <code>filter_handle </code>value is not <code>NULL</code>. If non-<code>NULL</code>, then returns the required size of the filter object in bytes.</p>
+        <p class="Parameter">buffer_ptr</p>
+        <p class="Body1">Must be large enough to meet the internal buffer requirements. You can determine this size in bytes by invoking resamp_filter_create() with the <code>filter_handle </code>parameter specified as <code>NULL</code>, and the <code>num_bytes </code>parameter specified as non-<code>NULL</code>.</p>
+        <p class="Body1">Do not modify the content of the buffer until the <code>filter_handle </code>is freed by calling <a href="#resamp_filter_close">resamp_filter_close()</a>.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument is detected. The function was not executed.</p>
+        <p class="Parameter">SAL_NOT_ENOUGH_MEMORY</p>
+        <p class="Body1">Allocation failure.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="Resampling_filter_sets.htm#Polyphas" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.PrintOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Polyphase Filter Sets</i></span></a> <![CDATA[ ]]></p>
+        <p class="Body"><a href="Considerations.htm#Filter" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Filter Set and Reference Map Memory Allocation</i></span></a>
+        </p>
+        <h2>Construct a Polyphase Filter Set</h2>
+        <p class="API_name"><a name="resamp_make_filter_set"></a>resamp_make_filter_set()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 33px;" />
+            <col style="width: 172px;" />
+            <col style="width: 315px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_make_filter_set</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 (*filter_func) (double),</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to filter function */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *filter_set,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output filter set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 filter_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* length of each filter in filter_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_filters );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of filters in filter_set */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_make_filter_set() function constructs a polyphase filter set from a user-supplied real-valued filter function. You can use the resulting <code>filter_set </code>as the input to the <a href="#resamp_filter_create">resamp_filter_create()</a> and <a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a> functions.</p>
+        <p class="Body">Filter sets are built according to the following algorithm:</p>
+        <p class="Body1"><i>fs</i>(<i>i</i>,<i>j</i>) = <code>filter_funci </code>(<i>j </i>– <i>L</i>)</p>
+        <p class="Body">where 		<code>filter_funci </code>(<i>x</i>) = <code>filter_func </code>(<i>x </i>– <i>i</i>/<code>num_filters</code>), and:</p>
+        <p class="Body1"><i>L </i>= <i>floor </i>( (<code>filter_len </code>– 1) / 2)</p>
+        <p class="Body1"><i>j </i>= <span style="font-family: serif;">0</span>, <code>filter_len </code>– 1</p>
+        <p class="Body1"><i>i </i>= <span style="font-family: serif;">0</span>, <code>num_filters </code>– 1</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">filter_func</p>
+        <p class="Body1">A continuous, real-valued (typically symmetric) filter function centered about the origin and defined in a neighborhood on either side of the origin from at least -(<code>filter_len</code>/2 + 1) to (<code>filter_len</code>/2 + 1).</p>
+        <p class="Body1">A careful examination of the above algorithm reveals that <code>filter_func </code>is effectively centered over <i>i</i>/<code>num_filters </code>when computing the <i>ith </i>filter in the filter set.</p>
+        <p class="Body1">To maintain as much accuracy as possible during polyphase filter construction, the filter function is defined as double precision, although the former has single precision coefficients.</p>
+        <p class="Parameter">filter_set</p>
+        <p class="Body1">Output filter set. An array with size of (<code>num_filters </code>x <code>filter_len</code>).</p>
+        <p class="Parameter">filter_len</p>
+        <p class="Body1">Length of each interpolation filter in <code>filter_set</code>.</p>
+        <p class="Parameter">num_filters</p>
+        <p class="Body1">Number of interpolation filters in <code>filter_set</code>.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument is detected. The function was not executed.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="Resampling_filter_sets.htm#Polyphas" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.PrintOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Polyphase Filter Sets</i></span></a> <![CDATA[ ]]></p>
+        <h2>Close a Reference Map Object</h2>
+        <p class="API_name"><a name="resamp_map_close"></a>resamp_map_close()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col />
+            <col style="width: 203px;" />
+            <col style="width: 217px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_map_close</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify 0 */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_map_close() function closes a resampling map object. The underlying filter object is not closed until you invoke the <a href="#resamp_filter_close">resamp_filter_close()</a> function.</p>
+        <p class="Body">If the map object was created with <a href="#resamp_map_create">resamp_map_create()</a>, the memory that was previously allocated for the object is freed.</p>
+        <p class="Body">If the map object was created with <a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a>, the object memory is not freed. You are responsible for freeing the memory.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument is detected. The function was not executed.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="Considerations.htm#Resampli" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Resampling Reference Maps</i></span></a>
+        </p>
+        <h2>Create a Resampling Map Object from a Set of Reference Map Tables</h2>
+        <p class="API_name"><a name="resamp_map_create"></a>resamp_map_create(), <a name="resamp_map_create_user_alloc"></a>resamp_map_create_user_alloc()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 39px;" />
+            <col style="width: 190px;" />
+            <col style="width: 315px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_map_create</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_filter filter_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *map_table_set,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input reference map set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* length of each map in map_table_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_map_tables,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of maps in map_table_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 uniform_seq_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* length of each uniform sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* boundary check flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map *map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle or NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *num_bytes );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* size of map object */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_map_create_user_alloc</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_filter filter_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* filter handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *map_table_set,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input reference map set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* length of each map in map_table_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_map_tables,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of maps in map_table_set */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 uniform_seq_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* length of each uniform sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* boundary check flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map *map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *buffer_ptr );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* user alloc. internal buffer */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_map_create() and resamp_map_create_user_alloc() functions create a resampling map object from a set of reference map tables. The resamp_map_create() function implicitly allocates space for internal storage. The resamp_map_create_user_alloc() function uses a user-allocated buffer for internal storage.</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">filter_handle</p>
+        <p class="Body1">Filter handle previously returned by the <a href="#resamp_filter_create">resamp_filter_create()</a> or <a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a> function.</p>
+        <p class="Parameter">map_table_set</p>
+        <p class="Body1">Reference map table set. A 2-D array of reference maps of size (<code>num_map_tables </code>x <code>map_table_len</code>), where each reference map position (<code>ref_map</code>) is a real value, so that <span style="font-family: serif;">0</span> ≤ <code>ref_map </code>&lt; <code>uniform_seq_len</code>.</p>
+        <p class="Parameter">map_table_len</p>
+        <p class="Body1">Length of each reference map table in <code>map_table_set</code>.</p>
+        <p class="Parameter">num_map_tables</p>
+        <p class="Body1">Number of reference map tables in <code>map_table_set</code>.</p>
+        <p class="Parameter">uniform_seq_len</p>
+        <p class="Body1">Length of each uniform sequence (input for OC or output for IC) indirectly addressed by the reference map values in <code>map_table_set</code>.</p>
+        <p class="Parameter">flag</p>
+        <p class="Body1">Specify one of the following <i>boundary check</i> values:</p>
+        <p class="ParameterIndent">0 (zero)</p>
+        <p class="Body2">No boundary checking is performed on the reference map values in <code>map_table_set </code>(default). It is assumed that all reference maps are in-bounds.</p>
+        <p class="ParameterIndent">SAL_RESAMP_ZERO_OUT_OF_BOUNDS</p>
+        <p class="Body2">If a reference map is out-of-bounds, then a zero value is written or added to the relevant output points.</p>
+        <p class="ParameterIndent">SAL_RESAMP_TAPER_OUT_OF_BOUND</p>
+        <p class="Body2">If a reference map is out-of-bounds, the filter is applied as if the uniform sequence was extended infinitely in both directions with zero values. So, only the sequence in-bounds points are included in the resampling calculation.</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_NoteIndent.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #808080;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;" class="TableStyle_o_NoteIndent" cellspacing="0">
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_NoteIndent_Body_0_0_RowSep_ColEnd">
+                        <p class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #06347a;&quot; class=&quot;mcFormatColor&quot;&gt;Note&lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #06347a;" class="mcFormatColor">Note</span></b></span></span>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_NoteIndent_Body_0_0_RowEnd_ColEnd">
+                        <p>A reference map position (<code>ref_map</code>) is defined as in-bound if:</p>
+                        <p class="Code1" style="font-family: monospace;"><b>floor</b> ( (filter_len – 1) / 2) &lt;=&#160;</p>
+                        <p class="Code1" style="font-family: monospace;">ref_map + 1/(2 * num_filters) &lt;</p>
+                        <p class="Code1" style="font-family: monospace;">uniform_seq_len – <b>floor</b> (filter_len / 2)</p>
+                        <p>Otherwise, it is defined to be out-of-bounds.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Parameter">filter_handle</p>
+        <p class="Body1">Filter object handle.</p>
+        <p class="Parameter">num_bytes</p>
+        <p class="Body1">You can specify <code>NULL</code> only if the <code>map_handle </code>value is not <code>NULL</code>. If non-<code>NULL</code>, then receives the required size of the filter object in bytes.</p>
+        <p class="Parameter">map_handle</p>
+        <p class="Body1">Map object handle. You can specify <code>NULL </code>only for the resamp_map_create() function and only if the <code>num_bytes </code>value is not <code>NULL</code>. If the map_handle is <code>NULL</code>, then the filter object is not created, but its required size is returned in <code>num_bytes</code>.</p>
+        <p class="Parameter">buffer_ptr</p>
+        <p class="Body1">Must be large enough to meet the internal buffer requirements. You can determine this size in bytes by invoking resamp_map_create() with the <code>map_handle</code> parameter specified as NULL.</p>
+        <p class="Body1">Do not modify the content of the buffer until the <code>map_handle</code> is freed by calling <a href="#resamp_map_close">resamp_map_close()</a>.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument is detected. The function was not executed.</p>
+        <p class="Parameter">SAL_NOT_ENOUGH_MEMORY</p>
+        <p class="Body1">Allocation failure.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="Considerations.htm#Boundary" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Boundary Handling</i></span></a>
+        </p>
+        <p class="Body"><a href="Considerations.htm#Resampli" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Resampling Reference Maps</i></span></a>
+        </p>
+        <h2>Input-Centered Resampling Functions</h2>
+        <p class="API_name"><a name="resamp_ricx"></a>resamp_ricx(), <a name="resamp_cicx"></a>resamp_cicx(), <a name="resamp_zicx"></a>resamp_zicx(), <a name="resamp_mc_ricx"></a>resamp_mc_ricx(), <a name="resamp_mc_cicx"></a>resamp_mc_cicx(), <a name="resamp_mc_zicx"></a>resamp_mc_zicx(), <a name="resamp_mr_ricx"></a>resamp_mr_ricx(), <a name="resamp_mr_cicx"></a>resamp_mr_cicx(), <a name="resamp_mr_zicx"></a>resamp_mr_zicx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 24px;" />
+            <col style="width: 208px;" />
+            <col style="width: 320px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_ricx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of points in input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32  eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_cicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of points in input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32  eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_zicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32  eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_ricx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input col.*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_cicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input col.*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_zicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input col.*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_ricx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_rows,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_cicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_rows,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_zicx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each input row */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_rows,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_ricx(), resamp_cicx(), resamp_zicx(), resamp_mc_ricx(), resamp_mc_cicx(), resamp_mc_zicx(), resamp_mr_ricx(), resamp_mr_cicx() and resamp_mr_zicx() functions perform single, multiple column, and multiple row input-centered (IC) 1-D resampling.</p>
+        <p class="Body">Each input point is associated with a reference map value from the specified reference map table. Each reference map value effectively selects a particular filter from the underlying polyphase filter set along with an output subsequence of the same length as the filter. The associated input point is then multiplied in turn by each filter element, and the result is added into the corresponding output point in the output subsequence.</p>
+        <p class="Body">Before calling each of these functions, you must create a map object using the <a href="#resamp_map_create">resamp_map_create()</a> or <a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a> function, and prior to that you must create the underlying filter object by calling <a href="#resamp_filter_create">resamp_filter_create()</a> or <a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a> with the corresponding <code>function_name</code>. Filter objects created for a particular <code>function_name </code>can only be used in the function with the matching name.</p>
+        <p class="Body">The functions sequentially access the reference map table specified by <code>map_handle </code>and <code>map_table </code>at a zero-based index <code>map_table_start_idx</code>. Therefore, there must be at least <code>input_len </code>points in the map table starting at <code>map_table_start_idx</code>, as indicated by the following formula:</p>
+        <p class="Body1"><i>map_table_start_idx </i>+ <code>input_len </code>≤ <code>map_table_len</code></p>
+        <p class="Body">The multiple column (<code>_mc_</code>) and the multiple row (<code>_mr_</code>) functions are functionally identical to their single function counterparts, except that for the same reference maps specified by <code>map_handle</code>, <code>map_table</code>, <code>map_table_start_idx</code>, and <code>input_len </code>are used repeatedly to resample the specified number of columns (<code>_mc_</code>) or rows (<code>_mr_</code>).</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">map_handle</p>
+        <p class="Body1">Map handle previously returned by one of the <a href="#resamp_map_create"><a href="#resamp_map_create">resamp_map_create()</a></a>, <a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a> functions.</p>
+        <p class="Parameter">map_table</p>
+        <p class="Body1">Zero-based index of the reference map table to use in the resampling operation.</p>
+        <p class="Parameter">map_table_start_idx</p>
+        <p class="Body1">Starting index into reference map table corresponding to the zero input point. Usually zero.</p>
+        <p class="Parameter">input</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the input sequence <code>input_len</code>.</p>
+        <p class="Body1">Multiple column functions: <code>resamp_mc_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the input matrix of sampled columns.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the input matrix of sampled rows.</p>
+        <p class="Parameter">output</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the output sequence that is indirectly addressed by the reference map values in <code>map_table</code>.</p>
+        <p class="Body1">Multiple column functions: <code>resamp_mc_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the output matrix of sampled columns.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}icx()</code></p>
+        <p class="Body2">Pointer to the output matrix of sampled rows.</p>
+        <p class="Parameter">input_tcols</p>
+        <p class="Body1">Total input columns (column element stride). Multiple row and multiple column functions only.</p>
+        <p class="Parameter">output_tcols</p>
+        <p class="Body1">Total output columns (column element stride). Multiple row and multiple column functions only.</p>
+        <p class="Parameter">input_len</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}icx()</code></p>
+        <p class="Body2">Number of points in input.</p>
+        <p class="Body1">Multiple column function: <code>resamp_mc_{r|c|z}icx()</code></p>
+        <p class="Body2">Number of points in each input column.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}icx()</code></p>
+        <p class="Body2">Number of points in each input row.</p>
+        <p class="Parameter">num_columns</p>
+        <p class="Body1">Number of input and output columns to resample. Multiple column <code>resamp_mc_{r|c|z}icx()</code> functions only.</p>
+        <p class="Parameter">num_rows</p>
+        <p class="Body1">Number of input and output rows to resample. Multiple row <code>resamp_mr_{r|c|z}icx()</code> functions only.</p>
+        <p class="Parameter">flag</p>
+        <p class="Body1">Specify one of the following accumulation options:</p>
+        <p class="ParameterIndent">0 (zero)</p>
+        <p class="Body2">Before entering the IC resampling loop, the entire output sequence is initialized to zero (default).</p>
+        <p class="ParameterIndent">SAL_RESAMP_ACCUMULATE</p>
+        <p class="Body2">The output sequence is not initialized. You are responsible for initializing the output sequence before calling the function.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument was detected. The function was not executed.</p>
+        <h2>Output-Centered Resampling Functions</h2>
+        <p class="API_name"><a name="resamp_rocx"></a>resamp_rocx(), <a name="resamp_cocx"></a>resamp_cocx(), <a name="resamp_zocx"></a>resamp_zocx(), <a name="resamp_mc_rocx"></a>resamp_mc_rocx(), <a name="resamp_mc_cocx"></a>resamp_mc_cocx(), <a name="resamp_mc_zocx"></a>resamp_mc_zocx(), <a name="resamp_mr_rocx"></a>resamp_mr_rocx(), <a name="resamp_mr_cocx"></a>resamp_mr_cocx(), <a name="resamp_mr_zocx"></a>resamp_mr_zocx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col />
+            <col style="width: 196px;" />
+            <col style="width: 322px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_rocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in output seq. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_cocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in output seq. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */ </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_zocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to input sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* pointer to output sequence */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in output seq. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_rocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_cocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mc_zocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled cols */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out cols to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_rocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_cocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>resamp_mr_zocx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_resamp_map map_handle,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* map handle */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_table,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* index of reference map table */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 map_start_idx,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* starting idx into ref. map tbl */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *input,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to input matrix of sampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 input_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total input cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *output,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ptr to output matrix of resampled rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* total output cols (col.stride) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 output_len,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of points in each output col. */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 num_columns,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* no. of in/out rows to resample */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* accumulation flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The resamp_rocx(), resamp_cocx(), resamp_zocx(), resamp_mc_rocx(), resamp_mc_cocx(), resamp_mc_zocx(), resamp_mr_rocx(), resamp_mr_cocx(), and resamp_mr_zocx() functions perform single, multiple column, and multiple row output-centered (OC) 1-D resampling.</p>
+        <p class="Body">Each output point is a associated with a reference map value from a specified reference map table. Each reference map value effectively selects a particular filter from the underlying polyphase filter set along with an input subsequence of the same length as the filter. The output value is then calculated as the dot-product between the filter and the input subsequence and is written to or added into the associated output point, depending on the value of the accumulation flag.</p>
+        <p class="Body">Before calling each of these functions, you must create a map object using the <a href="#resamp_map_create">resamp_map_create()</a> or <a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a> function, and prior to that you must create the underlying filter object by calling <a href="#resamp_filter_create">resamp_filter_create()</a> or <a href="#resamp_filter_create_user_alloc">resamp_filter_create_user_alloc()</a> with the corresponding <code>function_name</code>. Filter objects created for a particular <code>function_name </code>can be used only in the function with the matching name.</p>
+        <p class="Body">The functions sequentially access the reference map table specified by <code>map_handle </code>and <code>map_table </code>at a zero-based index <code>map_table_start_idx</code>. Therefore, there must be at least <code>output_len </code>points in the map table starting at <code>map_table_start_idx</code>, as indicated by the following formula:</p>
+        <p class="Body1"><i>map_table_start_idx </i>+ <i>output_len </i>≤                           <![CDATA[ ]]><i>map_table_len</i></p>
+        <p class="Body">The multiple column (<code>_mc_</code>) and the multiple row (<code>_mr_</code>) functions are functionally identical to their single function counterparts, except that the same reference maps specified by <code>map_handle</code>, <code>map_table</code>, <code>map_table_start_idx</code>, and <code>output_len </code>are used repeatedly to resample the specified number of columns (<code>_mc_</code>) or rows (<code>_mr_</code>).</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">map_handle</p>
+        <p class="Body1">Map handle previously returned by the <a href="#resamp_map_create">resamp_map_create()</a> or <a href="#resamp_map_create_user_alloc">resamp_map_create_user_alloc()</a> functions.</p>
+        <p class="Parameter">map_table</p>
+        <p class="Body1">Zero-based index of the reference map table to use in the resampling operation.</p>
+        <p class="Parameter">map_table_start_idx</p>
+        <p class="Body1">Starting index into reference map table corresponding to the zeroth input point. Usually zero.</p>
+        <p class="Parameter">input</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the input sequence that is indirectly addressed by the reference map values in map_table.</p>
+        <p class="Body1">Multiple column functions: <code>resamp_mc_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the input matrix of sampled columns.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the input matrix of sampled rows.</p>
+        <p class="Parameter">output</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the output sequence <code>output_len</code>.</p>
+        <p class="Body1">Multiple column functions: <code>resamp_mc_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the output matrix of sampled columns.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}ocx()</code></p>
+        <p class="Body2">Pointer to the output matrix of sampled rows.</p>
+        <p class="Parameter">input_tcols</p>
+        <p class="Body1">Total input columns (column element stride). Multiple row and multiple column functions only.</p>
+        <p class="Parameter">output_tcols</p>
+        <p class="Body1">Total output columns (column element stride). Multiple row and multiple column functions only.</p>
+        <p class="Parameter">output_len</p>
+        <p class="Body1">Single functions: <code>resamp_{r|c|z}ocx()</code></p>
+        <p class="Body1">Multiple column functions: <code>resamp_mc_{r|c|z}ocx()</code></p>
+        <p class="Body2">Number of points in each output column.</p>
+        <p class="Body1">Multiple row functions: <code>resamp_mr_{r|c|z}ocx()</code></p>
+        <p class="Body2">Number of points in each output row.</p>
+        <p class="Parameter">num_columns</p>
+        <p class="Body1">Number of input and output columns to resample. Multiple column <code>resamp_mc_{r|c|z}ocx()</code> functions only.</p>
+        <p class="Parameter">num_rows</p>
+        <p class="Body1">Number of input and output rows to resample. Multiple row <code>resamp_mr_{r|c|z}ocx()</code> functions only).</p>
+        <p class="Parameter">flag</p>
+        <p class="Body1">Specify one of the following accumulation options:</p>
+        <p class="ParameterIndent">0 (zero)</p>
+        <p class="Body2">Each resampled output value (dot-product result) is written into the output sequence (default).</p>
+        <p class="ParameterIndent">SAL_RESAMP_ACCUMULATE</p>
+        <p class="Body2">Each resampled output value (dot-product result) is added to the output sequence. You are responsible for initializing the output sequence before calling the function.</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Parameter">SAL_INVALID_ARGUMENT</p>
+        <p class="Body1">An invalid argument was detected. The function was not executed.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="744" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="SAL Transform Functions" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="T5/k3K5679IZ9oddvoVUt2uQAU3sxroAkaiWQbJnqbm9JaKn5mAVr5i2beJDdx1p57fdxRfHCzeSKf2QqiwLbwc7qegv0bwBQKTOY25M8pVp2ivnqiOaWMSnnR873Mlqz3top3O8Uph4exW5C3S+Gx06XfC4NJcp31WmA6z26Rvi36oRWDCekeHgtdORWVDsnvsjt2XkQZ/Y1ErbuWqku3APIlfgmonrlyV0VrCGwSGQ5cTu61sanPuJcuwPBVSDpb+NiFugKG2Rj3gNR/833vrtPwRpgeaj8tzvmmdcTTNG+mZ7U/cjV+1vcSroxh2DkchWWrvoEWIYIgz1Rb8CnUNIiWpYpZ54L+BDhCPpFtHwkdQGYTGBOuTTb4PdD+X+SXT2CERK9nJbL1nus+tnHaaJdsrOoY9bEIQQ7WrowfStC6v2ymKU2Es8ehKXhNkwo6iLqFN/BOdB3MoxQYw+S4YdMPrzB2gONBjbovFdV2i/vkEyYxcvXb+LagDq1F+J9l+O2y8ukxPRlfb+j9JNgVkTG1A2apjKwINKJKKqjKFdL/9RaZ35sZD44av6DqlVVFxUR0b5EepYzzHokE2nsZZV7zwQtFt8kwgz1Do9oxR7hZCLw6R7VU6OKhYXG9NU1fn6+m/3Z3cUChIBwQf1uejLm3XC+mjshLqgEP7uLgKSftleWSwiSulT9opqwa2673ri6lQww4u3LcQqAAegYgfHKa8AS6Up/IdOj9CagnrVHjHrPQCWtOKoHsqc6rFmi9Ek/pRN+U/BFAuXc3Sxc6q7VamTAcw23NMJZUVxKXqnvCceq6LUZD9uAnJ1cthPm4Snb+2JlmValUy0g9Td6T6d3kYOi2E9j88H5O+LQRq+b7ZL1tDjxPD8kTOMnWHdcsMZ8eNdn2cpaC/dsm1J3nHGkJ4YqEC+3+UAk8qM0fdla3r5i4X79sS9et4z7yMG809rCgF1iaejrPigjGcc4eqUL2SwJfJRlqXScoCNJSEUaKhi4vXHj4hDKVfOiFgB" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>SAL Image Transformations</title>
+        <link href="../Resources/TableStyles/o_Invisible.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Invisible.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH02 - Transform Functions/SAL_image_transforms.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="kanchor57"></a>SAL Image Transformations</h1>
+        <p class="Body">SAL provides two image-transformation functions, <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> and <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>. </p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 80px;" />
+            <col style="width: 452px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowSep_ColSep" style="font-size: 10pt;font-family: Georgia;font-weight: bold;">
+                        <p><a name="kanchor58"></a><a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowSep_ColEnd" style="font-size: 10pt;font-family: Georgia;">
+                        <p>Performs a specific image transformation by translating, then rotating and scaling, then again translating an input image to produce the output image. The <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function sequence of operations is fixed, and scaling must be uniform in the X and Y directions.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep" style="font-size: 10pt;font-family: Georgia;font-weight: bold;">
+                        <p><a name="kanchor59"></a><a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd" style="font-size: 10pt;font-family: Georgia;">
+                        <p>Provides a general transformation function, allowing any composite transformation to be defined as a set of coefficients, which are passed to <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> as parameters. Two coefficients, if given non-zero values, specify nonlinear transformations. If parameters for the two nonlinear coefficients are zero, the remaining six parameters specify an affine transformation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">For better performance (and because of the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function nonlinear transformation ability), the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> and <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> functions require that transformations be expressed inversely in terms of image coordinates. In other words, their input must be mapped to their output. When necessary, both functions interpolate output magnitudes from the input image. However, <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> is slightly faster than <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>, and should be used when possible.</p>
+        <p class="Body">For the syntax and further description of these functions, see the following topics:</p>
+        <ul>
+            <li value="1"><a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm" target="" title="GO to Image Rotate, Scale and Translate with Bilinear Interpolation" alt="GO to Image Rotate, Scale and Translate with Bilinear Interpolation" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Image Rotate, Scale and Translate with Bilinear Interpolation</i></span></a>
+            </li>
+            <li value="2"><a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm" target="" title="Go to Bilinear Warp with Bilinear Interpolation" alt="Go to Bilinear Warp with Bilinear Interpolation" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Bilinear Warp with Bilinear Interpolation</i></span></a>
+            </li>
+        </ul>
+        <h2><a name="kanchor60"></a>Function Analysis</h2>
+        <p class="Body">To begin an analysis of the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> and <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> functions, assume that your application requires performing the following operations on an input image:</p>
+        <ul>
+            <li value="1">Translating the image so a fixed point is at the video origin</li>
+            <li value="2">Rotating and scaling the image</li>
+            <li value="3">Translation the image back to its starting location</li>
+        </ul>
+        <p class="Body" style="page-break-after: avoid;">To define a composite transformation that performs these operations, express each operation as a homogeneous matrix operator so that p´ = pG, where:</p>
+        <ul>
+            <li value="1">p´ represents homogeneous output coordinates [x<sub>2</sub>, y<sub>2</sub>, 1]</li>
+            <li value="2">p represents homogeneous input coordinates [x<sub>1</sub>, y<sub>1</sub>, 1]</li>
+            <li value="3">G is any linear 3x3 composite transformation operator</li>
+        </ul>
+        <p class="Body"><a href="#Transformation_Operators" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-11</span></a> shows several transformation operators followed by their inverses.</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_equation_05_556x194.jpg" style="width: 556; height: 194;" />
+        </p>
+        <p class="CaptionNumChap_Figure" MadCap:autonum="&lt;b&gt;Figure 2-11: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 2-11: </b></span></span><a name="Transformation_Operators"></a>Transformation Operators</p>
+        <p class="StepStart">To begin building the composite transformation:</p>
+        <ol>
+            <li value="1">Translate the image so that the subsequent rotation occurs about its center point. The translation is expressed by:p´ = p T where T is the translation operator.</li>
+            <li value="2">Apply the first rotation operator to the transformation. p´ = p (T Rq)</li>
+            <li value="3">Scale the image. Applying the scaling operator to the composite transformation yields the following result: p´ = p (T Rq S)</li>
+            <li value="4">Translate the image back to its original position by applying the final translation operator. p´ = p (T Rq S T-1)</li>
+        </ol>
+        <p class="Body">The composite transformation operator of the specified operation is:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 242px;" />
+            <col style="width: 241px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">T Rq S T-1</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(1)&lt;/b&gt;"><span class="autonumber"><span><b>(1)</b></span></span><a name="equation_1"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">One difference between the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> and <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> functions, is that <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> can scale by one factor in the X direction and by another factor in the Y direction. The <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function limits scaling to a uniform factor in both directions. Given the composite transformation defined by <a href="#equation_1" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (1)</span></a>, if scaling operator S specifies uniform scaling in both directions, so that s<sub>x</sub> = s<sub>y</sub>, as shown here:</p>
+        <p class="ImageIndent">
+            <img src="../Resources/Images/SAL_equation_06.jpg" />
+        </p>
+        <p class="Body">then <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> is sufficient to complete the transformation. However, if s<sub>x</sub> ≠ s<sub>y</sub>, call <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> instead.</p>
+        <p class="Body">If a transformation requires additional operators, such as a shear operator, call <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>. The <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function can apply any combination of transformation operators.</p>
+        <h3><a name="kanchor61"></a>spinx() Function Parameters</h3>
+        <p class="Body">The <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function implements a specific transformation consisting of:</p>
+        <ul>
+            <li value="1">Translating the image</li>
+            <li value="2">Rotating and scaling the image</li>
+            <li value="3">Translating the image</li>
+        </ul>
+        <p class="Body">So, in matrix form, the transformation is defined as:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">p´ = p (Tpre R Tpost)</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(2)&lt;/b&gt;"><span class="autonumber"><span><b>(2)</b></span></span><a name="equation_2"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">where:</p>
+        <ul>
+            <li value="1">p´ contains homogeneous output coordinates [x2, y2, 1]</li>
+            <li value="2">p contains homogeneous input coordinates [x1, y1, 1]</li>
+            <li value="3">Tpre is a translation operator applied before rotation</li>
+            <li value="4">Tpost is a translation operator applied after rotation</li>
+            <li value="5">R is a composite rotation/scaling transformation operator, so that R = Rq S</li>
+        </ul>
+        <p class="Body">The <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function requires that its composite transformation be inversely expressed in terms of image coordinates. Its input must be mapped to its output. Taking the inverse of  <a href="#equation_2" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (2)</span></a> yields:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">p = p´ (Tpost-1 R-1 Tpre-1)</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(3)&lt;/b&gt;"><span class="autonumber"><span><b>(3)</b></span></span><a name="equation_3"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">where:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">R-1 = S-1 Rq-1</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(4)&lt;/b&gt;"><span class="autonumber"><span><b>(4)</b></span></span><a name="equation_4"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">Because the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function implements a specific transformation, the six function parameters, <i>u</i> through <i>z</i>, do not represent general transformation coefficients. Instead, they provide values for the three operator matrices in <a href="#equation_2" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (2)</span></a>. </p>
+        <p class="Body">For example, parameters <i>y</i> and <i>z</i> become values in translation matrix Tpre, so that:</p>
+        <p class="Body" style="margin-top: 12pt;margin-bottom: 12pt;">
+            <img src="../Resources/Images/SAL_equation_07.jpg" />
+        </p>
+        <p class="Body">Therefore, positive values for <i>y</i> and <i>z</i> shift an image up and left toward its video origin, prior to rotation and scaling.</p>
+        <p class="Body"> Similarly, parameters <i>w</i> and <i>x</i> become values in translation matrix T<sub>post</sub>, so that:</p>
+        <p class="Body" style="margin-bottom: 12pt;margin-top: 12pt;">
+            <img src="../Resources/Images/SAL_equation_08.jpg" />
+        </p>
+        <p class="Body">Therefore, positive values for <i>w</i> and <i>x</i>, shift an image down and right, away from its video origin, after rotation and scaling. </p>
+        <p class="Body">Finally, parameters <i>u</i> and <i>v</i> become values in the composite rotation/scaling matrix.</p>
+        <p class="Body" style="margin-top: 12pt;margin-bottom: 12pt;">
+            <img src="../Resources/Images/SAL_equation_09.jpg" />
+        </p>
+        <p class="Body">Because R<sup>-1</sup> = S<sup>-1</sup> R<sub>q</sub><sup>-1</sup>, values for parameters <i>u</i> and <i>v</i> are calculated by combining the rotational operator with the scaling operator.</p>
+        <p class="Body" style="margin-bottom: 12pt;margin-top: 12pt;">
+            <img src="../Resources/Images/SAL_equation_10_449x107.jpg" style="width: 449; height: 107;" />
+        </p>
+        <p class="Body">Therefore:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">v = cos q/s   and u = sin q/s</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(5)&lt;/b&gt;"><span class="autonumber"><span><b>(5)</b></span></span><a name="equation_5"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">where:</p>
+        <ul>
+            <li value="1">s is a uniform scaling factor applied in the x and y directions</li>
+            <li value="2">q is the angle of rotation applied before scaling</li>
+        </ul>
+        <p class="Body">By expanding these values to create the following composite inverse transformation operator:</p>
+        <p class="Body1">p = p´ (Tpost-1 R Tpre-1)</p>
+        <p class="Body">the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> parameters map as shown. The output coordinates are multiplied by the inverse transformation operator, to yield the following input coordinates:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 386px;" />
+            <col style="width: 136px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p>
+                            <img src="../Resources/Images/SAL_equation_11.jpg" />
+                        </p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(6)&lt;/b&gt;"><span class="autonumber"><span><b>(6)</b></span></span><a name="equation_6"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">As an example, suppose:</p>
+        <p class="Body">A 64x64 sub-image requires 45-degree rotation about its center and scaling by a factor of one-half</p>
+        <p class="Body">The sub-image is bounded by homogeneous coordinates [0, 0, 1], [0, 63, 1], [63, 0, 1], and [63, 63, 1]. Repeating <a href="#equation_2" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (2)</span></a>:</p>
+        <p class="Body1">p = p´ (Tpre-1 R-1 Tpost-1)</p>
+        <p class="Body">to center the image about the video origin, calculate values for parameters y and z, which in this case, define the center of the sub-image (31.5, 31.5):</p>
+        <p class="Body" style="margin-bottom: 12pt;margin-top: 12pt;">
+            <img src="../Resources/Images/SAL_equation_12.jpg" />
+        </p>
+        <p class="Body">Because the rotated and scaled image will be returned to its original position, <i>w</i> and <i>x</i> also define the center of the image (31.5, 31.5):</p>
+        <p class="Body" style="margin-bottom: 12pt;margin-top: 12pt;">
+            <img src="../Resources/Images/SAL_equation_13.jpg" />
+        </p>
+        <p class="Body">Finally, plugging the rotation angle of 45 degrees and the scaling factor of one-half into <a href="#equation_2" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (2)</span></a> gives:</p>
+        <p class="Body1">v = 2.0 cos 45 and u = 2.0 sin 45</p>
+        <p class="Body">Therefore, calling the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function with the following parameter list performs the required transformation.</p>
+        <ul>
+            <li value="1">u = 2.0 sin 45</li>
+            <li value="2">v = 2.0 cos 45</li>
+            <li value="3">w = 31.5</li>
+            <li value="4">x = 31.5</li>
+            <li value="5"> y = 31.5</li>
+            <li value="6">z = 31.5 </li>
+        </ul>
+        <h3><a name="kanchor62"></a>warpx() Function Parameters</h3>
+        <p class="Body">As shown, <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> implements the specific transformation</p>
+        <p class="Body1">p´ = p (Tpre R Tpost)</p>
+        <p class="Body">and requires a uniform scaling factor in the x and y directions. In contrast, <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> provides a general transformation function, permitting any linear transformation to be implemented with a single call to <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>. </p>
+        <p class="Body">Instead of directly supplying values to a static set of transformation operators, the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function transformation parameters provide eight general transformation coefficients, six of which are expressed by inverting the familiar linear transformation operator:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 386px;" />
+            <col style="width: 136px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <img src="../Resources/Images/SAL_equation_14.jpg" />
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(7)&lt;/b&gt;"><span class="autonumber"><span><b>(7)</b></span></span><a name="equation_7"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">which, inverted is:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 386px;" />
+            <col style="width: 136px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <img src="../Resources/Images/SAL_equation_15.jpg" />
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(8)&lt;/b&gt;"><span class="autonumber"><span><b>(8)</b></span></span><a name="equation_8"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">Substituting the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>) function parameter mnemonics into the inverse transform in <a href="#equation_8" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (8)</span></a> yields:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col style="width: 386px;" />
+            <col style="width: 136px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <img src="../Resources/Images/SAL_equation_16.jpg" />
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(9)&lt;/b&gt;"><span class="autonumber"><span><b>(9)</b></span></span><a name="equation_9"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">Nonzero values for b[6] and b[7], two parameters that are not part of <a href="#equation_9" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (9)</span></a>, result in a bilinear transform, changing the scale of the image along the diagonal.</p>
+        <p class="Body">To define <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> parameters for a given transformation:</p>
+        <ol>
+            <li value="1">Define the composite transformation as a series of operator matrices.</li>
+            <li value="2">Rewrite the transformation in inverse form.</li>
+            <li value="3">Solve for the coefficients shown in <a href="#equation_9" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (9)</span></a>.</li>
+        </ol>
+        <p class="CaptionNumChap_Example" MadCap:autonum="&lt;b&gt;Example 2-5: &lt;/b&gt;"><span class="autonumber"><span><b>Example 2-5: </b></span></span>Defining parameters for a transformation</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p>Apply the static transformation performed by the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function to <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a>, adding the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function ability to apply different scaling factors in the x and y directions. Repeating the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> transform:</p>
+                        <p class="Indent">p´ = p (T<sub>pre</sub> R T<sub>post</sub>) where R = S R<sub>q</sub></p>
+                        <p>so</p>
+                        <p class="Indent">p´ = p (T<sub>pre</sub> R<sub>q</sub> S T<sub>post</sub>)</p>
+                        <p>Assume that the pre- and post-rotation translations center the image about the origin, then return it to its original location. Therefore:</p>
+                        <p class="Indent">T<sub>pre</sub> = T and T<sub>post</sub> = T<sup>-1</sup></p>
+                        <p>make the composite transformation:</p>
+                        <p class="Indent">C = T R<sub>q</sub> S T<sup>-1</sup></p>
+                        <p>To solve for the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> coefficients required to match this transform, the inverse transform is required:</p>
+                        <p class="Indent">C-1 = T S<sup>-1</sup> R<sub>q</sub><sup>-1</sup> T<sup>-1</sup></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">Solving for C<sup>-1</sup>:</p>
+        <p class="Body" style="margin-top: 12pt;margin-bottom: 38pt;">
+            <img src="../Resources/Images/SAL_equation_17.jpg" />
+        </p>
+        <p class="Body">
+            <img src="../Resources/Images/SAL_equation_18.jpg" />
+        </p>
+        <p class="Body">Therefore, calling the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function with these parameters performs the transformation specified:</p>
+        <p class="Body1">
+            <img src="../Resources/Images/SAL_equation_19.jpg" />
+        </p>
+        <p class="Body">These coefficients reveal a correlation between the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function arguments and the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function arguments, as seen in <a href="#equation_6" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (6)</span></a>. </p>
+        <p class="Body">Recalling that, for the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function, SDO2(x) = sSDO2(y), the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function can duplicate the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function if the six <a href="../CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm#spinx">spinx()</a> function arguments are used to calculate <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> coefficients:</p>
+        <p class="Body1">
+            <img src="../Resources/Images/SAL_equation_20.jpg" />
+        </p>
+        <p class="Body">A powerful feature of <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> is the ability to dynamically add and combine linear transformation operators. For example, suppose that before rotating and scaling the image, an application must shear the image in the X direction by some factor. The composite transform:</p>
+        <p class="Body1">C = T Rq S T-1</p>
+        <p class="Body">becomes:</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Invisible.css');caption-side: top;width: 500px;" class="TableStyle_o_Invisible" cellspacing="0">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColSep">
+                        <p class="Indent" style="font-family: Georgia;">C = T H Rq S T-1</p>
+                    </td>
+                    <td class="TableStyle_o_Invisible_Body_0_0_RowEnd_ColEnd">
+                        <p class="EquationNumber" MadCap:autonum="&lt;b&gt;(10)&lt;/b&gt;"><span class="autonumber"><span><b>(10)</b></span></span><a name="equation_10"></a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Body">where H is the shear operator.</p>
+        <p class="Body">The inverse transform is then:</p>
+        <p class="Body1">C-1 = T S-1 Rq-1 H-1 T-1</p>
+        <p class="Body" style="page-break-after: avoid;">Solving for C-1:</p>
+        <p class="Body1" style="page-break-after: avoid;">C-1 = T-1 S-1 Rq-1 H-1 T</p>
+        <p class="Body" style="margin-top: 12pt;margin-bottom: 16pt;">
+            <img src="../Resources/Images/SAL_equation_21.jpg" />
+        </p>
+        <p class="Body">Therefore, calling the <a href="../CH12 - Functions - CCF_Image_Processing/Image/Bilinear Warp.htm#warpx">warpx()</a> function with these parameters performs the transformation specified in <a href="#equation_10" target="" title="" alt="" class="MCXref_Equation"><span style="color: DarkBlue;" class="mcFormatColor">Equation (10)</span></a>.</p>
+        <p class="Body1">
+            <img src="../Resources/Images/SAL_equation_22.jpg" />
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

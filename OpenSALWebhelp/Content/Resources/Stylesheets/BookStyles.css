@@ -1,0 +1,1797 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+	font-size: 8pt;
+}
+
+h1
+{
+	font-family: Arial;
+	mc-heading-level: 2;
+	margin: 0;
+	padding-top: 0pt;
+	font-style: normal;
+	margin-top: 22pt;
+	font-weight: bold;
+	margin-bottom: 0.75em;
+	mc-hyphenate: never;
+	page-break-after: avoid;
+	page-break-before: auto;
+	font-size: 16pt;
+}
+
+h2
+{
+	font-weight: bold;
+	font-family: Arial;
+	mc-heading-level: 3;
+	left: 0.25in;
+	margin-top: 21.75pt;
+	mc-hyphenate: never;
+	page-break-after: avoid;
+	page-break-before: auto;
+	font-size: 14pt;
+	margin-left: 0.25in;
+}
+
+h3
+{
+	font-weight: bold;
+	font-family: Arial;
+	mc-heading-level: 4;
+	page-break-after: avoid;
+	mc-hyphenate: never;
+	page-break-before: auto;
+	font-size: 12pt;
+	margin-top: 21.83pt;
+	margin-left: 0.5in;
+	margin-bottom: 0.75em;
+}
+
+h4
+{
+	font-weight: bold;
+	font-family: Georgia;
+	mc-heading-level: 0;
+	page-break-after: avoid;
+	page-break-before: auto;
+	font-size: 10pt;
+	margin-top: 22pt;
+	margin-left: 0.5in;
+	margin-bottom: 0.75em;
+}
+
+p
+{
+	margin-top: 0pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	line-height: 12pt;
+	margin-bottom: 3pt;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+p.Title
+{
+	text-align: center;
+	page-break-before: always;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Arial;
+	margin-bottom: 0in;
+	margin: 0;
+	margin-top: 0px;
+	padding-top: 0.50in;
+	mc-hyphenate: never;
+	height: 2.25in;
+	font-size: 36pt;
+	line-height: 36pt;
+}
+
+p.Subtitle
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+	font-family: Arial;
+	mc-hyphenate: never;
+}
+
+MadCap|glossaryProxy
+{
+	border-top-style: none;
+}
+
+MadCap|indexProxy
+{
+	border-top-style: none;
+	font-family: Georgia;
+	font-size: 7pt;
+	line-height: 7px;
+	padding-left: 5pt;
+	padding-right: 5pt;
+	padding-top: 0px;
+	margin-top: 0px;
+	width: 2in;
+}
+
+@media print
+{
+	p.Publisher
+	{
+		page-break-after: always;
+	}
+
+	MadCap|xref.See_NoPrefix
+	{
+		mc-format: '{color DarkBlue}{i}{paratext}{/i}{/color} {pageref}';
+	}
+
+	MadCap|xref.See_Prefixed
+	{
+		mc-format: 'For more information, see {color DarkBlue}{i}{paratext}{/i}{/color} {pageref}';
+	}
+
+	h1.ChapterTitle
+	{
+		font-size: 28pt;
+		padding-bottom: 21.5pt;
+		mc-auto-number-offset: 0px;
+	}
+
+	h1.ChapterTitleNumbered
+	{
+		font-style: italic;
+		border-bottom: solid 2px #06347a;
+		padding-bottom: 21.5pt;
+		font-size: 28pt;
+		mc-auto-number-class: white;
+		mc-auto-number-format: 'CH:Chapter {chapnum}:  ';
+		mc-auto-number-offset: 50px;
+		mc-auto-number-position: outside-head;
+	}
+
+	h1.AppendixTitle
+	{
+		font-size: 28pt;
+		padding-bottom: 21.5pt;
+		mc-auto-number-class: white;
+		mc-auto-number-format: 'CH:Appendix {chapnum}: ';
+		mc-auto-number-offset: 50px;
+		mc-auto-number-position: outside-head;
+	}
+
+	p.CaptionNum_Example
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNum_ExampleIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.CaptionNum_Figure
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNum_FigureIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.CaptionNum_Table
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNumChap_Example
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNumChap_Figure
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNumChap_Table
+	{
+		margin-left: 1in;
+	}
+
+	p.CaptionNum_TableIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.CaptionNumChap_ExampleIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.CaptionNumChap_FigureIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.CaptionNumChap_TableIndent
+	{
+		margin-left: 1.2in;
+	}
+
+	p.Image
+	{
+		margin-left: 1in;
+	}
+
+	p.ImageIndent
+	{
+		margin-left: 1.25in;
+	}
+
+	p.ParameterIndent
+	{
+		margin-left: 1.25in;
+	}
+
+	p.Parameter
+	{
+		margin-left: 1in;
+	}
+
+	p.SeeAlso
+	{
+		margin-left: 1in;
+	}
+
+	p.Related
+	{
+		margin-left: 1in;
+	}
+
+	ul
+	{
+		margin-left: 1.125in;
+	}
+
+	ol
+	{
+		margin-bottom: 8pt;
+		margin-left: 1.15in;
+	}
+
+	p.API_heads
+	{
+		margin-left: 1in;
+	}
+
+	p.API_name
+	{
+		margin-left: 1in;
+	}
+
+	span.white
+	{
+		color: #ffffff;
+	}
+
+	p.Index1
+	{
+		margin-bottom: 2pt;
+		font-size: 8pt;
+		line-height: 12pt;
+		font-family: Georgia;
+	}
+
+	p.Index2
+	{
+		margin-bottom: 2pt;
+		font-size: 8pt;
+		line-height: 12pt;
+		font-family: Georgia;
+	}
+
+	p.Index3
+	{
+		margin-bottom: 2pt;
+		line-height: 12pt;
+		font-size: 8pt;
+		font-family: Georgia;
+	}
+
+	p.Index4
+	{
+		margin-bottom: 2pt;
+		font-size: 8pt;
+		line-height: 12pt;
+		font-family: Georgia;
+	}
+
+	MadCap|indexProxy
+	{
+		margin-top: 0px;
+		padding-left: 5pt;
+		padding-right: 5pt;
+		padding-top: 0px;
+		font-size: 8pt;
+		line-height: 12px;
+		width: inherit;
+		font-family: Georgia;
+	}
+
+	p.or
+	{
+		mc-auto-number-format: '- or -';
+		margin-top: 8pt;
+		margin-bottom: 2pt;
+	}
+
+	p.and
+	{
+		margin-top: 8pt;
+		margin-bottom: 2pt;
+		mc-auto-number-format: '- and -';
+	}
+
+	h2
+	{
+		margin-left: 0.625in;
+	}
+
+	h3
+	{
+		margin-left: 1in;
+	}
+
+	h4
+	{
+		margin-left: 1in;
+	}
+
+	ol.TableList
+	{
+		margin: 0;
+		margin-bottom: 4pt;
+		margin-left: 0.16in;
+	}
+
+	ul.TableBullets
+	{
+		margin: 0;
+		margin-bottom: 4pt;
+		margin-left: 0.13in;
+	}
+
+	li.BulletIndentSub
+	{
+		margin-left: 0.45in;
+	}
+
+	li.ListIndent2
+	{
+		margin-left: 0.53in;
+	}
+
+	li.BulletIndent2Sub
+	{
+		margin-left: 0.64in;
+	}
+
+	li.ListIndent2Sub
+	{
+		margin-left: 0.76in;
+	}
+
+	li
+	{
+		margin-left: 5pt;
+	}
+
+	li.BulletSub
+	{
+		margin-left: 0.26in;
+	}
+
+	li.BulletIndent
+	{
+		margin-left: 0.26in;
+	}
+
+	li.BulletIndent2
+	{
+		margin-left: 0.45in;
+	}
+
+	li.BulletSubSub
+	{
+		margin-left: 0.45in;
+	}
+
+	li.BulletIndentSubSub
+	{
+		margin-left: 0.64in;
+	}
+
+	li.ListSub
+	{
+		margin-left: 0.30in;
+	}
+
+	li.ListIndent
+	{
+		margin-left: 0.30in;
+	}
+
+	li.ListSubSub
+	{
+		list-style-position: outside;
+		margin-left: 0.55in;
+	}
+
+	li.ListIndentSub
+	{
+		margin-left: 0.53in;
+	}
+
+	li.ListIndentSubSub
+	{
+		list-style-position: outside;
+		margin-left: 0.8in;
+	}
+
+	p.Body
+	{
+		margin-left: 1in;
+		margin-right: 0.5in;
+	}
+
+	p.Body1
+	{
+		margin-left: 1.2in;
+		margin-right: 0.5in;
+	}
+
+	p.Body1LeadIn
+	{
+		margin-left: 1.25in;
+		margin-right: 0.5in;
+	}
+
+	p.Body2
+	{
+		margin-left: 1.4in;
+		margin-right: 0.5in;
+	}
+
+	p.Body3
+	{
+		margin-left: 1.6in;
+		margin-right: 0.5in;
+	}
+
+	p.BodyLeadIn
+	{
+		margin-left: 1in;
+		margin-right: 0.5in;
+	}
+
+	p.BodySpaceBefore
+	{
+		margin-left: 1in;
+		margin-right: 0.5in;
+	}
+
+	p.StepStart
+	{
+		margin-left: 1in;
+		margin-right: 0.5in;
+	}
+
+	MadCap|xref.FigTabExam
+	{
+		mc-format: '{color darkblue}{paranumonly}{/color}{color black} {pageref}{/color}';
+	}
+
+	MadCap|xref.Equation
+	{
+		mc-format: '{color darkblue}Equation {paranum}{/color} {color black}{pageref}{/color}';
+	}
+
+	img
+	{
+		max-width: 100%;
+	}
+
+	p.RelatedTopics
+	{
+		margin-left: 1in;
+	}
+
+	p.RelatedFunctions
+	{
+		margin-left: 1in;
+	}
+}
+
+div.copyright
+{
+	font-family: Georgia;
+	mc-hyphenate: never;
+	font-size: 8pt;
+	page-break-before: always;
+}
+
+MadCap|variable.PartNumber
+{
+	
+}
+
+p.PartNumber
+{
+	margin-top: 0pt;
+	mc-hyphenate: never;
+	font-family: Arial;
+	text-align: right;
+	font-size: 10pt;
+	margin-bottom: 2pt;
+}
+
+tfoot
+{
+	font-family: Arial;
+	font-size: 8pt;
+}
+
+p.Copyright
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	font-size: 8pt;
+}
+
+MadCap|tocProxy
+{
+	border-top-style: none;
+	font-family: Arial;
+	border-top-width: 0px;
+}
+
+p.TOC1
+{
+	mc-leader-format: 'none';
+	font-family: Arial;
+	margin-right: auto;
+	margin-top: 12pt;
+	font-size: 12pt;
+	color: #06347a;
+}
+
+p.TOC2
+{
+	margin-top: 3pt;
+	margin-left: 20pt;
+	margin-right: auto;
+	font-size: 10pt;
+}
+
+p.TOC3
+{
+	margin-left: 40pt;
+	margin-right: auto;
+}
+
+MadCap|pageFooter.OddPage
+{
+	font-size: 9pt;
+	font-family: Arial;
+}
+
+td
+{
+	font-size: 9pt;
+	font-family: Arial;
+	padding-top: 3pt;
+	vertical-align: top;
+	mc-hyphenate: never;
+	padding-bottom: 3pt;
+}
+
+th
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 9pt;
+	font-family: Arial;
+	left: 1px;
+	text-align: left;
+	vertical-align: top;
+	mc-hyphenate: never;
+	background-color: #f5f5f5;
+	padding-bottom: 3pt;
+	padding-top: 3pt;
+}
+
+tbody
+{
+	font-size: 9pt;
+	font-family: Arial;
+}
+
+thead
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 9pt;
+	font-family: Arial;
+}
+
+tr
+{
+	font-size: 9pt;
+	font-family: Arial;
+	page-break-inside: auto;
+}
+
+table
+{
+	font-size: 9pt;
+	font-family: Arial;
+	text-align: left;
+	vertical-align: top;
+	background-repeat: no-repeat;
+}
+
+caption
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 10pt;
+	font-family: Arial;
+	margin-bottom: 6pt;
+	padding-bottom: 6pt;
+	caption-side: top;
+	text-align: left;
+	padding-top: 6pt;
+	mc-hyphenate: never;
+}
+
+col
+{
+	font-size: 9pt;
+	font-family: Arial;
+}
+
+colgroup
+{
+	font-size: 9pt;
+	font-family: Arial;
+}
+
+p.HeaderLeft
+{
+	margin-bottom: 0;
+	font-family: Arial;
+}
+
+p.HeaderRight
+{
+	text-align: right;
+	font-family: Arial;
+	margin-bottom: 0;
+	margin: 0;
+}
+
+td.ChapterNumber
+{
+	background-repeat: no-repeat;
+	font-weight: bold;
+	font-style: italic;
+	background-position-y: center;
+	background-position-x: center;
+	vertical-align: middle;
+	font-size: 28pt;
+	padding-top: 20pt;
+	padding-bottom: 20pt;
+	text-align: center;
+	background-position: center right;
+	padding-right: 20pt;
+}
+
+p.Body
+{
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-bottom: 8pt;
+	margin-top: 2pt;
+	line-height: 12pt;
+	margin-left: 0.5in;
+}
+
+p.Body1
+{
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	line-height: 12pt;
+	margin-top: 2pt;
+	margin-bottom: 8pt;
+	margin-left: 0.68in;
+}
+
+p.Body2
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-left: 1.05in;
+}
+
+p.Body3
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-left: 1.38in;
+}
+
+MadCap|xref
+{
+	text-decoration: none;
+	mc-format: '{color black}For more information, see {/color}{i}{color darkblue}{paratext}{/color}{/i}{color black} on page {page}.{/color}';
+	color: #00008b;
+}
+
+caption.Numbered
+{
+	mc-auto-number-format: 'Table {n+}: ';
+}
+
+table.Footer
+{
+	table-layout: fixed;
+	width: 100%;
+	margin-left: 0.00in;
+	vertical-align: middle;
+	border: none;
+}
+
+p.Code1
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: 'Courier New';
+	margin-left: 0.25in;
+}
+
+p.Code2
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: 'Courier New';
+	margin-left: 0.50in;
+}
+
+p.Code3
+{
+	margin-top: 0pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: 'Courier New';
+	margin-left: 0.75in;
+	margin-bottom: 6pt;
+}
+
+div.list
+{
+	margin-left: 1in;
+}
+
+p.StepStart
+{
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	font-weight: bold;
+	page-break-after: avoid;
+	margin-top: 12pt;
+	margin-left: 0.5in;
+}
+
+span.Keyword
+{
+	font-family: Arial;
+	font-weight: bold;
+}
+
+MadCap|xref.ListOfPageNumber
+{
+	mc-format: 'For more information, see {i}{paratext}{/i} on page {page}.';
+	text-decoration: none;
+}
+
+a
+{
+	color: #00008b;
+}
+
+p.Code
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: 'Courier New';
+}
+
+table.Indented
+{
+	margin-left: 1.25in;
+}
+
+MadCap|footnote
+{
+	font-size: 8pt;
+	font-family: Arial;
+}
+
+p.Image
+{
+	page-break-before: avoid;
+	margin-bottom: 6pt;
+	margin-top: 24pt;
+	margin-left: 0.5in;
+}
+
+p.Caption
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	margin-left: 1in;
+	page-break-before: avoid;
+	font-weight: bold;
+	margin-top: 12pt;
+}
+
+p.ImageIndent
+{
+	page-break-before: avoid;
+	margin-bottom: 6pt;
+	margin-top: 24pt;
+	margin-left: 0.75in;
+}
+
+p.CaptionIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	margin-left: 1.25in;
+	page-break-before: avoid;
+	font-weight: bold;
+	margin-top: 12pt;
+}
+
+p.BodyLeadIn
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-left: 0.5in;
+}
+
+p.Body1LeadIn
+{
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-left: 0.68in;
+}
+
+div.TableBugWorkaround
+{
+	margin-left: 0in;
+}
+
+dd
+{
+	margin-left: 0px;
+}
+
+h1.ChapterTitle
+{
+	font-style: italic;
+	border-bottom: solid 2px #06347a;
+	mc-heading-level: 1;
+	font-size: 24pt;
+	padding-bottom: 9.5pt;
+}
+
+p.BodySpaceBefore
+{
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	font-family: Georgia;
+	margin-bottom: 8pt;
+	margin-top: 22pt;
+	margin-left: 0.5in;
+}
+
+p.TOC4
+{
+	margin-left: 60pt;
+	mc-leader-offset: 0pt;
+	margin-right: auto;
+}
+
+p.MiniTOC2
+{
+	margin-left: 20pt;
+}
+
+p.MiniTOC3
+{
+	margin-left: 40pt;
+}
+
+p.MiniTOC4
+{
+	margin-left: 60pt;
+}
+
+caption.NumberedBook
+{
+	mc-auto-number-format: 'Table {chapnum}-{n+}: ';
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #00008b;
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+h6
+{
+	mc-heading-level: 0;
+}
+
+div.GlossaryPageDefinition
+{
+	font-size: 10pt;
+	font-family: Georgia;
+	line-height: 12pt;
+	margin-left: 0.50in;
+	margin-top: 3pt;
+}
+
+div.GlossaryPageEntry
+{
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+div.GlossaryPageHeading
+{
+	font-family: Arial;
+	border-bottom-width: 0px;
+	font-size: 14pt;
+}
+
+div.GlossaryPageTerm
+{
+	font-size: 10pt;
+	margin-left: 0.25in;
+}
+
+caption.Example
+{
+	mc-auto-number-format: 'Example {n+}: ';
+}
+
+caption.ExampleBook
+{
+	mc-auto-number-format: 'Example {chapnum}-{n+}: ';
+}
+
+p.IndexHeading
+{
+	margin: 0;
+	font-family: Arial;
+	font-size: 11pt;
+	text-align: left;
+	margin-bottom: 8pt;
+	margin-top: 20pt;
+	color: #06347a;
+}
+
+p.Index1
+{
+	margin-top: 0pt;
+	margin-right: 0in;
+	white-space: normal;
+	font-size: 7pt;
+	line-height: 7pt;
+	margin-bottom: 2pt;
+}
+
+p.Index2
+{
+	margin-left: 0.125in;
+	white-space: normal;
+	font-size: 7pt;
+	line-height: 7pt;
+	margin-bottom: 2pt;
+}
+
+MadCap|glossaryTerm
+{
+	color: #06347a;
+	font-weight: normal;
+}
+
+p.MiniTOC1
+{
+	line-height: 8pt;
+	font-family: Arial;
+	font-size: 8pt;
+	color: #06347a;
+}
+
+a.GlossaryPageTerm:visited
+{
+	text-decoration: none;
+}
+
+a.Popup:visited
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #800000;
+}
+
+a:hover
+{
+	color: #800000;
+}
+
+a.Popup:link
+{
+	color: #00008b;
+}
+
+MadCap|breadcrumbsProxy
+{
+	font-family: Arial;
+	font-size: 8pt;
+	border-bottom-color: #06347a;
+	border-bottom-width: 1px;
+}
+
+MadCap|topicToolbarProxy
+{
+	border-top-color: #06347a;
+	border-top-style: solid;
+	border-top-width: 1px;
+	margin-top: 0.5in;
+}
+
+MadCap|miniTocProxy
+{
+	border-top-color: #a8a9ad;
+	margin-top: 30px;
+}
+
+MadCap|conceptLink
+{
+	color: #00008b;
+}
+
+MadCap|keywordLink
+{
+	color: #00008b;
+}
+
+MadCap|popupHead
+{
+	color: #06347a;
+}
+
+MadCap|relatedTopics
+{
+	color: #00008b;
+}
+
+MadCap|shortcut
+{
+	color: #00008b;
+}
+
+MadCap|xref.ConceptPageNumber
+{
+	text-decoration: none;
+}
+
+MadCap|xref.IndexPageNumber
+{
+	text-decoration: none;
+}
+
+MadCap|xref.TOCPageNumber
+{
+	text-decoration: none;
+}
+
+p.Draft
+{
+	color: #4169e1;
+	font-family: Arial;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+table.ITAR
+{
+	background-repeat: no-repeat;
+	background-image: url('../Images/Infrastructure/ITAR.png');
+}
+
+p.Indent
+{
+	margin-left: 0.25in;
+}
+
+p.EquationNumber
+{
+	text-align: right;
+	font-family: Georgia;
+	mc-auto-number-format: 'E:{b}({n+}){/b}';
+}
+
+td.IndentedContent
+{
+	font-size: 9pt;
+	font-family: Arial;
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	vertical-align: top;
+	mc-hyphenate: never;
+	padding-left: 0.25in;
+}
+
+p.Parameter
+{
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-top: 2pt;
+	margin-bottom: 8pt;
+	font-family: 'Courier New';
+	font-style: italic;
+	page-break-after: avoid;
+	margin-left: 0.5in;
+}
+
+p.ParameterIndent
+{
+	text-align: left;
+	widows: 3;
+	orphans: 3;
+	mc-hyphenate-shortest-word: 5;
+	mc-hyphenate-shortest-prefix: 3;
+	mc-hyphenate-shortest-suffix: 3;
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-top: 2pt;
+	margin-bottom: 8pt;
+	font-family: 'Courier New';
+	font-style: italic;
+	page-break-after: avoid;
+	margin-left: 0.75in;
+}
+
+p.API_name
+{
+	line-height: normal;
+	margin: 0.83em;
+	margin-right: 0em;
+	margin-top: 23.83pt;
+	mc-hyphenate: never;
+	font-family: Georgia;
+	margin-left: 0.5in;
+	font-size: 12pt;
+}
+
+p.API_heads
+{
+	font-weight: bold;
+	line-height: normal;
+	mc-hyphenate: never;
+	margin: 1.12em;
+	margin-right: 0em;
+	margin-top: 24.12pt;
+	font-family: Arial;
+	margin-left: 0.5in;
+	font-size: 12pt;
+}
+
+p.Index3
+{
+	margin-left: 0.25in;
+	white-space: normal;
+	font-size: 7pt;
+	line-height: 7pt;
+	margin-bottom: 2pt;
+}
+
+p.Index4
+{
+	font-size: 8pt;
+	margin-left: 0.50in;
+	white-space: normal;
+}
+
+p.CaptionNum_Example
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.5in;
+	mc-auto-number-format: 'GX:{b}Example {n+}: {/b}';
+}
+
+p.CaptionNum_ExampleIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.68in;
+	mc-auto-number-format: 'GX:{b}Example {n+}: {/b}';
+}
+
+p.CaptionNum_Figure
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	page-break-before: avoid;
+	margin-top: 12pt;
+	page-break-after: auto;
+	margin-left: 0.5in;
+	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
+}
+
+p.CaptionNum_FigureIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	page-break-before: avoid;
+	margin-top: 12pt;
+	page-break-after: auto;
+	margin-left: 0.68in;
+	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
+}
+
+p.CaptionNum_Table
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-top: 18pt;
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-bottom: 5pt;
+	margin-left: 0.5in;
+	mc-auto-number-format: 'GT:{b}Table {n+}: {/b}';
+}
+
+p.CaptionNum_TableIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.68in;
+	mc-auto-number-format: 'GT:{b}Table {n+}: {/b}';
+}
+
+p.CaptionNumChap_Example
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	mc-auto-number-format: 'CX:{b}Example {chapnum}-{n+}: {/b}';
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.5in;
+}
+
+p.CaptionNumChap_ExampleIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	mc-auto-number-format: 'CX:{b}Example {chapnum}-{n+}: {/b}';
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.68in;
+}
+
+p.CaptionNumChap_Figure
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	page-break-before: avoid;
+	margin-top: 12pt;
+	mc-auto-number-format: 'CF:{b}Figure {chapnum}-{n+}: {/b}';
+	page-break-after: auto;
+	margin-left: 0.5in;
+}
+
+p.CaptionNumChap_FigureIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 18pt;
+	page-break-before: avoid;
+	margin-top: 12pt;
+	mc-auto-number-format: 'CF:{b}Figure {chapnum}-{n+}: {/b}';
+	page-break-after: auto;
+	margin-left: 0.68in;
+}
+
+p.CaptionNumChap_Table
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	mc-auto-number-format: 'CT:{b}Table {chapnum}-{n+}: {/b}';
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.5in;
+}
+
+p.CaptionNumChap_TableIndent
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-bottom: 3pt;
+	margin-top: 18pt;
+	mc-auto-number-format: 'CT:{b}Table {chapnum}-{n+}: {/b}';
+	page-break-after: avoid;
+	page-break-before: auto;
+	margin-left: 0.68in;
+}
+
+h1.AppendixTitle
+{
+	font-style: italic;
+	border-bottom: solid 2px #06347a;
+	mc-heading-level: 1;
+	font-size: 24pt;
+	padding-bottom: 9.5pt;
+}
+
+h1.ChapterTitleNumbered
+{
+	mc-heading-level: 1;
+	border-bottom: solid 2px #06347a;
+	font-style: italic;
+	font-size: 24pt;
+	padding-bottom: 9.5pt;
+}
+
+p.or
+{
+	margin-top: 8pt;
+	margin-bottom: 2pt;
+	mc-auto-number-format: '- or -';
+}
+
+MadCap|popupBody
+{
+	background-color: #f5f5f5;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+p.and
+{
+	margin-top: 8pt;
+	margin-bottom: 2pt;
+	mc-auto-number-format: '- and -';
+}
+
+p.Caution
+{
+	mc-auto-number-format: '{b}{color #ff6600}Caution{/color}{/b}';
+	font-family: Arial;
+}
+
+p.Important
+{
+	mc-auto-number-format: '{b}{color #800000}Important{/color}{/b}';
+	font-family: Arial;
+}
+
+p.Note
+{
+	mc-auto-number-format: '{b}{color #06347a}Note{/color}{/b}';
+	font-family: Arial;
+}
+
+p.Notes
+{
+	mc-auto-number-format: '{b}{color #06347a}Notes{/color}{/b}';
+	font-family: Arial;
+}
+
+p.RelatedFunctions
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 11pt;
+	margin-top: 24pt;
+	margin-left: 0.5in;
+	mc-auto-number-format: 'Related Functions';
+}
+
+p.RelatedTopics
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 11pt;
+	margin-top: 24pt;
+	mc-auto-number-format: 'Related Topics';
+	margin-left: 0.5in;
+}
+
+p.SeeAlso
+{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 11pt;
+	margin-top: 24pt;
+	mc-auto-number-format: 'See Also';
+	page-break-after: avoid;
+	margin-left: 0.5in;
+}
+
+p.Tip
+{
+	mc-auto-number-format: '{b}{color #009933}Tip{/color}{/b}';
+	font-family: Arial;
+}
+
+p.Warning
+{
+	mc-auto-number-format: '{b}{color #cc0000}Warning{/color}{/b}';
+	font-family: Arial;
+}
+
+MadCap|xref.Equation
+{
+	mc-format: '{color darkblue}Equation {paranum}{/color}';
+}
+
+MadCap|xref.FigTabExam
+{
+	mc-format: '{color darkblue}{paranumonly}{/color}';
+}
+
+MadCap|xref.See_NoPrefix
+{
+	color: #000000;
+	text-decoration: none;
+	mc-format: '{color DarkBlue}{i}{paratext}{/i}{/color}';
+}
+
+MadCap|xref.See_Prefixed
+{
+	color: #000000;
+	text-decoration: none;
+	mc-format: 'For more information, see {color DarkBlue}{i}{paratext}{/i}{/color}';
+}
+
+MadCap|xref.SimpleLink
+{
+	font-style: normal;
+	mc-format: '{color darkblue}{paratext}{/color}';
+}
+
+MadCap|xref.SimpleLinkItalic
+{
+	mc-format: '{color darkblue}{i}{paratext}{/i}{/color}';
+}
+
+ul
+{
+	font-family: Georgia;
+	list-style-type: square;
+	font-size: 10pt;
+	margin-bottom: 8pt;
+	margin-left: 0.55in;
+}
+
+ul.TableBullets
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-left: 0.07in;
+	margin-bottom: 4pt;
+}
+
+ul.ul
+{
+	margin-top: 3.12pt;
+}
+
+ol
+{
+	font-family: Georgia;
+	font-size: 10pt;
+	list-style-type: decimal;
+	margin-bottom: 8pt;
+	margin-left: 0.6in;
+}
+
+ol.TableList
+{
+	font-family: Arial;
+	font-size: 9pt;
+	margin-top: 1.12em;
+	margin-left: 0.1in;
+	margin-bottom: 4pt;
+}
+
+ol.ul
+{
+	margin-top: 0.12pt;
+	margin-bottom: 0.12pt;
+	margin-left: 0in;
+}
+
+li
+{
+	padding-bottom: 6pt;
+	margin-left: 0.125in;
+}
+
+li.BulletIndent
+{
+	list-style-type: square;
+	margin-left: 0.48in;
+}
+
+li.BulletIndent2
+{
+	list-style-type: square;
+	margin-left: 0.83in;
+}
+
+li.BulletIndent2Sub
+{
+	margin-left: 1in;
+	list-style-type: disc;
+}
+
+li.BulletIndentSub
+{
+	list-style-type: disc;
+	margin-left: 0.65in;
+}
+
+li.BulletIndentSubSub
+{
+	margin-left: 0.83in;
+	list-style-type: circle;
+}
+
+li.BulletSub
+{
+	list-style-type: disc;
+	margin-left: 0.30in;
+}
+
+li.BulletSubSub
+{
+	margin-left: 0.48in;
+	list-style-type: circle;
+}
+
+li.ListIndent
+{
+	list-style-type: decimal;
+	margin-left: 0.36in;
+}
+
+li.ListIndent2
+{
+	list-style-type: decimal;
+	margin-left: 0.60in;
+}
+
+li.ListIndent2Sub
+{
+	list-style-type: lower-alpha;
+	margin-left: 0.83in;
+}
+
+li.ListIndentSub
+{
+	list-style-type: lower-alpha;
+	margin-left: 0.60in;
+}
+
+li.ListIndentSubSub
+{
+	list-style-type: lower-roman;
+	list-style-position: outside;
+	margin-left: 0.8in;
+}
+
+li.ListSub
+{
+	list-style-type: lower-alpha;
+	margin-left: 0.36in;
+}
+
+li.ListSubSub
+{
+	list-style-type: lower-roman;
+	list-style-position: outside;
+	margin-left: 0.55in;
+}
+
+li.SingleStep
+{
+	list-style-type: none;
+	list-style-image: url('../Images/Infrastructure/SingleStep.jpg');
+	margin-left: 0in;
+	padding-bottom: 0pt;
+}
+

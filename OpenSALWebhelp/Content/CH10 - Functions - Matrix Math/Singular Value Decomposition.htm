@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="706" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - Matrix Math|Matrix Float and Double Precision Functions" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="mYW9AhCcozGql8LVYiYUE3JUrJoq3sSRsOM3NUq5QYnB09V2SLWQavkLiMTyHJbLroSRt2jGZgKAGGNYaslV3jFoc8mkJtDBdGmm0NJiVC5JN5E6CGAXdp2mZF+JLWHsKdT/8vh5hs3Be0oFehxVRq6gsQGJFJ2a4FGw7L2MlzTiO3wL2BCAEDVPFAAjrIXijCanrWYhzEyryT/+W54YRMxsSgUhDxFSIkM8RZofWEbL9fHllibWjgbh3Q9TkVZgtPwD3LZjscKG8kitCicdh2zDysiA6AuQu2ODgy5jWY8iCj1X/DXKzDE8c7foUkiVueUbIcXfPmhjSy6kdDpbIElnEZzhnV28M11lliY0vVH3YnNvtLcLPil9cBabZLLyniNA2G47gEDh1ySW81r0Dj4LtAqKbPSp1pbPnVDVpK1DsTbl6CSir3i7zCre2LFe2s4v0CKYzePl2EnCBe17DElgREBke53lvOZMcIFDvc4apDKcDk6lzTl93wqbwgLiM4GObqlKPN1IX2qRg6ebzAKXuH/czwP5Px8pwHGk2saDDKlwDM2KaIV6/wMnZIPXDBstenzvAtgi6cX4M6MHR3IisftQbcs1yJCqBmw3kfi5oy1j5pgnDDi1Ug+AzlIu+rhDNTKxQs+VTnMvXNJOZ5cYmHUcniGMxnCFaq0Envp6cuSYOBZFQLKaeRGuAjl8t8aAUbI2Aa18MflLQ2xvanf4cI3yCZw6VHW7pO+bNdZ2Lexw/IPRluRt/zm/MmxEWBZIm3bCqmPdUVTxIZMq+hk+s8ikUaPVVHk+nmvs6yXbgCB8Uv9YPZcPuXgYIEMc6t/Ln5aTXgzp0lnEt2hRwQTJljesX7qIoK+9nsB+2MVDNtmUh1KZNqnWcRCbvRmm9MxkuLLJ0fTq9Bl78qKoxEDZbdCuJhPZEpTz2EFk7zAJaQGK70bZdyzNMSzqqZB0s6T8YwVWEHbM67gLufMwvCe3Yf3sPAiXhP18gsJhVHKTpAA7e7n0mTjTRRI37pMy" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Singular Value Decomposition</title>
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH10 - Functions - Matrix Math/Singular Value Decomposition.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2 style="page-break-before: always;page-break-after: auto;margin-left: 0.5in;"><a name="kanchor725"></a>Singular Value Decomposition</h2>
+        <p class="API_name"><a name="zmat_svdx"></a><a name="kanchor726"></a>zmat_svdx()</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_funct_equat_201.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 180px;" />
+            <col style="width: 278px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>zmat_svdx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* complex m x n matrix. Destroyed on exit */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Atcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A column stride (&gt;=n) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *D,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector of singular values */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *U,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix of left singular vectors of A as rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Utcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix U column stride (&gt;=m) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *V,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix of right singular vectors of A as rows */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Vtcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix V column stride (&gt;=n) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A row and U row and column count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A col. and V row and column count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_svd_tune *svd_tune,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* reserved, specify NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *cond_num,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* condition number, or NULL */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 *numerical_rank,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* numerical rank of matrix A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 sal_svd_flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* SAL_SVD_XXXX flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The zmat_svdx() function performs a singular value decomposition (SVD) of a matrix. The function returns <code>SAL_SUCCESS </code>for success. Otherwise, the function failed to converge within the maximum number of iterations.</p>
+        <p class="Body">The zmat_svdx() function treats <i>numerically rank-deficient matrices </i>in a special manner. It zeros all singular values below a certain threshold, which depends on the dimensions and the norm of input matrix <i>A</i>.</p>
+        <p class="Body">The implemented threshold is <i>m </i>• || <i>A </i>||2 • <i>macheps</i>, where <i>macheps </i>= 2-23 ≈ 1.2e<sup>-7</sup> is the single precision “machine epsilon.” The number of singular values greater than or equal to this threshold is the <i>numerical rank </i>(<i>r</i>).</p>
+        <p class="Body">An <i>m </i>x <i>n </i>(<i>m </i>&gt;= <i>n</i>) matrix <i>A </i>is numerically rank-deficient if <i>r </i>&lt; <i>n</i>. In this case, the condition number <i>D</i>[<span style="font-family: serif;">0</span>]/<i>D</i>[<i>n</i>-1] is infinite. Therefore, the <code>cond_num </code>is the ratio of the largest to the smallest <i>non-zero</i> singular value (<i>D</i>[<span style="font-family: serif;">0</span>]/<i>D</i>[<i>r</i>-1]).</p>
+        <p class="Body">For best performance:</p>
+        <ul>
+            <li value="1">Compute minimum required rows in <i>U </i>and <i>V</i>. In the <code>sal_svd_flag </code>options, <code>SAL_SVD_THIN </code>performs better than <code>SAL_SVD_FULL</code>, and <code>SAL_SVD_TRUNC_TO_RANK </code>performs better than <code>SAL_SVD_THIN</code>.</li>
+            <li value="2">Where possible, forgo <i>U </i>and <i>V </i>computation. If <i>V </i>is not required, initialize <i>V </i>= <code>NULL </code>and <code>sal_svd_flag </code>= <code>SAL_SVD_NO_V</code>. If <i>U </i>is not required and <i>m </i>= <i>n</i>, set <i>U </i>= <code>NULL</code>.</li>
+        </ul>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">A</p>
+        <p class="Body1">An m x n matrix (<i>m </i>&gt;= <i>n</i>), for which all singular values and all left singular vectors and (optionally) all right singular vectors are to be computed. Destroyed on exit.</p>
+        <p class="Parameter">Atcols</p>
+        <p class="Body1">Specifies a column stride of input matrix <i>A</i>.</p>
+        <p class="Parameter">V</p>
+        <p class="Body1">Unitary output <i>n </i>x <i>n </i>or <i>r </i>x <i>n </i>(depending on the <code>sal_svd_flag </code>value) matrix that contains the right singular vectors for complex matrix <i>A </i>as rows. Initialize <i>V </i>= <code>NULL </code>to skip right singular vectors calculation.</p>
+        <p class="Parameter">Vtcols</p>
+        <p class="Body1">Specifies a column stride of output matrix <i>V</i>.</p>
+        <p class="Parameter">U</p>
+        <p class="Body1">Unitary output <i>m </i>x <i>m</i>, <i>n </i>x <i>m</i>, or <i>r </i>x <i>m </i>(depending on the <code>sal_svd_flag </code>value) matrix that contains the left singular vectors for complex matrix <i>A </i>as rows. Initialize <i>U </i>= <code>NULL </code>to skip left singular vectors calculation for <i>m </i>= <i>n </i>only.</p>
+        <p class="Parameter">Utcols</p>
+        <p class="Body1">Specifies a column stride of output matrix <i>U</i>.</p>
+        <p class="Parameter">D</p>
+        <p class="Body1">A float output vector of length <i>n </i>containing the singular values of <i>A </i>in descending order (<i>D</i>[<i>i</i>] &gt;= <i>D</i>[<i>i</i>+1]).</p>
+        <p class="Parameter">cond_num</p>
+        <p class="Body1">The condition number output pointer. Initialize <code>cond_num </code>= <code>NULL </code>to skip the condition number calculation.</p>
+        <p class="Parameter">numerical_rank</p>
+        <p class="Body1">Numerical rank of matrix <i>A</i>.</p>
+        <p class="Parameter">sal_svd_flag</p>
+        <p class="Body1">Flag to control the SVD calculation. The following <code>sal_svd_flag </code>values can be ORed together:</p>
+        <p class="Body1">To control the sizes of the <i>U </i>and <i>V </i>matrices:</p>
+        <p class="ParameterIndent">SAL_SVD_FULL</p>
+        <p class="Body2">Compute the full <i>m </i>x <i>m U </i>matrix (default).</p>
+        <p class="ParameterIndent">SAL_SVD_THIN</p>
+        <p class="Body2">Compute only the first n rows of the <i>U </i>matrix (“thin” SVD).</p>
+        <p class="ParameterIndent">SAL_SVD_TRUNC_TO_RANK</p>
+        <p class="Body2">Compute only the first <i>r </i>rows of the <i>U </i>and <i>V </i>matrices, where r is the numerical rank of <i>A</i>. This operation is sometimes called the truncated SVD of matrix <i>A</i>.</p>
+        <p class="Body1">To control the <i>V </i>matrix computation:</p>
+        <p class="ParameterIndent">SAL_SVD_NO_V</p>
+        <p class="Body2">Do not compute the <i>V </i>matrix (default).</p>
+        <p class="ParameterIndent">SAL_SVD_V</p>
+        <p class="Body2">Compute the <i>V </i>matrix.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../CH03 - Matrix Decomposition/SVD.htm#top" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Singular Value Decomposition</i></span></a>
+        </p>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="Eigenvalues Eigenvectors.htm#zmatherm_eigx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>zmatherm_eigx()</i></span></a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

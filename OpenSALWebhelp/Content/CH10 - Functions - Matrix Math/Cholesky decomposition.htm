@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2275" MadCap:lastWidth="633" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - Matrix Math|Matrix Float and Double Precision Functions" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="KRyCA8vpfVrCqhZbylNYqyqbDUqk2UcTPRrHvM9o+eJN5/RniIOmYzxM8SJzVhnNS9Y7h8zWYHp4POq0XU3VouzdHDwVJt9XF1lToNAbs/Cec9WfVkk6phO0Hataa+4bHW33wwCLR3SYY3cmtkqCR+D5r/Zhj3qg95mL5X2JlV/XtnM4dE4AYrsKeSX1Ys4Fmrw40M+I5L7BU1ZShGyGsLJeeesrfrGb13zSQmA9zJdIu4Vj/VlWD8DOL2DM75hCrU+QepYa7pKSib1OYtBHa0kZpQ8KeGgvyMz78tm2vBAQ97tG9IqLjYgQdbi9OjZoVtI5oPSuVoWyoIqIxO0z249FCRrN81z16Ks1d83zpC7ryu1ak4qfRs3OSXhsgkJoajWTYeqhZZeah4yFbC2estNgebRcyuvUIxUgb/uIyGXHkWOKVGQlrMMh6P2y3HVN0yp4z4ud2qjr9aAN76dzxUpYOCIyxCwWCpWo13JruYFf9e61Q43wMslnemIUkwFc5fg3MS5dynYm5+PwmDEovc+XyXEKmPwiaWICQxHnkm68+uoofpVa0FqGF5qLIQB/QA2ScwK1gcrZf6Y8V3toLHJo7ZLm8tDJdGTQ/xCbDPOgsQEtUXZ7FtcateWTJTeBSToYVPzZi/JOsdbOrG4JpOwQbtEBq+LsTeqKJ6YonBJONvlVjfdLtwSYgauSwsBz30TznUxyZ9wUV440jifRnp0227hW81kkyC7CDiSnWMVmGXcf2Qpt6EDnMR7DwMxQKrkwy3Ne80RyFKmXLcJJS6KwLMWOpW7cG9Aea+aCHEfDRIxTGf48dYpE7jzGchl62fpQZ6429h1aXRwFfME9tcFqqoxKXymiBV/ADR7Ixa6bjx5YgfXLB8+3k7MHXt3E630NrXx8C1m5D8OM32eVAAsarTk2IG7zLGanXqgfFViN3b1GCoTpeuoXV8SEmwiadrURKocZ9fj+4yG7sLnhaQU3b4rVvTq3fnEXPuDMj3ySVFcns8weR2PV9IHM7WKa" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Matrix Cholesky Decomposition</title>
+        <link href="../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH10 - Functions - Matrix Math/Cholesky decomposition.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor714"></a>Matrix Cholesky Decomposition</h2>
+        <p class="API_name"><a name="mat_chol_decx"></a><a name="kanchor715"></a>mat_chol_decx()<MadCap:conditionalText MadCap:conditions="Default.OpenSALonly">, <a name="mat_chol_decdx"></a>mat_chol_decdx()</MadCap:conditionalText></p>
+        <p class="Image" style="font-family: serif;">A = L • D •&#160;U</p>
+        <p class="API_heads">Syntax</p>
+        <table style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 57px;">
+            </col>
+            <col style="width: 147px;">
+            </col>
+            <col style="width: 333px;">
+            </col>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>mat_chol_decx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* symmetric positive definite input matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 A_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A column stride */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *LDU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LDU_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LDU column stride */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row/column count for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *rcond,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* estimated reciprocal condition number */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *v,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* minimizing vector for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* type of condition estimate */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">SAL_i32 <b>mat_chol_decdx</b>(</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* symmetric positive definite input matrix */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 A_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix A column stride */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *LDU,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output matrix */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 LDU_tcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* matrix LDU column stride */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row/column count for A */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *rcond,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* estimated reciprocal condition number */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *v,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* minimizing vector for A */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* type of condition estimate */</td>
+            </tr>
+            <tr MadCap:conditions="Default.OpenSALonly">
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The <MadCap:conditionalText MadCap:conditions="Default.OpenSALonly">mat_chol_decx() and mat_chol_decdx() functions perform</MadCap:conditionalText> <![CDATA[ ]]> the square-root-free Cholesky decomposition of square symmetric positive definite matrices and optional condition estimate.</p>
+        <p class="Body">The source matrix <i>A</i> is contained in a larger matrix, with a column count, <i>A_tcols</i>, greater than or equal to <i>n</i>, the column and row count of <i>A</i>.</p>
+        <p class="Body">This function executes out-of-place only.</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">A, A_tcols</p>
+        <p class="Body1">Input matrix and its column element stride.</p>
+        <p class="Parameter">LDU</p>
+        <p class="Body1">Output matrix containing <i>L</i>, <i>D</i>, and <i>U </i>in packed format, so that <br></br><i>A = L · D · U</i>. It consists of:</p>
+        <ul>
+            <li class="BulletIndent" value="1">a lower triangular matrix (<i>L</i>)</li>
+            <li class="BulletIndent" value="2">
+                <p>its Hermitian transpose, upper triangular matrix (<i>U </i>= <i>LH</i>)</p>
+                <p class="and" MadCap:autonum="- and -"><span class="autonumber"><span>- and -</span></span>&#160;</p>
+            </li>
+            <li class="BulletIndent" value="3">the reciprocals of the diagonal matrix <i>D</i></li>
+        </ul>
+        <p class="Body1">The elements of <i>L </i>above the diagonal and the elements of <i>U</i> below the diagonal are not stored because they are all equal to <span style="font-family: serif;">0.0</span>. The diagonal elements of <i>L</i> and <i>U </i>are not stored because they are all equal to <span style="font-family: serif;">1.0</span>.</p>
+        <p class="Parameter">LDU_tcols</p>
+        <p class="Body1">Output matrix column element stride.</p>
+        <p class="Parameter">n</p>
+        <p class="Body1">Row and column count for <i>A</i> and <i>LDU</i>.</p>
+        <p class="Parameter">rcond</p>
+        <p class="Body1">
+            <MadCap:conditionalText MadCap:conditions="Default.OpenSALonly">Reserved; specify <code>NULL</code>.</MadCap:conditionalText>
+        </p>
+        <p class="Parameter">v</p>
+        <p class="Body1">
+            <MadCap:conditionalText MadCap:conditions="Default.OpenSALonly">Reserved; specify <code>NULL</code>.</MadCap:conditionalText>
+        </p>
+        <p class="Parameter">flag</p>
+        <p class="API_heads">Returns</p>
+        <p class="Parameter">SAL_SUCCESS</p>
+        <p class="Body1">Successful execution.</p>
+        <p class="Body1">Other return values</p>
+        <p class="Body1">A floating point exception is detected. The resulting matrix is unusable.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../CH01 - Introduction/Calling_Conventions.htm#Address_strides" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Address Strides</i></span></a>
+        </p>
+        <p class="Body"><a href="../CH03 - Matrix Decomposition/Intro_matrixdecomp.htm#top" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Matrix Decompositions and Condition Numbers</i></span></a>
+        </p>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="Matrix LU Solution.htm#mat_lud_solx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>mat_lud_solx(), mat_lud_soldx()</i></span></a>
+        </p>
+        <p class="Body"><a href="Matrix LU Solution - Complex.htm#cmat_lud_solx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>cmat_lud_solx(), cmat_lud_soldx(), zmat_lud_solx(), zmat_lud_soldx()</i></span></a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

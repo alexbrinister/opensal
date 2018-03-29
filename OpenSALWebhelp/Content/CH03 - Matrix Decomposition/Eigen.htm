@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="396" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="About Matrix Decomposition" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="iE2wkdImrl6aFbuiNYWr5bJSbyrfZ4rrrVyiChM1+OJWPX1ecsn7+Na61K67lRU9DJZT97nbWITFx844Lmh74QoOXLimFDSYY3EU6FI3quJ7LwkUWPdwywB1FecD7AxQuOzMWsMVHIle6WyjCk7a8x2j1mBccz0CrCfEHitTmBNLtwySKakEqKoYurI6HB0amfV7tQ/UZXGbin4/oNH06iY8Y5LAtZN2WZGSJLRnDRaX+0sMSzrQuncNTKw8kRHxbnSmfdMPjAPBQrJ0HbxjFFrlP+fkMdlKXvHQD7fksJuqYcdeEPEicn/CbZ1e1NqUYlSpSmVF6FiGBvGrXBLZY2WW2DWcbJbnTR767EoS68YcAw9myirPRQ+ZjwMO5hbx8Fk+ecQ+JJptLgJfbuQ7kFaGQaAnpC2U5Dzdm3CMAtrmgc/UYNqFXb6eeJtZ8BJ8xfgJSo2luX05caOrd9g1swbcrSQMRULP3jHH8CqeUR3hwQOV4OCWv44X/oTkGQGdPapqVtyl8K4N0kyYRF/M2QwPvNwnrP2gTmJECt4zI4haO5rbyMycfgLnWZdTYNi1/a4lqtCU8DR1SERXjtukbYu0/Lft3PPkGJ62SLtC0sdkMlqHHEy9fjasPTvPJi2jm+leCRW3vCTVWENjVXI13UaQLZxsCTA8Rqb6xm/I2fBln3EXoZrwGCWXSInc7CEDyKagr89WJPNdnWR4KaFKVFmcgayfnh2TKxY2q73xhFkjKOVRLCqcgb2ajZkAakuHp4++EJARMF8WA9mnY3N0z6w2NFEMLSnhvZe4WYxB5zfDYR6mLYCtOj50q4lvMemWW5gPwDu7u1392BymzxLyeNuq/IOdl9RbS+LvvGWEfcOn78FasNhc78nPLzv7z/0wmjv0oBKUtirYuX+hWroJ4sKhqhEqIBIvs6jAxWgHyzOicgIsi2LiYMPbOAxnfg4Ss9wum7sqVzLok3c+RVZ+dz4yOieEMVpddxa28gallh3oktN1OGrk2XB51BdyPSr5" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Symmetric Matrix Eigenvalues and Eigenvectors</title>
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH03 - Matrix Decomposition/Eigen.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: avoid;"><a name="top"></a><a name="kanchor73"></a>Symmetric Matrix Eigenvalues and Eigenvectors</h1>
+        <p class="Body">Given a matrix <i>A</i>, the <i>eigenvalue problem</i> is to find the scalars l (the eigenvalues) and corresponding nonzero vectors z (the <i>eigenvectors</i>) so that <i>A</i> • z = λ • z. If the matrix <i>A</i> is real symmetric, this problem is called a Symmetric Eigenvalue Problem (SEP). If A is a Hermitian matrix, then the problem of finding the eigenvalues and eigenvectors is called the Hermitian Eigenvalue Problem (HEP). The eigenvalues of a Hermitian matrix are always real.</p>
+        <p class="Body"><a name="kanchor74"></a>A spectral factorization (or <i>unitary diagonalization</i>, or <i>eigendecomposition</i>) <i>A</i> = <i>V • Λ • V<sup>H</sup></i> exists for any Hermitian n × n matrix <i>A</i>, where <i>V</i> is unitary and Λ is a diagonal matrix with diagonal elements equal to the eigenvalues of <i>A</i>. I, the factorization can be done so that the eigenvalues appear in descending order; for example, Λ = diag(λ<sub style="font-family: sans-serif;">0</sub>, λ<sub>1</sub>, …,λn<sub>–1</sub>) with λ<sub style="font-family: serif;">0</sub> ≥ λ<sub>1</sub> ≥ … ≥ λ<sub>n–1</sub>. Note that the columns of V are the orthonormal eigenvectors of A. </p>
+        <p class="Body">The <a href="../CH10 - Functions - Matrix Math/Eigenvalues Eigenvectors.htm#zmatherm_eigx">zmatherm_eigx()</a> SAL function calculates eigenvalues and corresponding eigenvectors of an n × n Hermitian matrix. The resulting eigenvalues define the diagonal matrix Λ, and the corresponding eigenvectors define the n × n orthonormal matrix <i>V</i>.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

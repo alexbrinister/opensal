@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="6528" MadCap:lastWidth="620" MadCap:disableMasterStylesheet="true" MadCap:tocPath="SAL Transform Functions" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="Dvc8eCHC00ewDXGoKef3nuzqAg6r0RAlGkYRUzfNDvpKD9BzJiDSSDKvxdx20LO9XlsYOi58zFbldhbQL45OhteDAxwmEq2aJ0C9oE4vsghDldLLH6rk2X5JRth/ZJkw0xlhzrtwEtBt79fOMxPj5qVWfICY9s7mKyAq78b/k9LWhr6rA7o9MMpaf0fgl3kY5b9aT+nNCyAZuKAUjcl3PPR4xg+Y5Dv+UBXtTiE0VhSdvoVofmzxVg18QPJuI2yqxYf3yPuRhIs85Qbser5qhI3mzUzhBgO1QifR8cfr+Flowub78HeFcVchVjKz9h8jKXkoEzvOY90yFQ7P3keL5WP8lDo4WFzYBzLgVDzpij4EJardQ9S3JGigogLz0QvuXaHI6X7Z98RFcGoe+tSSV7psCW8YjE095/y0qRPGSTCeqHiwFmVcDxTHS98nW9kJL2ia1rr3RFDiwnX5uBgJeJjkWPrwnGEcAbkxTtSEkILXuWn0+bcyAV4/L5Dou6BM22xE6YXpV5mLf3oxjtwAzaXI5Z1xHvAo0qqkJ0W+ZktaRLdyoMPXeVpRiJR4UIZAA8+xsz1xXF7ge/rmvy9OjjGGQE2wux06mGaCstfFd/tnkVEPf5i6FVYA3mt33YvtUCbGw0hXrewxKlgpj6JTOsQ8su3J6k8sTXf4PfNJKZQzuWo64NUVeRZgJBHqQiCXJsATVwFNBstbEOrcFMkn7Jn7J2K7Ofna1d2xRQsLRYedqmqrQn68lGQx/yr4pPHMdEARBjpwW5htwOg7th0LI9fLdGywGt5aoEARUTdRs/rhorZKPhLUi/pRFMrrmrAxz1p+No74ur5Mvqp+H6OO3CFRn0PLGjoIXJbsRp6nAk0eRLYpYeFky/AbwZntQCI1M8sslVyknHCti+B0eWlgpS5G8RjvLmpNcYmaeh8YbJXT5PrfMNGunnvy0/SZmBhotA4Jlznmf2IZ44cHRZ68zYeX5ERpWbsqr3Pf3KY3Axlp1KpQoFi5PKpF6yVPlJhS" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>SAL Convolution and Correlation Functions</title>
+        <link href="../Resources/TableStyles/o_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/o_InvisibleIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_InvisibleIndent.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/p_Note.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH02 - Transform Functions/SAL_CCFs.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: auto;page-break-after: auto;"><a name="top"></a><a name="kanchor42"></a>SAL Convolution and Correlation Functions</h1>
+        <p class="Body">The SAL library fast convolution and correlation (FC) functions enable single library calls to perform Fourier-based one-dimensional convolutions and correlations. The FC functions generally allow for greater optimization than that achieved by invoking a functionally equivalent sequence of existing SAL functions, like FFT (complex multiply) inverse FFT. In addition, by encapsulating the FC functionality in its own API, application code becomes more compact and less error prone.</p>
+        <p class="Body"><a href="#FFT_and_Fast_Convolution" target="" title="" alt="" class="MCXref_Figure_Table_Example"><span style="color: Black;" class="mcFormatColor">For more information, see </span><i><span style="color: DarkBlue;" class="mcFormatColor">FFT and Fast Convolution</span></i><span style="color: Black;" class="mcFormatColor"> on page 1.</span></a> illustrates the fast convolution process and roles of the fast convolution functions and the corresponding filter transform functions. </p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_FFT_Fast_Convolv_479x208.png" style="width: 479; height: 208;" />
+        </p>
+        <p class="CaptionNumChap_Figure" MadCap:autonum="&lt;b&gt;Figure 2-8: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 2-8: </b></span></span><a name="FFT_and_Fast_Convolution"></a>FFT and Fast Convolution</p>
+        <p class="Body">The output of the filter transform function is generally reused to filter different signals in multiple invocations of the corresponding fcs_*() function.</p>
+        <h2><a name="kanchor43"></a>Fast Convolution and Correlation Naming Convention</h2>
+        <p class="Body">The FC extension to the SAL library consists of twelve (three sets of four) functions that perform 1-D circular convolutions or correlations. FC function names have the following structure:</p>
+        <p class="Body1"><code>fc[<b>f</b>|<b>s</b>][<b>m</b>]_{<b>c</b>|<b>z</b>|<b>r</b>|<b>zr</b>}iptx(),</code> &#160;</p>
+        <p class="Body">Where:</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_InvisibleIndent.css');" class="TableStyle_o_InvisibleIndent" cellspacing="0">
+            <col style="width: 31px;" />
+            <col style="width: 178px;" />
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">Element</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd" style="font-weight: bold;">Meaning</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">f</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">filter transform, radix</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">s</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">signal convolution (size of an FFT decomposition)</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">m</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">multiple, FC type</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">c</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">complex interleaved, data type</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">z</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">complex split</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">r</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">float, interleaved real</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColSep" style="font-weight: bold;text-align: center;">zr</td>
+                <td class="TableStyle_o_InvisibleIndent_Body_0_0_RowSep_ColEnd">odd/even real split</td>
+            </tr>
+        </table>
+        <p class="Body">The “ipt” in the function name stands for “in-place with temporary buffer.”</p>
+        <table class="TableStyle_o_Note" style="width: 500px;caption-side: top;mc-table-style: url('../Resources/TableStyles/o_Note.css');" cellspacing="0">
+            <col style="width: 100%;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowSep_ColEnd">
+                        <p class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #06347a;&quot; class=&quot;mcFormatColor&quot;&gt;Note&lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #06347a;" class="mcFormatColor">Note</span></b></span></span>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowEnd_ColEnd">Unless otherwise stated, all SAL functions support in-place execution.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="kanchor44"></a>Filter Sequence Sets</h2>
+        <p class="Body">The “fc” prefix stands for “fast convolution” or “fast correlation.” </p>
+        <p class="Body">Functions with an <a name="kanchor45"></a>"fcf" prefix  perform forward or inverse FFTs of a real or complex time domain filter sequence of N elements (N = 2k). This is in preparation for generally repeated use as input to the corresponding function variant in the second <a name="kanchor46"></a>(fcs_…()) or third (fcsm_…()) set of functions.</p>
+        <p class="Body">Use the output from the filter sequence set as an input to the fast convolution functions, only. Do not assume that it is in the same format as a standard forward or inverse FFT of size <i>N</i>. <a href="SAL_FFTs.htm#top" target="" title="" alt="" class="MCXref_See_Prefixed" MadCap:conditions="Default.ScreenOnly">For more information, see <span style="color: DarkBlue;" class="mcFormatColor"><i>SAL Fast Fourier Transforms</i></span></a>.</p>
+        <p class="Body">If the length of the filter function (that is, the number of filter “taps”) is less than <i>N</i>, the filter sequence vector passed to the fcf_…() set of functions must be zero-padded to the length of <i>N</i> elements. Generally, the length of the signal sequence is also less than <i>N</i>. Therefore, it must be zero-padded to <i>N</i> points.</p>
+        <p class="Body">The fcs_…() set of functions convolves or correlates the input (the filter impulse response) to the fcf_…() set of functions with a time domain signal sequence of the same data type and size as the zero-padded filter. This is accomplished by:</p>
+        <ol>
+            <li value="1">A forward or inverse FFT of the signal sequence</li>
+            <li value="2">A complex multiplication between the Fourier transforms of the filter and signal sequences</li>
+            <li value="3">An inverse FFT of the resulting product sequence</li>
+        </ol>
+        <p class="Body">The convolution and correlation output (output of inverse FFT) overwrites the input signal sequence (hence, the “ipt” in the function name). The input frequency domain filter vector is preserved.</p>
+        <p class="Body">The fcsm_…() set is similar to the fcs_…() set, except that multiple <code>m</code> non-overlapping convolutions or correlations are performed with the same filter.</p>
+        <p class="Body"><a href="#FC_Naming_Convention_" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Table 2-5</span></a> illustrates the compatibility of elements in the FC function name. Check marks indicate that the SAL library contains a function or functions that perform FC with both features.</p>
+        <p class="CaptionNumChap_Table" MadCap:autonum="&lt;b&gt;Table 2-5: &lt;/b&gt;"><span class="autonumber"><span><b>Table 2-5: </b></span></span><a name="FC_Naming_Convention_"></a>FC Naming Convention Elements Compatibility</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../Resources/TableStyles/o_Basic.css');" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 80px;" />
+            <col style="width: 42px;" />
+            <col style="width: 39px;" />
+            <col style="width: 67px;" />
+            <col style="width: 40px;" />
+            <col style="width: 41px;" />
+            <col style="width: 41px;" />
+            <col style="width: 43px;" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep" style="text-align: center;">Element</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep" colspan="2" style="text-align: center;">Sequence</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep" style="text-align: center;">FC type</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep" colspan="4" style="text-align: center;">Data type</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">f</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">s</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">m</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">c</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">z</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">r</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="text-align: center;">zr</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">f</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">s</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">m</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">c</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">z</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">r</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="text-align: center;">zr</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">ü</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd" style="font-family: Wingdings;color: #06347a;text-align: center;">&#160;</td>
+            </tr>
+        </table>
+        <h2><a name="Fast_Convolution_and_Correlation_Setup"></a><a name="kanchor47"></a>Fast Convolution and Correlation Setup</h2>
+        <p class="Body">All FC functions take the <a href="../AppD - Legacy Functions/Create Complex Exponentials for FFTs.htm#fft_setup"><a href="../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup()</a> or <a href="../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 2D FFTs.htm#fft2d_setup">fft2d_setup()</a></a> setup object returned from a prior call to the setup function. </p>
+        <table class="TableStyle_o_Note" style="width: 500px;mc-table-style: url('../Resources/TableStyles/o_Note.css');" cellspacing="0">
+            <col style="width: 441px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowSep_ColEnd">
+                        <p class="Note" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #06347a;&quot; class=&quot;mcFormatColor&quot;&gt;Note&lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #06347a;" class="mcFormatColor">Note</span></b></span></span>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Note_Body_0_0_RowEnd_ColEnd">Unlike the SAL FFT functions, the size argument (<i>log2n</i>) specified in <a href="../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup()</a> or <a href="../CH11 - Functions - FFTs/Setup/Create Complex Exponentials for 2D FFTs.htm#fft2d_setup">fft2d_setup()</a> must exactly match the size argument specified in subsequent fast convolution invocations.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="kanchor48"></a>Fast Convolution and Correlation Filters</h2>
+        <p class="Body">To implement a convolution and correlation filter:</p>
+        <ol>
+            <li value="1">Use a common filter function to convolve a sequence of different signals or signal segments. </li>
+            <li value="2">Call an <code>fcf_…()</code> function (once only)&#160;to calculate the filter transform.</li>
+            <li value="3">Call the corresponding fast convolution function <code>fcs_…()</code> separately for each signal or signal segment to convolve with this common filter function.</li>
+        </ol>
+        <p class="Body">The <code>filter_freq </code>parameter of each of these <code>fcs_…()</code> functions then points to the output of the subject filter transform function <code>fcf_…()</code>.</p>
+        <h2><a name="kanchor49"></a>Fast Convolution and Correlation Parameters</h2>
+        <p class="Body">The fcf_…() function set takes a scale parameter that you can use to “pre-scale” the filter and the entire convolution. If the scale pointer is <code>NULL</code>, the filter is pre-scaled by 1/<i>N</i> (mathematically equivalent to the time domain calculation).</p>
+        <p class="Body">The <code>fcf_…()</code> and <code>fcs_…()</code> FC functions take an FFT direction flag (<code>FFT_FORWARD </code>or <code>FFT_INVERSE</code>) that specifies how to transform the time domain sequences in the call. Depending on the transform direction, the function performs a circular fast convolution or circular fast correlation. <a href="#FFT_Directional_Flag_Settings" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Table 2-6</span></a> lists the appropriate FFT direction flag settings for the <code>fcf_…()</code> and <code>fcs_…()</code> functions for convolution and correlation.</p>
+        <p class="CaptionNumChap_Table" MadCap:autonum="&lt;b&gt;Table 2-6: &lt;/b&gt;"><span class="autonumber"><span><b>Table 2-6: </b></span></span><a name="FFT_Directional_Flag_Settings"></a>FFT Directional Flag Settings</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Basic.css');caption-side: top;width: 500px;" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 173px;" />
+            <col style="width: 156px;" />
+            <col style="width: 150px;" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Operation</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Filter Transforms<br />(fcf_…() Functions)</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColEnd">Convolver Functions<br />(fcs_…() Functions)</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">Convolution</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><span style="font-family: 'Courier New';">FFT_FORWARD</span>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd"><span style="font-family: 'Courier New';">FFT_FORWARD</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">Filter correlated with signal</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><span style="font-family: 'Courier New';">FFT_FORWARD</span>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd"><span style="font-family: 'Courier New';">FFT_INVERSE</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">Signal correlated with filter</td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><span style="font-family: 'Courier New';">FFT_INVERSE</span>
+                </td>
+                <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd"><span style="font-family: 'Courier New';">FFT_FORWARD</span>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="kanchor50"></a>Relationships Between Fast Convolution and Correlation</h2>
+        <p class="Body">The following formulas express the combined output from a call to an <code>fcf_…()</code> function, followed by a call to the corresponding <code>fcs_…()</code> or <code>fcsm_…()</code> function.</p>
+        <p class="ImageIndent" style="margin-bottom: 16pt;">
+            <img src="../Resources/Images/SAL_equation_02_427x91.jpg" style="width: 427; height: 91;" />
+        </p>
+        <p class="Body"><b>A</b> is the filter sequence, <b>B</b> is the signal sequence. and <b>C</b> is the convolved or correlated output sequence. All three are the same data type.</p>
+        <p class="ImageIndent" style="margin-bottom: 16pt;">
+            <img src="../Resources/Images/SAL_equation_03_420x89.jpg" style="width: 420; height: 89;" />
+        </p>
+        <p class="Body">Note that the <code>FFT_FORWARD </code>flag corresponds to FFT, and <code>FFT_INVERSE </code>corresponds to IFFT, as applied to the time domain sequences <b>A</b> and <b>B</b>.</p>
+        <p class="ImageIndent">
+            <img src="../Resources/Images/SAL_equation_03_437x92.jpg" style="width: 437; height: 92;" />
+        </p>
+        <p class="ImageIndent" style="margin-bottom: 16pt;page-break-before: always;">
+            <img src="../Resources/Images/SAL_equation_04_446x245.jpg" style="width: 446; height: 245;" />
+        </p>
+        <h2><a name="kanchor51"></a>Fast Convolution and 2-D FFTs</h2>
+        <p class="Body">One common use for 2-D real FFTs is performing a fast convolution of a real-valued 2-D image with a smaller real-valued 2-D filter matrix.</p>
+        <p class="BodyLeadIn">To perform a fast convolution of an image with a filter matrix:</p>
+        <ol>
+            <li value="1">Assume that:</li>
+            <li class="BulletIndent" value="2">The given image dimension is K × L </li>
+            <li class="BulletIndent" value="3">M and N are the next larger or equal powers of 2, so that M = 2<sup>m</sup> ≥ K, and N = 2<sup>n</sup> ≥ L, where <i>m</i> and <i>n</i> are integers</li>
+            <li value="2">
+                <p>Zero-pad the image and the 2-D filter function so that both become M × N matrices. </p>
+                <p>Add the zero-padding to the top and to the right of the original image and filter matrices.</p>
+            </li>
+            <li value="3">
+                <p>Using one of the SAL <code>fft2d_[z]r{i|o}p[t]x()</code> functions, calculate the M × N 2-D real FFT on the zero-padded image and filter matrices. </p>
+                <p>Depending on whether interleaved or split complex format transforms are implemented, the resulting frequency domain matrices have the format illustrated in <a href="SAL_FFTs.htm#Packed_Format_FFT_Complex_Interleaved" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-6</span></a> for <a href="../CH10 - Functions - Matrix Math/Image Multiply.htm#cimulx">cimulx()</a> and <a href="SAL_FFTs.htm#Packed_Format_FFT_Complex_Split" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-7</span></a>.</p>
+            </li>
+            <li value="4">
+                <p>Multiply the 2-D image transform matrix, element-by-element, by the 2-D signal transform matrix using the <a href="../CH10 - Functions - Matrix Math/Image Multiply.htm#cimulx">cimulx()</a> and <a href="../CH10 - Functions - Matrix Math/Image Multiply.htm#zimulx">zimulx()</a> functions for interleaved and split complex formats, correspondingly. </p>
+                <p>You must use these two functions because of the special format of these transform matrices; illustrated in <a href="SAL_FFTs.htm#Packed_Format_FFT_Complex_Interleaved" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-6</span></a> for <a href="../CH10 - Functions - Matrix Math/Image Multiply.htm#cimulx">cimulx()</a> and <a href="SAL_FFTs.htm#Packed_Format_FFT_Complex_Split" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-7</span></a> for <a href="../CH10 - Functions - Matrix Math/Image Multiply.htm#zimulx">zimulx()</a>. Each of these functions perform an element-by-element complex multiplication of two M × N matrices.</p>
+            </li>
+            <li value="5">Inverse-transform the resulting 2-D matrix product using the same 2-D real FFT function with the <code>FFT_INVERSE</code> flag set.</li>
+        </ol>
+        <p class="Body">The result of this inverse transform is the 2-D convolution of the original image and the filter matrix.</p>
+        <h2><a name="kanchor52"></a>Convolution Precision</h2>
+        <p class="Body">Although mathematically equivalent, convolutions performed with frequency domain techniques (for example, fast convolutions) tend to be numerically less accurate than those performed with time domain techniques. This is due to the additional error inherent in most DFT and FFT implementations that result from rounding errors in the digital representation of the complex twiddle factors. The larger the convolution (the size of the component FFTs), the greater the error. This is true for frequency and time domain techniques and can be further compounded by a lack of uniformity (for example, large dynamic range) in the input data sequences. No attempt has been made to quantify the error associated with either technique.</p>
+        <p class="Body"><a name="kanchor53"></a>The convolution performed by the FC functions is <i>circular</i>, not <i>linear</i>, as implemented in normal *<a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#convx">convx()</a> convolutions. Circular convolution is a convolution of a cyclic signal.</p>
+        <p class="Body">To avoid corruption of the final result, the minimum required FFT length, N, is the smallest power of 2, N=2<sup>n</sup>, so that N ≥ L + K – 1 (given a signal of length L and a convolution filter of length K).</p>
+        <p class="Body"><a href="#Circular_convolution" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-9</span></a> and <a href="#Corrupted_circular_convolution" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Figure 2-10</span></a> illustrate the concepts of circular convolution and corrupted circular convolution due to insufficient FFT length.</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_circular_convolution_493x291.jpg" style="width: 493; height: 291;" />
+        </p>
+        <p class="CaptionNumChap_Figure" MadCap:autonum="&lt;b&gt;Figure 2-9: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 2-9: </b></span></span><a name="Circular_convolution"></a>Circular convolution</p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_circular_convolution_corrupted_455x308.jpg" style="width: 455; height: 308;" />
+        </p>
+        <p class="CaptionNumChap_Figure" MadCap:autonum="&lt;b&gt;Figure 2-10: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 2-10: </b></span></span><a name="Corrupted_circular_convolution"></a>Corrupted circular convolution (insufficient FFT length)</p>
+        <p class="Body">Given this FFT length, the L-point signal and K-point filter must be zero-padded to N points.</p>
+        <h2><a name="kanchor54"></a>Time-Domain Convolution and Down-Sampling</h2>
+        <p class="Body">The SAL <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#convx">convx()</a>, <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#cconvx">cconvx()</a>, <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#zconvx">zconvx()</a>, and <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#desampx">desampx()</a> functions implement alternative methods of performing a time domain convolution or correlation.</p>
+        <p class="Body">In a time domain convolution of two vectors, the longer of the two vectors is the <i>data vector</i>, and the shorter is the <i>filter vector</i>. Normally, the length of the filter vector is shorter than that of the data vector, although, this is not necessary.</p>
+        <p class="Body"><a href="#Domain_convolution_functions" target="" title="" alt="" class="MCXref_FigTabExam"><span style="color: DarkBlue;" class="mcFormatColor">Table 2-7</span></a> lists the time domain convolution functions that SAL supports.</p>
+        <p class="CaptionNumChap_Table" MadCap:autonum="&lt;b&gt;Table 2-7: &lt;/b&gt;"><span class="autonumber"><span><b>Table 2-7: </b></span></span><a name="Domain_convolution_functions"></a>Domain convolution functions</p>
+        <table style="margin-right: auto;mc-table-style: url('../Resources/TableStyles/o_Basic.css');caption-side: top;width: 500px;" class="TableStyle_o_Basic" cellspacing="0">
+            <col style="width: 104px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColSep">Function</th>
+                    <th class="TableStyle_o_Basic_Head_0_0_RowSep_ColEnd">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#convx">convx()</a>
+                    </td>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Implements a time-domain convolution of two real vectors</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep">
+                        <p><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#cconvx">cconvx()</a>,<br /><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#zconvx">zconvx()</a></p>
+                    </td>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Implement a time-domain convolution of two complex vectors</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="../CH12 - Functions - CCF_Image_Processing/2-D/2-D Convolution.htm#conv2dx">conv2dx()</a>,<br /><a href="../CH12 - Functions - CCF_Image_Processing/2-D/2-D Convolution.htm#cconv2dx">cconv2dx()</a>,<br /><a href="../CH12 - Functions - CCF_Image_Processing/2-D/2-D Convolution.htm#zconv2dx">zconv2dx()</a></td>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Implement a 2-D time-domain convolution of the input matrix with a filter matrix</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColSep"><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#desampx">desampx()</a>
+                    </td>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowSep_ColEnd">Implements a time-domain convolution of two real vectors with down-sampling of the output</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowEnd_ColSep"><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#crdesampx">crdesampx()</a>,<br /><a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#zrdesampx">zrdesampx()</a></td>
+                    <td class="TableStyle_o_Basic_Body_0_0_RowEnd_ColEnd">Implement a time-domain convolution of a complex vector with a real filter vector with down-sampling of the complex output</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="kanchor55"></a>Frequency-Domain and Time-Domain Convolutions</h3>
+        <p class="Body">For filter lengths greater than 36 real or 18 complex elements, using time-domain convolution functions becomes impractical because calculating the subject convolutions using the fast convolution method is more efficient.</p>
+        <p class="Body">This method computes the FFT of the input vector. Complex multiplies this result by the same-length FFT of the zero-padded filter vector and then takes the inverse FFT of the resulting complex product.</p>
+        <p class="Body">The time required to perform a fast (frequency-domain) convolution is approximately proportional to (L+K)*log<sub>2</sub>(L+K), whereas the time required to perform a time-domain convolution is proportional to (L*K), where L is the length of the signal sequence, and K is the filter length.</p>
+        <p class="Body">Although the fast convolution method is more efficient than time-domain convolution for sufficiently long filters, it requires more memory for code and data storage than time-domain convolution. If K is large enough, then fast (frequency-domain) convolutions become faster than time-domain convolutions. This is because for large K, log<sub>2</sub>(L+K)&lt;&lt;K.</p>
+        <p class="Body">The values of these maximum filter lengths depend on the function being used. For real convolutions implemented by <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#convx">convx()</a>, the maximum practical value of filter vector length is 36 points. For complex convolutions implemented by <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#cconvx">cconvx()</a> and <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#zconvx">zconvx()</a>, the maximum practical value of filter vector length is just 17 points. For filter lengths longer than these limits, the fast convolution method becomes significantly more efficient.</p>
+        <h3><a name="kanchor56"></a>Down-Sampling</h3>
+        <p class="Body">The down-sampling ratio (which must be an integer) is specified as an input parameter to the <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#desampx">desampx()</a>), <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#crdesampx">crdesampx()</a>, and <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Complex-Real Down Sample.htm#zrdesampx">zrdesampx()</a> functions. The [c|z]desampx() functions are useful in applications where the implemented filter is a low-pass filter with a bandwidth ratio of 0.5 or less, relative to the sampling rate of the input data vector.</p>
+        <p class="Body">Execution times for [c|z]desampx() functions are proportional to the length of the down-sampled output vector, not the length of the input data vector. Therefore, regardless of the down-sampling factor, the [c|z]desampx() execution times are approximate to those for <a href="../CH12 - Functions - CCF_Image_Processing/1-D/Convolution and Correlation.htm#convx">convx()</a> for the same output vector and filter length values. </p>
+        <p class="Body">To estimate the execution times for other data and filter vector length combinations, remember that the times are proportional to the product of the lengths of the output data and filter vectors. For example, the execution times for an output data vector length of 256 are approximately one quarter of those listed in the timing tables (which are sampled for a length of 1024), for the same value of filter length.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

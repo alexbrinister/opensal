@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1908" MadCap:lastWidth="670" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - CCF/Image Processing|Image Processing" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="FnVYH8mru89T6bB/RuSmSEAyhZMJ31Cp6wVO7Rie1P+V8qz4wWHRkFeXn3v2tFnRYB/K+jVY9NY6ZXIavYhc8BXcSe3UIYJMQ1qvcYDxLvSwsOqlxaVY6C3pfUEEo0lKwOevyfbjO0WY/FAIxzZmE4yMiGrAXyzB8YiywBFi87Bf/AnoQwuc3futEFQnExjr4eGk20LH9erp9+bsy+Qcd3k189KsFy7p115VjjPOpchn20oBxVTe+dLkg54t68ZZa6tCdng9To9XCPTQF6M03384jrRhj/jYwqqo8Jz+j0x15B7n/+Vk4S2Z3KDD0sBQXx2sUXeWyLouneEOwkP8y25PK0ETpA9nKhBKGp4HSzO1ApYtCvyL/T+k+WYqqf2JmAb1KmxaOyNO3oEirOgp3iVRpft8wOaBVQAVTj0NjM/F08i4RBBFfHrno7NAfb031PALiWMD3szSmNBePghQyWcf+7FQ6vJ7NJYzALyAUWOk2rp3M+FX6uL8o49AfyZzEOPaDYqrUiipT08LHOmK764cnnmHduNtVq6orSCntmdocI+57mCtpe8S+6lt7mm182DKqPTzpHl+d3r3rBPs8aoxDCKhtct1zxKd1TAN06DmFDRf8sEFGHe+Ijn1M6KKcQ9K/O65HdOLz4qHrVohvSg6hLcrg8pSv20cQBnka66cjoQFNdUvA2WTL58Hx5mRFABB/1oeHdephoXL3u5SMRk9YB0IQzh/mY92RW548XJv/V3XTDXUuUJWTzH91Gb1DPmWZlne7EZy3dcwmhmWirrxhM8nj/H0mKhIQTaOMrz4mEcY3DTfy1P/sI+dN9+4zPFBBKle7+7jZpn6CX8YdkA/7zCdi34yz3sqcwXqwStRWF/ZZhiiT8RN+lq4qM1SKWtvQ+hAV0JCH+Y0HLxp9ovzhk4vbA04Evnywc8ZDsHa4XriPmavGhVsfgdziyTUBeLJ3h+KCGs50PwXKgTTW/PrCZ4xn//zA3DHEF7vwm8lk9CcF+r5r+CvBUsCvZMiCfbcFp5o5Kb3HJhinFXnyt6EObWzkkwCx8bMOVe7RVoJar1jpN5v0uIF1oae8a34AWqBLjayqadnMvSodbUb9VI+iPJMjyyfHl3uwa65ttVDzNkdhDskJlhL6j9FwlSLw7BuqeAPwOZ6hfo0b3QAxDATGSvfqL2tIYkHT5h36stB78VhqodBn2oPVhRuOzIxZlsqxlmYZwBB/WgWS98OADIEuRAPX4yh3U1qDfBvtIlbFNo0dXvJ2FqdWTUQ3p7aRLIJAPlQ5VNV3v0jDTDFCO6b8EL+tiT88imD+bcB75J1zxlH9OiiN6LwT1B7LiZzW6ku2jLGFvBBBNOn1qeBWA==" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Image Rotate, Scale and Translate with Bilinear Interpolation</title>
+        <link href="../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../Default_CSH.htm#CH12 - Functions - CCF_Image_Processing/Image/Image Rotate Scale Translate.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1142"></a>Image Rotate, Scale and Translate with Bilinear Interpolation</h2>
+        <p class="API_name"><a name="spinx"></a><a name="kanchor1143"></a>spinx(), <a name="spindx"></a><a name="kanchor1144"></a>spindx()</p>
+        <p class="Body">The following equations define the inverse mapping that relates source image coordinates (x', y') to target image coordinates (x, y).</p>
+        <p class="Image">
+            <img src="../../Resources/Images/SAL_funct_equat_198.jpg" />
+        </p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 135px;" />
+            <col style="width: 310px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>spinx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* transform specifications b0-b5 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for A, must be even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 p,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for C, must be even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 q,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* flag: background value provided by g */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *g,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* background intensity value */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>spindx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *B,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* transform specifications b0-b5 */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output image */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 m,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for A, must be even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 p,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column count for C, must be even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 q,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* row count for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 f,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* flag: background value provided by g */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f64 *g,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* background intensity value */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The spinx() and spindx() functions rotate, translate, and enlarge or reduce an image, clipping and interpolating when necessary. These functions can be done out-of-place only. </p>
+        <p class="Body">Vector B provides an ordered list of specifications to guide the function operation:</p>
+        <p class="Parameter">SAL_f32 b0</p>
+        <p class="Body1">Sine <i>theta </i>*·scale factor, where <i>theta </i>is the rotation angle. Scale factors greater than 1 reduce the output image. Scale factors less than 1 enlarge the output image. Scale factors of 1 produce no scaling.</p>
+        <p class="Parameter">SAL_f32 b1</p>
+        <p class="Body1">Cosine <i>theta </i>* scale factor, where <i>theta </i>is the rotation angle. Scale factors greater than 1 reduce the output image. Scale factors less than 1 enlarge the output image. Scale factors of 1 produce no scaling.</p>
+        <p class="Parameter">SAL_f32 b2</p>
+        <p class="Body1">Horizontal shift after rotation. Positive <i>b2 </i>shifts the image right <i>b2 </i>columns. Negative <i>b2 </i>shifts the image left <i>b2 </i>columns.</p>
+        <p class="Parameter">SAL_f32 b3</p>
+        <p class="Body1">Vertical shift after rotation. Positive <i>b3 </i>shifts the image down <i>b3 </i>rows. Negative <i>b3 </i>shifts the image up <i>b3 </i>rows.</p>
+        <p class="Parameter">SAL_f32 b4</p>
+        <p class="Body1">Horizontal shift before rotation. Positive <i>y </i>shifts the image left <i>y </i>columns. Negative <i>y </i>shifts the image right <i>y </i>columns.</p>
+        <p class="Parameter">SAL_f32 b5</p>
+        <p class="Body1">Vertical shift before rotation. Positive <i>z </i>shifts the image up <i>z </i>rows. Negative <i>z </i>shifts the image down <i>z </i>rows.</p>
+        <p class="Body">The function maps an input image of pixels to an output image. Input image <i>A </i>is defined as a rectangle with its upper-left pixel (<span style="font-family: serif;">0</span>,<span style="font-family: serif;">0</span>) at row <span style="font-family: serif;">0</span>, column <span style="font-family: serif;">0</span> and its lower-right pixel at row <i>n</i>-1, column <i>m</i>-1.</p>
+        <p class="Body">First, the function translates the input image by shifting it left (<i>y </i>&gt; <span style="font-family: serif;">0</span>) or right (<i>y </i>&lt; <span style="font-family: serif;">0</span>) |<i>y</i>| columns and up (<i>z </i>&gt; <span style="font-family: serif;">0</span>) or down (<i>z </i>&lt; <span style="font-family: serif;">0</span>) |<i>z</i>| rows. The image is then rotated clockwise (<i>theta </i>&gt; <span style="font-family: serif;">0</span>) or counter-clockwise (<i>theta </i>&lt; <span style="font-family: serif;">0</span>) by the number of degrees specified by the rotation angle theta, and is enlarged or reduced according to these rules:</p>
+        <ul>
+            <li value="1">No change when scale factor = 1.0</li>
+            <li value="2">Enlarges when zero &lt; scale factor &lt; 1.0</li>
+            <li value="3">Reduces when scale factor &gt; 1.0</li>
+        </ul>
+        <p class="Body">Next, the function shifts the image down (<i>b3 </i>&gt; <span style="font-family: serif;">0</span>) or up (<i>b3 </i>&lt; <span style="font-family: serif;">0</span>) by |b3| rows and right (<i>b2 </i>&gt; <span style="font-family: serif;">0</span>) or left (<i>b2 </i>&lt; <span style="font-family: serif;">0</span>) by |<i>b2</i>| columns. Finally, bilinear interpolation of the transformed image creates the output image. The output image is computed row by row from pixel (<span style="font-family: serif;">0</span>,<span style="font-family: serif;">0</span>) at row <span style="font-family: serif;">0</span>, column <span style="font-family: serif;">0</span>to pixel (<i>q</i>-1,<i>p</i>-1) at row <i>q</i>-1, column <i>p</i>-1.</p>
+        <p class="Body">The functions rotate the image about its video origin, the upper-left pixel (<span style="font-family: serif;">0</span>,<span style="font-family: serif;">0</span>). To rotate the image about an interior point, shift that point in the image (specifications <i>b4 </i>and <i>b5</i>) to the video origin before rotating. After rotation, the relative position of the image can be preserved by shifting it back (specifications <i>b2 </i>and <i>b3</i>).</p>
+        <p class="Body">Interpolation of input values from <i>A </i>determines output values for <i>C</i>. If flag <i>f </i>is zero, pixels of <i>C </i>derived from out-of-range coordinates of image <i>A </i>are not written. If flag <i>f </i>is 1, the functions set the pixels to the intensity specified by <i>g</i>. All other <i>C </i>pixels derive their intensities by interpolation between the four pixels of image <i>A </i>surrounding each mapped output pixel in the input image.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../../CH02 - Transform Functions/SAL_image_transforms.htm" target="" title="GO to SAL Image Transformations" alt="GO to SAL Image Transformations" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly" xrefformat="{color DarkBlue}{i}{paratext}{/i}{/color}"><span style="color: DarkBlue;" class="mcFormatColor"><i>SAL Image Transformations</i></span></a>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

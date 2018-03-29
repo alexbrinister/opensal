@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="737" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - FFTs|One-Dimensional Fast Fourier Transforms, Complex" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="RTtT4kn3h3PHTjg2jNGJiXHwCRBEcV+207k9JfFUwvGfvUKPjE/d3gi0VgOih7iHyqyv6dDTtnK0lnbgx7DU/MSffTRMYUBTtyWEU/x4qeQAcHU9QTOUeVFje345l9SfvusH4mikNSY9Yf6pJJfyVj7XDAPWJDXxlskgpdOaui/z/iIbZ+aGbUEqjy6K8h1JjnU1uXLtG1upjTrZH9rFug9kHeHbmcbsmiLTesrVc3SbUr4gj7dJvJKoliS/GmeaPWuduWdvcFI3LTFiq8NCGimos7E8SdJLhT/7ynNDmDFH+X7jJXUiXSLXMG0ZlGfxUqVdGoxt7WG3IocJS/04apIwbJUHdJ5ALW1hyE5Fhb+pDMQiG7NxJmGDykK6zT1d0yh/PWGaXLVc0WEFuS8MDKRiG5gF0itS/7brLw6o/ckh3g033fmmtHAvCt5VQJuB0evSzbQkisplUWOzQzNRWQslSH6ckRmBQNCgj1N7429x+5EukXc149EDzUxFaYzBoGxdiCn2vJ2vx1Y1ZsGPSvmMZ69y80PfY8Em8OLrvgJsb6/8MyGHP2j38eA+C0kmaH6eXd1HFb2QxZO56ZGzBPTCsylIW67lNoAfu3LGp8tNIOPw0GCMN/+ipRPURUY12WS3TuqQm/dRIVeyBlacRCvPFP1L9XgM36Rc9gGDRWmEK+gbCgHrzzIkawPJXEyRAL5N1VgBLRI75luyeYDmkJCzMshOqjepdCIS58QmZZbpHu2CP57MQU7BHCPRskxfFMdsAdcUTdxQXlBWfbTRFdS6Qgj8Evm8ssNFptnwCmkp+6jkhmMQf5SzZ2iHBGmDMN4gZa1trdHLMJirFDpRfE7DvIS+InX72s8PDtb4clHcdKb4MI4i9Tsbj2wAwPoxXV4OZ8fP86uRdWpm70U+R0Aum5KADhwsuSK1Ji4LE1KG6wtqJYrtE8IqKqOuXJrXlu4B69IHgKnvtWNJ+Y8x5/RDD7+rKGd6BuKRk0R71T2xu0H9zLuy/doCzanH0Aonh5Ell6DFMwXKtvRIxnEQpC/KWGZERpFQqkgzIhL/JmjfUTfyq/bWB1O7EpDp27NQSGfyx6/ybszcNjHThv+Ana3yTa3NIIEaqOAAvTcR+Huz/XXzZfJERqQ5wmtjM99HzySFll17B8BAEitIKHlQ5OQQYPprmqz9f6V8JOCNuL8dT2TCucaWSsiiJxlycw6tRni08CRRO++/hUObCFYtkUTA5FStZY87cIIL7j9Gnx2Sgf3mWbAvpB2hwbQ8E/B5Jpd8Cb33HInM/fXxIlx9tZcvbTI6fi6zqoxegfmR/anII8qqxMVZPGg/pf4bT+f+B/RPw39Qk5Z+33K+tjalKg==" MadCap:PathToHelpSystem="../../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Fourier Transform and Square Magnitudes</title>
+        <link href="../../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../../Default_CSH.htm#CH11 - Functions - FFTs/1D_FFTs/Complex/FFT and Square Magnitudes.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor962"></a>Fourier Transform and Square Magnitudes</h2>
+        <p class="API_name"><a name="fft_cvmagsx"></a><a name="kanchor963"></a>fft_cvmagsx(), <a name="fft_zvmagsx"></a><a name="kanchor964"></a>fft_zvmagsx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 54px;" />
+            <col style="width: 127px;" />
+            <col style="width: 323px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fft_cvmagsx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_cf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector (destroyed) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* half-element stride for A, must be even */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3">void <b>fft_zvmagsx</b>(</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setup *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector (destroyed) */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 i,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_f32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 k,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* element stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_ui32 log2N,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The fft_cvmagsx() and fft_zvmagsx() functions calculate the in-place complex FFT and squared magnitudes of complex vector <i>A</i>. </p>
+        <ul>
+            <li value="1">A call to fft_cvmagsx() produces the same output as calling <a href="IP Interleaved Complex FFT.htm#fft_cipx">fft_cipx()</a> followed by <a href="../../../CH07 - Functions - Single Vector/SV Scientific Complex.htm#cvmagsx">cvmagsx()</a>. </li>
+            <li value="2">A call to fft_zvmagsx() produces the same output as a pair of calls, <a href="IP Split FFT.htm#fft_zipx">fft_zipx()</a> followed by <a href="../../../CH07 - Functions - Single Vector/SV Scientific Complex.htm#zvmagsx">zvmagsx()</a>. </li>
+        </ul>
+        <p class="Body">In both cases, the output from the first call is supplied as input to the second call.</p>
+        <p class="Body">Both functions destroy the complex input vector, but they can both be in-place operations:</p>
+        <ul>
+            <li value="1">For the fft_cvmagsx(), if both vectors are packed (i = 2 and k = 1), the output vector <i>C</i> can be the same as the input vector <i>A</i>. Also, if the two strides, <i>i </i>and <i>k</i>, have the same value, <i>C </i>can point to the real (<i>&amp;A-&gt;</i>real) or imaginary (<i>&amp;A-&gt;</i>imag) input vector component.</li>
+            <li value="2">For the fft_zvmagsx(), if <i>i </i>and <i>k </i>have the same value, the output vector <i>C </i>can point to the real (<i>A-</i>&gt;realp) or imaginary (<i>A-&gt;</i>imagp) input vector component.</li>
+        </ul>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">setup</p>
+        <p class="Body1">Points to a structure initialized by a prior call to FFT weights array function, <a href="../../../AppD - Legacy Functions/Create Complex Exponentials for FFTs.htm#fft_setup"><a href="../../Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup()</a></a>.</p>
+        <p class="Parameter">i, k</p>
+        <p class="Body1">Element strides through input vector <i>A </i>and output vector <i>C</i>. For the fft_cvmagsx() function, <i>i </i>is a half-element stride and must be even.</p>
+        <p class="Parameter">log2N</p>
+        <p class="Body1">Base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter <i>log2N</i>.</p>
+        <p class="Parameter">flag</p>
+        <p class="Body1">Forward/inverse directional flag. Specify one of the following:</p>
+        <p class="ParameterIndent">FFT_FORWARD</p>
+        <p class="Body2">Forward transform.</p>
+        <p class="ParameterIndent">FFT_INVERSE</p>
+        <p class="Body2">Inverse transform.</p>
+        <p class="Body2">Results are undefined for other values of flag.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../../../CH01 - Introduction/Calling_Conventions.htm#Address_strides" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Address Strides</i></span></a>&#160;&#160;&#160;</p>
+        <p class="Body"><a href="../../../CH02 - Transform Functions/SAL_FFTs.htm" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>SAL Fast Fourier Transforms</i></span></a>
+        </p>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="../../Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fft1d_setup(), fft1d_setupd()</i></span></a>&#160;</p>
+        <p class="Body"><a href="IP Split FFT.htm#fft_zipx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fft_zipx(), fft_zipdx(), fft_ziptx(), fft_ziptdx()</i></span></a>
+        </p>
+        <p class="Body"><a href="IP Interleaved Complex FFT.htm" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>In-place Interleaved Complex Fourier Transform</i></span></a>
+        </p>
+        <p class="Body"><a href="../../../CH07 - Functions - Single Vector/SV Scientific Complex.htm#cvmagsx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>cvmagsx(), cvmagsdx(), zvmagsx(), zvmagsdx()</i></span></a>
+        </p>
+        <script type="text/javascript" src="../../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

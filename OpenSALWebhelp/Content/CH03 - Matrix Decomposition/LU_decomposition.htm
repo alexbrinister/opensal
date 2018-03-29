@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="438" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="About Matrix Decomposition" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="JSSx1vjwJjeltW3qSUYsb4VQq6idHMRrPXF573LjXG/l5GnECJKPSbeo++Uwm87aJYA7C4DqFl3ViKViuKxSK85PQ/12fQe508CDcAF8aOXlD4Z6jmFXIXVfsAWJKzd68CMXsxnPl8+JBlOaQxQrXCVo3oZAuhhgPnN6eMo2+ekR5prKBgDtLTw27p5e3RJQymBJn8cHNuK0WgRM60QvzvsIO9B4qWNfbfvDtqhMmc835iK0pYXqfTEr48VyRzyD6DpfdeQIyXnOxpL1XDYUka7cq0wNJjGRD9eVlg+zlgQqx/S4xrKyIPRIQMUp/hAPzdm3F4adcHefAD6chTNui6aiKlLCDX00H46jc45LEMlLLBz9YCKCKb8H3/3BKdWiZqFcILPztN6a2A4H76NtdxRi3yDbCc1g3c2iurqxE3Pa6wRKFs7gaxJe4/TV5Wy3pReg51EJqQx3vGNKBUfXU7g0ZLvxXIChZGJQCgrjVOA+qbrLshW6GdQvlY3IRyHQtQHFMqwZblYqvZKxNBuwF2IDX5WUdmObhmmN2icQVEfREhVYmRzkUQvy91qRx+zaC2oiWBdwFh3HqKU4jhhnotq9Y6p3EzWkycv6HeiSm0ZZwX5gQY2c0guHSiYFXRvpEh++LrurT17Ch2L27giEJmZc7EXFWyOVdIOlvAVhTVp/awT+EbDSV9r9+UoXdh9aKeBW2Y/4W9fMipwPQJXyNl8e2L+glaSNV/mxkfuxTuuysrzv/X46087VaspCnBHD5IEH5gZZWgrXeDtQAKfWLe7X6uTr2UHYQl9DDbkOtsnK0hq0SsFs8JRDJhQOocmVavSYBIajwj/Moc4/HQPI7X44KwtMFRf/HuYeCrLRjSnuJ+57Hs85pULos7Kqv83ZKw/WQUqNasuT23wqwAM42+mBZqb+QSYh+kQGqPaTuH0T9fRQ4bu/XWQR67D/wF2uqNs9L1KJMPGmI9imBeDlSP450d4JQsBgVhQMg/7VFmNL75P7DcIS3vcVKMJZXMo5" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>LU Decomposition</title>
+        <link href="../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../Default_CSH.htm#CH03 - Matrix Decomposition/LU_decomposition.htm" style="">Open topic with navigation</a>
+        </p>
+        <h1 style="page-break-before: avoid;"><a name="top"></a><a name="kanchor70"></a>LU Decomposition</h1>
+        <p class="Body">Given an n × n matrix <i>A</i>, the LU decomposition (LUD) consists of two n × n triangular factor matrices <i>L</i> (lower triangular) and <i>U</i> (upper triangular) so that <i>A</i> = <i>L • U</i>. By definition, the diagonal elements of the submatrix <i>L</i> are 1. </p>
+        <p class="Image">
+            <img src="../Resources/Images/SAL_equation_26.jpg" />
+        </p>
+        <p class="CaptionNumChap_Figure" MadCap:autonum="&lt;b&gt;Figure 3-1: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 3-1: </b></span></span>LU Decomposition</p>
+        <p class="Body">The <a href="../CH10 - Functions - Matrix Math/Matrix Invert.htm#matinvx">matinvx()</a>, <a href="../CH10 - Functions - Matrix Math/Matrix Invert.htm#matinvdx">matinvdx()</a>, <a href="../CH10 - Functions - Matrix Math/Matrix Invert.htm#matinv_lux">matinv_lux()</a>, <a href="../CH10 - Functions - Matrix Math/Matrix Invert - Complex.htm#cmatinv_lux">cmatinv_lux()</a>, <a href="../CH10 - Functions - Matrix Math/Matrix Invert - Complex.htm#zmatinv_lux">zmatinv_lux()</a> SAL functions perform the LU decomposition. These functions use partial pivoting; meaning the row order in <i>L • U</i> can differ from the row order in <i>A</i>.</p>
+        <p class="Body">SAL LUD functions account for the row order change through a permutation vector output, therefore, A<sub>D[i]•j</sub> = (<i>L • U</i>)<sub>i•j</sub>, where D[i] is a permutation vector. These functions also implement the Reciprocal Diagonal Convention. <a href="Terms.htm#Reciproc" target="" title="" alt="" class="MCXref_See_Prefixed" MadCap:conditions="Default.ScreenOnly">For more information, see <span style="color: DarkBlue;" class="mcFormatColor"><i>Reciprocal Diagonal Convention</i></span></a></p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="742" MadCap:lastWidth="654" MadCap:disableMasterStylesheet="true" MadCap:tocPath="Functions - FFTs|One-Dimensional Fast Fourier Transforms, Complex" MadCap:InPreviewMode="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" MadCap:liveHelp="qKL9aCG1GmPny3MK87XNUlzc84bcNL7ukp/56sS36CA8bHKVOU7xDIp1VTlfFQZhz2LU6pFvSH6AtbQPlC9Dbqm5ovnntkNQLO9a3N+B5wwbouJ22R83UBmgYEFDTqisaTsoy6bsjx47PtTp+KbQs7mupVRsDInV0aJwhhqbgnD6/nZo89lLtjJc7GBE7rcCHXBPfQSkV6Ef051bV18HvMLATX3iUSzoNxVpa+WtnErl3PPUhasTwUy3JpcPwTnIcOn0HI/049QZIGogyG8Ji9toaXzzeEkYL1PEwNh3LOcvkZS2IZQjyEut7yYYux80G2U6x/LykDf2OnIe4VfGkhIRAXTl4ykE36YMo+MhjLibe3BpJPPgnU+aw1b3ZqYgW4/E3qNBNXe0aL7gNndv9jWaWBUMz+y3bpad4Tjt9CUUudtkwsrFFIPfMP8yvd3Sxa7kOfmJJORlfHKdpamYO+Pt684Ovo5K3B9kM6r0jpZLm6TUUSWOhhdY17HwHt3muguGTATDu9WGDqBwvsPpaboybs6BMyyTiOs3dJgS5EsdBKlcvpY83/9NxtMro3oC/TmQ1IaNoCa/QQ2CVUh+2tQgLggwEI2wY2aYCpzGFge5eSu/NcYRE+uUg8NFFfntODCQtUvNHFm4kayyHiMc2jxiY4zIxR5DpeqxcXXZq7UwCRYFhyDcplkrsYaO84HxU5moyBJXdw5+0C0ITMIvTgI4x5m8JCZi0Vv4MRHO2j8S77kAZn3cBt2MlVEIMe3ENuu/eh7LTw4XFil0BwpjEVAtyxycadZTyktqUKYX8++qeQXqqGM7ulg7zqrQXr7MqPNm0Q2AENh3IWZTshZ9N6tXNW0XJYiQllQvspyCaEMyZaZZvf2aBHsdhxYI+z1YDmkGMO5gu2jw42yK6DEU1EGnTXJQWmtZLDmNQTCquatuK8la/GUFvSZ98ztrVbjmhqWqoVo47lRJalY+B1FojxdekxAAKXjlQIKGdtqV0zP2/D7j5WXw+fIuOnS9kYW8F7BiivnGG0Gwau7TXvf1s59emhr+d5bGHURYR+heXPXFn+l2NGA3GsZV1P3dmxmehhB3f2vfvsbhzw/BPJ9alLfXAPNUsRoqKi0y2VmUqf9QlikiK9tvvIOmh2MvBGWYGdLJH9RQ2xI4j/CQAzSeKPBRuTGv9jKUt2bFIWHRTpykbMl1eom1p1FKs8UiMizh8q+dD2V9iqf41Wpni9kCi0hvS5fZNF0Cb/PHgzbOvMr8dVFTp561Wys3S4HBcnCaE1Gv2u2R5Z+uGKhDnF8ZEQSb/XBpkMju+tBNqWULhO8I7Wu5QkNheATpCnI+zG/HA19eGRQGvzzyKf5wsiq+ZA==" MadCap:PathToHelpSystem="../../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <link href="../../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Dimensional Multiple Out-of-Place Split Complex Fourier Transforms</title>
+        <link href="../../../Resources/TableStyles/o_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/TableStyles/p_Code.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../Resources/Stylesheets/BookStyles.css" rel="stylesheet" type="text/css" />
+        <script src="../../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapLiveHelpUtilities.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapLiveHelpBody.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapAddCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapReplyCommentDialog.js" type="text/javascript">
+        </script>
+        <script src="../../../SkinSupport/MadCapRegisterUserDialog.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../../../../Default_CSH.htm#CH11 - Functions - FFTs/1D_FFTs/Complex/OP Dim Multi Split FFT.htm" style="">Open topic with navigation</a>
+        </p>
+        <h2><a name="kanchor1028"></a>Dimensional Multiple Out-of-Place Split Complex Fourier Transforms</h2>
+        <p class="API_name"><a name="fftm_rows_zopx"></a><a name="kanchor1029"></a>fftm_rows_zopx(), <a name="fftm_cols_zopx"></a><a name="kanchor1030"></a>fftm_cols_zopx(), <a name="fftm_rows_zopdx"></a><a name="kanchor1031"></a>fftm_rows_zopdx(), <a name="fftm_cols_zopdx"></a><a name="kanchor1032"></a>fftm_cols_zopdx()</p>
+        <p class="API_heads">Syntax</p>
+        <table style="caption-side: top;width: 500px;mc-table-style: url('../../../Resources/TableStyles/o_Code.css');" class="TableStyle_o_Code" cellspacing="0">
+            <col style="width: 55px;" />
+            <col style="width: 163px;" />
+            <col style="width: 282px;" />
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><b>fftm_rows_zopx</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setupd *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Atcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Ctcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 log2n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nffts,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of FFTs in the batch*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 fi_flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><b>fftm_cols_zopx</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setupd *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Atcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf32 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Ctcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 log2n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nffts,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of FFTs in the batch*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 fi_flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><b>fftm_rows_zopdx</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setupd *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Atcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Ctcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 log2n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nffts,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of FFTs in the batch*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 fi_flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep" colspan="3"><b>fftm_cols_zopdx</b> (</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">FFT_setupd *setup,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* weights array */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *A,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* input vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Atcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for A */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_zf64 *C,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* output vector */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 Ctcols,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* column stride for C */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 log2n,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* base 2 exponent of element count */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 nffts,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* number of FFTs in the batch*/</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 fi_flag,</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* directional flag */</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">&#160;</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColSep">SAL_i32 eflag );</td>
+                <td class="TableStyle_o_Code_Body_0_0_RowSep_ColEnd">/* ESAL flag */</td>
+            </tr>
+        </table>
+        <p class="API_heads">Description</p>
+        <p class="Body">The fftm_rows_zop[d]x() and fftm_cols_zop[d]x() functions compute multiple out-of-place split complex discrete Fourier transforms, for rows or columns only, respectively.</p>
+        <p class="Body">These functions perform the same as the <a href="OP Multi Split FFT.htm#fftm_zopx">fftm_zop[d]x()</a> functions, but operate on row-wise or column-wise data layouts only.</p>
+        <p class="API_heads">Parameters</p>
+        <p class="Parameter">setup</p>
+        <p class="Body1">Points to a structure initialized by a prior call to <a href="../../Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup[d]()</a>, specifying the FFT function (e.g., <code>SAL_FFTM_ROWS_ZIPX</code>)</p>
+        <p class="Parameter">Atcols</p>
+        <p class="Body1">Specifies a column stride for vector <i>A</i>.  For row FFTs, <i>Atcols </i>should be greater or equal to the number of elements in the FFT. For column FFTs, <i>Atcols </i>should be greater or equal to <i>nffts</i>.</p>
+        <p class="Parameter">Ctcols</p>
+        <p class="Body1">Specifies a column stride for vector <i>C</i>.  For row FFTs, <i>Ctcols </i>should be greater or equal to the number of elements in the FFT. For column FFTs, <i>Ctcols </i>should be greater or equal to <i>nffts</i>.</p>
+        <p class="Parameter">log2n</p>
+        <p class="Body1">The base-2 exponent of the number of complex elements to process. For example, to process 1,024 elements, specify 10 for the <i>log2N </i>parameter. This must be the same value specified to the <a href="../../Setup/Create Complex Exponentials for 1D FFTs.htm#fft1d_setup">fft1d_setup[d]()</a> routine.</p>
+        <p class="Parameter">nffts</p>
+        <p class="Body1">The number of FFTs in the batch to process.</p>
+        <p class="Parameter">fi_flag</p>
+        <p class="Body1">A forward/inverse directional flag that must specify one of the following:</p>
+        <p class="ParameterIndent">FFT_FORWARD </p>
+        <p class="Body2">Forward transform.</p>
+        <p class="ParameterIndent">FFT_INVERSE </p>
+        <p class="Body2">Inverse transform.</p>
+        <p class="Parameter">flag</p>
+        <p class="Body1">The ESAL flag.</p>
+        <p class="RelatedTopics" MadCap:autonum="Related Topics"><span class="autonumber"><span>Related Topics</span></span>&#160;</p>
+        <p class="Body"><a href="../../../CH01 - Introduction/Calling_Conventions.htm#Address_strides" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Address Strides</i></span></a>&#160;&#160;&#160;</p>
+        <p class="Body"><a href="../../../AppC - Performance/Performance_Overview.htm#Using_ESAL_flag" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>Using the ESAL Flag Argument</i></span></a>
+        </p>
+        <p class="RelatedFunctions" MadCap:autonum="Related Functions"><span class="autonumber"><span>Related Functions</span></span>&#160;</p>
+        <p class="Body"><a href="OP Split FFT.htm#fft_zopx" target="" title="" alt="" class="MCXref_See_NoPrefix" MadCap:conditions="Default.ScreenOnly"><span style="color: DarkBlue;" class="mcFormatColor"><i>fft_zopx(), fft_zopdx(), fft_zoptx(), fft_zoptdx()</i></span></a>
+        </p>
+        <script type="text/javascript" src="../../../SkinSupport/MadCapBodyEnd.js">
+        </script><iframe id="topiccomments" name="topiccomments" title="Topic Comments" src="../../../../Skin/TopicComments.htm" frameborder="0" style="width: 100%; height: 0px; margin-top: 12px;"></iframe>
+    </body>
+</html>
