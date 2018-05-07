@@ -45,7 +45,7 @@ ARFLAGS := -cru
 
 CC := $(TOOLS_DIR)/gcc
 
-CCFLAGS_COMMON := -g -Wall -Werror
+CCFLAGS_COMMON := -g -Wall -Werror -Wextra
 
 ifdef TARGET_ARCH
 	CCFLAGS_COMMON += -DSAL_ARCH=$(TARGET_ARCH)
