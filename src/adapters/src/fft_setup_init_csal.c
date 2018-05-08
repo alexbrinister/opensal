@@ -49,7 +49,6 @@ SAL_i32 PREFIX( fft_setup_init_csal ) (
     SAL_ui32  LOG2M;
     SAL_i32 FLAG;
     void *BUFFERP;
-    SAL_ui32 NTHREADS;
     SAL__fft_setup_csal  *SETUP;
 
     SAL__fft_setup_config_base * config;
@@ -67,7 +66,6 @@ SAL_i32 PREFIX( fft_setup_init_csal ) (
 
     FLAG = config->fft_type_flags;
     BUFFERP = config->alloc_addr;
-    NTHREADS = 1;
 
     void  *handle = NULL;
 
@@ -75,8 +73,6 @@ SAL_i32 PREFIX( fft_setup_init_csal ) (
 
     SAL_f32  *twidp = NULL;
     SAL_ui32  m, ntwids, alloc_size;
-
-    SAL_ui32  top = 0;
 
     if ( FLAG & FFT_RADIX9 )
         FLAG |= FFT_RADIX3;
@@ -114,8 +110,6 @@ SAL_i32 PREFIX( fft_setup_init_csal ) (
         if ( !handle ) goto err_ret;
 
         temp = ( void * )ROUND_UP_POW2( handle, FFT_SETUP_STRUCT_ALIGN );
-
-        top = ( unsigned long )handle + alloc_size;
 
         SETUP = ( SAL__fft_setup_csal * )temp;
         SETUP->handle = ( void * )handle;

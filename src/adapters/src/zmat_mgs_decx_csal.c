@@ -59,8 +59,8 @@ void PREFIX( zmat_mgs_decx_csal )(
     SAL_f32 *Qpivotrp, *Qpivotip, *Acolrp, *Acolip, *Rrowrp, *Rrowip;
     SAL_i32 Rtcols1 = Rtcols + 1;
     SAL_f32 dotrp, dotip;
-    SAL_zf32 Rsave, Asave;
-    SAL_f32 *Rsaverp, *Rsaveip, *Asaverp, *Asaveip;
+    SAL_zf32 Rsave;
+    SAL_f32 *Rsaverp, *Rsaveip;
 
     ( void ) X;
 
@@ -71,12 +71,8 @@ void PREFIX( zmat_mgs_decx_csal )(
 
     Rsaverp = Rrp;
     Rsaveip = Rip;
-    Asaverp = ATrp;
-    Asaveip = ATip;
     Rsave.realp = Rsaverp;
     Rsave.imagp = Rsaveip;
-    Asave.realp = Asaverp;
-    Asave.imagp = Asaveip;
 
     for ( k = 0; k < n; k++ )
     {

@@ -41,20 +41,11 @@ SAL_i32 PREFIX( fft_setup_set_buffer_base )(
     SAL__return_info *r_info
 )
 {
-    SAL_ui32 fft_type = 0;
-    SAL_ui32 fft_type_flags = 0;
     unsigned long alloc_size = 0;
     SAL_i32 needed_size = 0;
     SAL__fft_setup_config_base * config_base = NULL;
 
     config_base = ( *p_setup )->fft_setup_config_base;
-
-    if ( p_setup && *p_setup && config_base )
-    {
-        fft_type = config_base->fft_type;
-    }
-
-    fft_type_flags = fft_type_flag_lookup( fft_type );
 
     if ( !( p_setup && *p_setup ) )
     {

@@ -43,8 +43,8 @@ SAL_i32 PREFIX( fft2d_setupd_create_base )(
     SAL__return_info *r_info
 )
 {
-    if ( ( fft_type <= SAL_FFT2D_FUNC_LB ) ||
-         ( fft_type >= SAL_FFT2D_FUNC_UB ) )
+    if ( ( fft_type <= SAL_FFT2D_FUNCD_LB ) ||
+         ( fft_type >= SAL_FFT2D_FUNCD_UB ) )
     {
         SAL_RINFO_SET_CODE( r_info, SAL_FFT_NOT_SUPPORTED );
         SAL_RINFO_SET_PATH( r_info, SAL_PATH_CSAL );

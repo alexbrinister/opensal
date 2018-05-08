@@ -152,8 +152,6 @@ static void PREFIX( _fft_setup_common )(
     SAL_f32  *twidp = NULL;
     SAL_ui32  m, ntwids, alloc_size;
 
-    SAL_ui32  top = 0;
-
     if ( FLAG & FFT_RADIX9 )
         FLAG |= FFT_RADIX3;
 
@@ -208,8 +206,6 @@ static void PREFIX( _fft_setup_common )(
         if ( !handle ) goto err_ret;
 
         temp = ( void * )ROUND_UP_POW2( handle, FFT_SETUP_STRUCT_ALIGN );
-
-        top = ( unsigned long )handle + alloc_size;
 
         SETUP = ( SAL__fft_setup_csal * )temp;
         SETUP->handle = ( void * )handle;

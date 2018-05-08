@@ -40,7 +40,13 @@ extern "C"
 
 #include "adapters.h"
 
-    typedef void ( *fft_cipdx_func )( FFT_setupd *, SAL_cf64 *, SAL_i32, SAL_ui32, SAL_i32, SAL_i32, SAL__return_info * );
+    typedef void ( *fft_cipdx_func )( FFT_setupd *, 
+				SAL_cf64 *, 
+				SAL_i32, 
+				SAL_ui32, 
+				SAL_i32, 
+				SAL_i32, 
+				SAL__return_info * );
 
     static inline void PREFIX( fft_cipdx_selector )(
         FFT_setupd *SETUPP,
